@@ -417,7 +417,6 @@ import { ref, computed, onMounted } from 'vue'
 import { codes as codesData } from '@/data/codes.js'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import { message } from '@/utils/message.js'
 
 // 响应式数据
 const codes = ref(codesData)
