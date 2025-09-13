@@ -192,11 +192,10 @@
                   </div>
                 </div>
               </div>
-              <img
-                class="redeem-image"
-                src="/images/emotes/Rest1.webp"
-                alt="How to Redeem Type Soul Codes"
-              />
+              <div class="redeem-placeholder">
+                <div class="redeem-icon">🎮</div>
+                <p>Redeem Codes in Type Soul</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1457,11 +1456,28 @@ onMounted(() => {
   line-height: 1.4;
 }
 
-.redeem-image {
-  width: 100%;
-  height: auto;
+.redeem-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 10px;
   margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.redeem-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.redeem-placeholder p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* About Type Soul New Layout */
