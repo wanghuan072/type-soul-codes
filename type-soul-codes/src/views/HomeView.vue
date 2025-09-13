@@ -194,7 +194,7 @@
               </div>
               <img
                 class="redeem-image"
-                src="/images/roblox-type-soul-codes-button.webp"
+                src="/images/emotes/Rest1.webp"
                 alt="How to Redeem Type Soul Codes"
               />
             </div>

@@ -9,7 +9,7 @@ export const guides = [
       "keywords": "Type Soul value list, Type Soul trading, Type Soul items, Type Soul accessories, Type Soul buddies, Type Soul rarity"
     },
     "description": "A complete Type Soul value list guide that includes rarity meanings, obtainable items, accessories, and buddies with updated values, demand, and trends for trading.",
-    "imageUrl": "/images/guides/guide-01.webp",
+    "imageUrl": "/images/blog/blog-01.webp",
     "imageAlt": "Type Soul Value List Guide",
     "publishDate": "2025-09-15",
     "category": "Guides",
@@ -156,7 +156,7 @@ export const guides = [
       keywords: "Bankai Type Soul, Type Soul Bankai guide, Bankai unlock, Bankai stages, Bankai weapon variants, Bankai element variants, Type Soul"
     },
     description: "A complete guide for Bankai in Type Soul, including how to unlock it through multiple stages, weapon and element rarities, and the best tips to win your Bankai fight.",
-    imageUrl: "/images/guides/guide-02.webp",
+    imageUrl: "/images/blog/blog-02.webp",
     imageAlt: "Bankai Type Soul Guide",
     publishDate: "2025-09-15",
     category: "Guides",
@@ -267,7 +267,7 @@ export const guides = [
   //     keywords: ""
   //   },
   //   description: "",
-  //   imageUrl: "/images/guides/guide-01.webp",
+  //   imageUrl: "/images/blog/blog-01.webp",
   //   imageAlt: "",
   //   publishDate: "2025-09-15",
   //   category: "",
