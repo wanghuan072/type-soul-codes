@@ -1,7 +1,6 @@
 {
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
-  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "env": {
     "VITE_API_BASE_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_SITE_NAME": "Type Soul Codes",
