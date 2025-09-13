@@ -21,13 +21,10 @@ export default defineConfig({
     rollupOptions: {
       external: [],
       output: {
-        assetFileNames: 'assets/[name]-[hash][extname]',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js'
+        assetFileNames: 'assets/[name]-[hash][extname]'
       }
     }
   },
   assetsInclude: ['**/*.webp'],
-  publicDir: 'public',
-  base: '/'
+  publicDir: 'public'
 })

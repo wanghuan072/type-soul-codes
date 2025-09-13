@@ -4,15 +4,11 @@
   "env": {
     "VITE_API_BASE_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_SITE_NAME": "Type Soul Codes",
-    "VITE_SITE_DESCRIPTION": "Type Soul游戏代码和指南",
+    "VITE_SITE_DESCRIPTION": "Type Soul",
     "VITE_LOCAL_API_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_NODE_ENV": "production"
   },
   "rewrites": [
-    {
-      "source": "/images/(.*)",
-      "destination": "/images/$1"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

@@ -449,7 +449,18 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 // 响应式数据
 const codes = ref(codesData)
-const robloxButtonImage = '/images/roblox-type-soul-codes-button.webp'
+
+// 动态获取图片路径，确保在所有环境中都能正确解析
+const getImagePath = (path) => {
+  // 在开发环境中直接返回路径
+  if (import.meta.env.DEV) {
+    return path
+  }
+  // 在生产环境中，确保路径正确
+  return path.startsWith('/') ? path : `/${path}`
+}
+
+const robloxButtonImage = getImagePath('/images/roblox-type-soul-codes-button.webp')
 
 // 计算属性
 const currentDateTime = ref('')
