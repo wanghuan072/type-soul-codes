@@ -9,7 +9,7 @@ export const guides = [
       "keywords": "Type Soul value list, Type Soul trading, Type Soul items, Type Soul accessories, Type Soul buddies, Type Soul rarity"
     },
     "description": "A complete Type Soul value list guide that includes rarity meanings, obtainable items, accessories, and buddies with updated values, demand, and trends for trading.",
-    "imageUrl": "./images/guides/guides-01.webp",
+    "imageUrl": "/images/guides/guides-01.webp",
     "imageAlt": "Type Soul Value List Guide",
     "publishDate": "2025-09-15",
     "category": "Guides",
@@ -156,7 +156,7 @@ export const guides = [
       keywords: "Bankai Type Soul, Type Soul Bankai guide, Bankai unlock, Bankai stages, Bankai weapon variants, Bankai element variants, Type Soul"
     },
     description: "A complete guide for Bankai in Type Soul, including how to unlock it through multiple stages, weapon and element rarities, and the best tips to win your Bankai fight.",
-    imageUrl: "./images/guides/guides-02.webp",
+    imageUrl: "/images/guides/guides-02.webp",
     imageAlt: "Bankai Type Soul Guide",
     publishDate: "2025-09-15",
     category: "Guides",
@@ -261,7 +261,7 @@ export const guides = [
       "keywords": "Vizard Type Soul, Vizard Type Soul guide, True Visored, Standard Visored, False Visored, Visored mask, Type Soul mastery"
     },
     "description": "A full guide to Vizard Type Soul, covering the different Visored states, mastery requirements, buffed moves, and Visored variants for players in Type Soul.",
-    "imageUrl": "./images/guides/guides-03.webp",
+    "imageUrl": "/images/guides/guides-03.webp",
     "imageAlt": "Vizard Type Soul Guide",
     "publishDate": "2025-09-15",
     "category": "Guides",
@@ -332,7 +332,7 @@ export const guides = [
       "keywords": "Trello Type Soul, Type Soul Trello link, Type Soul Trello guide, Type Soul Trello board, Trello Type Soul codes, Trello Type Soul roadmap"
     },
     "description": "A complete guide to Trello Type Soul, covering the official Trello link, how to use the board, races, items, skill trees, and the latest updates for the Roblox game Type Soul.",
-    "imageUrl": "./images/guides/guides-04.webp",
+    "imageUrl": "/images/guides/guides-04.webp",
     "imageAlt": "Trello Type Soul Guide",
     "publishDate": "2025-09-15",
     "category": "Guides",
@@ -384,7 +384,7 @@ export const guides = [
       "keywords": "Bankai Type Soul, how to get Bankai Type Soul, Bankai Type Soul guide, Type Soul Bankai stages, Bankai weapon variants, Bankai element variants"
     },
     "description": "A complete walkthrough on how to get Bankai Type Soul. This guide covers every stage, from points in Clan Wars, Raids, and Ranked matches, to Innerworld battles, Kisuke’s trial, and the final Bankai fight.",
-    "imageUrl": "./images/guides/guides-05.webp",
+    "imageUrl": "/images/guides/guides-05.webp",
     "imageAlt": "How to Get Bankai Type Soul Guide",
     "publishDate": "2025-09-15",
     "category": "Guides",

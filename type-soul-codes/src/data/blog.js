@@ -4,7 +4,7 @@ export const posts = [
     title: "Type Soul Codes September 2025 – Latest Working Codes",
     publishDate: "2025-09-12",
     description: "Discover all the latest working Type Soul codes for September 2025. Redeem free rewards like rerolls, boosts, and exclusive in-game items.",
-    imageUrl: "./images/blog/blog-01.webp",
+    imageUrl: "/images/blog/blog-01.webp",
     imageAlt: "Type Soul Codes Redeem Rewards",
     addressBar: "type-soul-codes",
     seo: {
@@ -59,7 +59,7 @@ export const posts = [
     "title": "Type Soul — Game Introduction and In-Depth Gameplay",
     "publishDate": "2025-09-12",
     "description": "An in-depth look at Roblox’s Type Soul: its world, factions, combat systems, progression, and what keeps players coming back for more.",
-    "imageUrl": "./images/blog/blog-02.webp",
+    "imageUrl": "/images/blog/blog-02.webp",
     "imageAlt": "Type Soul game artwork showing combat and characters",
     "addressBar": "type-soul-game-deep-dive",
     "seo": {
@@ -117,7 +117,7 @@ export const posts = [
     "title": "Type Soul — Worldbuilding and Lore Exploration",
     "publishDate": "2025-09-12",
     "description": "Dive into the lore and worldbuilding of Roblox’s Type Soul, exploring its inspirations, factions, realms, and how story elements shape gameplay.",
-    "imageUrl": "./images/blog/blog-03.webp",
+    "imageUrl": "/images/blog/blog-03.webp",
     "imageAlt": "Type Soul worldbuilding and lore concept art",
     "addressBar": "type-soul-worldbuilding",
     "seo": {

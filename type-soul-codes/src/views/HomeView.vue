@@ -449,7 +449,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 // 响应式数据
 const codes = ref(codesData)
-const robloxButtonImage = './images/roblox-type-soul-codes-button.webp'
+const robloxButtonImage = '/images/roblox-type-soul-codes-button.webp'
 
 // 计算属性
 const currentDateTime = ref('')
