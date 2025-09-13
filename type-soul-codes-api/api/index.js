@@ -24,6 +24,7 @@ const allowedOrigins = [
   'http://localhost:5173',  // 本地开发前端
   'http://localhost:3001',  // 本地开发后端
   'https://typesoulcodes.org',  // 生产环境前端地址
+  'https://type-soul-codes.vercel.app',  // Vercel 前端地址
   process.env.FRONTEND_URL  // 环境变量中的前端地址
 ].filter(Boolean);
 
