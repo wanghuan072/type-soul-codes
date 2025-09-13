@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://typesoulcodes.org/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all other content
+Allow: /emotes
+Allow: /wiki
+Allow: /blog
+Allow: /privacy-policy
+Allow: /terms-of-use
+Allow: /copyright
+Allow: /about-us
+Allow: /contact-us
+
+# Crawl delay
+Crawl-delay: 1
