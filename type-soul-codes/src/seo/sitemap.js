@@ -6,7 +6,7 @@
  * @returns {string} 站点地图 XML 字符串
  */
 export const generateSitemap = (routes) => {
-  const baseUrl = 'https://type-soul-codes.vercel.app'
+  const baseUrl = 'https://typesoulcodes.org'
   const currentDate = new Date().toISOString()
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>

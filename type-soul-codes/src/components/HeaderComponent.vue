@@ -3,30 +3,24 @@
     <div class="container">
       <div class="header-wrap">
         <div class="logo">
-          <div class="logo-icon">⚡</div>
           <div class="logo-text">Type Soul Codes</div>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="desktop-nav">
           <router-link to="/" class="nav-link">
-            <span class="nav-icon">🏠</span>
             Home
           </router-link>
           <router-link to="/emotes" class="nav-link">
-            <span class="nav-icon">😊</span>
-            Emotes List
+            Emotes
           </router-link>
           <router-link to="/wiki" class="nav-link">
-            <span class="nav-icon">📖</span>
             Wiki
           </router-link>
           <router-link to="/blog" class="nav-link">
-            <span class="nav-icon">📝</span>
             Blog
           </router-link>
           <router-link to="/guides" class="nav-link">
-            <span class="nav-icon">📋</span>
             Guides
           </router-link>
         </nav>
@@ -55,29 +49,23 @@
     <nav class="mobile-nav" :class="{ active: isMobileMenuOpen }">
       <div class="mobile-nav-header">
         <div class="mobile-logo">
-          <div class="logo-icon">⚡</div>
           <div class="logo-text">Type Soul Codes</div>
         </div>
       </div>
       <div class="mobile-nav-links">
         <router-link to="/" class="mobile-nav-link" @click="closeMobileMenu">
-          <span class="nav-icon">🏠</span>
           Home
         </router-link>
         <router-link to="/emotes" class="mobile-nav-link" @click="closeMobileMenu">
-          <span class="nav-icon">😊</span>
-          Emotes List
+          Emotes
         </router-link>
         <router-link to="/wiki" class="mobile-nav-link" @click="closeMobileMenu">
-          <span class="nav-icon">📖</span>
           Wiki
         </router-link>
         <router-link to="/blog" class="mobile-nav-link" @click="closeMobileMenu">
-          <span class="nav-icon">📝</span>
           Blog
         </router-link>
         <router-link to="/guides" class="mobile-nav-link" @click="closeMobileMenu">
-          <span class="nav-icon">📋</span>
           Guides
         </router-link>
       </div>
@@ -102,67 +90,89 @@ const closeMobileMenu = () => {
 <style scoped>
 /* Header Section */
 .header {
-  background: rgba(26, 11, 46, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #9b59b6;
-  position: relative;
-  z-index: 100;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(155, 89, 182, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
   height: 50px;
 }
 
-.logo-icon {
-  font-size: 32px;
-  color: #9b59b6;
-}
-
 .logo-text {
-  font-size: 24px;
-  font-weight: bold;
-  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(45deg, #ff6b9d, #4ecdc4, #9b59b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
+}
+
+.logo-text:hover {
+  transform: scale(1.05);
 }
 
 /* Desktop Navigation */
 .desktop-nav {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  align-items: center;
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
   color: #ffffff;
   text-decoration: none;
-  padding: 0 15px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.router-link-active {
-  background: rgba(155, 89, 182, 0.2);
-  color: #9b59b6;
-}
-
-.nav-icon {
   font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.router-link-active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ff6b9d;
+  transform: translateY(-2px);
+}
+
+.nav-link.router-link-active {
+  color: #4ecdc4;
+  font-weight: 600;
 }
 
 /* Mobile Menu Button */
@@ -171,26 +181,34 @@ const closeMobileMenu = () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
   border: none;
+  border-radius: 8px;
   cursor: pointer;
   padding: 0;
   z-index: 10001;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
+}
+
+.mobile-menu-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(155, 89, 182, 0.4);
 }
 
 .hamburger-line {
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   background: #ffffff;
-  margin: 3px 0;
+  margin: 2px 0;
   transition: all 0.3s ease;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .mobile-menu-btn.active .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .mobile-menu-btn.active .hamburger-line:nth-child(2) {
@@ -198,7 +216,7 @@ const closeMobileMenu = () => {
 }
 
 .mobile-menu-btn.active .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Mobile Navigation Overlay */
@@ -208,11 +226,12 @@ const closeMobileMenu = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 .mobile-nav-overlay.active {
@@ -224,17 +243,17 @@ const closeMobileMenu = () => {
 .mobile-nav {
   position: fixed;
   top: 0;
-  right: -280px;
-  width: 280px;
+  right: -320px;
+  width: 320px;
   max-width: 85vw;
   height: 100vh;
-  background: rgba(26, 11, 46, 1);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
   backdrop-filter: blur(20px);
-  border-left: 1px solid #9b59b6;
+  border-left: 1px solid rgba(155, 89, 182, 0.3);
   z-index: 10000;
-  transition: right 0.3s ease;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .mobile-nav.active {
@@ -245,63 +264,76 @@ const closeMobileMenu = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #333;
-}
-
-.mobile-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.mobile-logo .logo-icon {
-  font-size: 24px;
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(155, 89, 182, 0.2);
+  background: linear-gradient(45deg, rgba(255, 107, 157, 0.1), rgba(78, 205, 196, 0.1));
 }
 
 .mobile-logo .logo-text {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .mobile-nav-links {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .mobile-nav-link {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: block;
   color: #ffffff;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 18px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
-  border-left: 3px solid transparent;
+  border-left: 4px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 107, 157, 0.1), rgba(78, 205, 196, 0.1));
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.mobile-nav-link:hover::before,
+.mobile-nav-link.router-link-active::before {
+  left: 0;
 }
 
 .mobile-nav-link:hover,
 .mobile-nav-link.router-link-active {
-  background: rgba(155, 89, 182, 0.2);
-  border-left-color: #9b59b6;
-  color: #9b59b6;
+  border-left-color: #ff6b9d;
+  color: #ff6b9d;
+  transform: translateX(10px);
 }
 
-.mobile-nav-link .nav-icon {
-  font-size: 18px;
+.mobile-nav-link.router-link-active {
+  color: #4ecdc4;
+  font-weight: 600;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .desktop-nav {
-    gap: 20px;
+    gap: 30px;
   }
 
   .nav-link {
-    padding: 0 12px;
-    font-size: 14px;
-  }
-
-  .nav-icon {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -315,75 +347,40 @@ const closeMobileMenu = () => {
   }
 
   .logo-text {
-    font-size: 20px;
+    font-size: 24px;
   }
 
-  .logo-icon {
-    font-size: 28px;
-  }
-
-  .mobile-nav {
-    width: 260px;
-    right: -260px;
-    max-width: 90vw;
-  }
-
-  .mobile-nav-header {
-    padding: 15px;
-  }
-
-  .mobile-logo .logo-text {
-    font-size: 16px;
-  }
-
-  .mobile-logo .logo-icon {
-    font-size: 20px;
-  }
-
-  .mobile-nav-links {
+  .header-wrap {
     padding: 15px 0;
-  }
-
-  .mobile-nav-link {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-
-  .mobile-nav-link .nav-icon {
-    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .mobile-nav {
-    width: 240px;
-    right: -240px;
-    max-width: 95vw;
+    width: 280px;
+    right: -280px;
+    max-width: 90vw;
   }
 
   .mobile-nav-header {
-    padding: 12px;
+    padding: 25px 15px;
   }
 
   .mobile-logo .logo-text {
-    font-size: 14px;
-  }
-
-  .mobile-logo .logo-icon {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .mobile-nav-links {
-    padding: 12px 0;
+    padding: 25px 0;
   }
 
   .mobile-nav-link {
-    padding: 10px 12px;
-    font-size: 13px;
+    padding: 15px 25px;
+    font-size: 15px;
   }
 
-  .mobile-nav-link .nav-icon {
-    font-size: 14px;
+  .logo-text {
+    font-size: 22px;
   }
 }
 </style>

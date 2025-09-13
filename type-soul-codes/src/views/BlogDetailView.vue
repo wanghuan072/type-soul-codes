@@ -3,16 +3,6 @@
     <!-- Header Component -->
     <HeaderComponent />
 
-    <!-- Back Button -->
-    <section class="back-section">
-      <div class="container">
-        <button @click="goBack" class="back-button">
-          <span class="back-icon">←</span>
-          Back to Blog
-        </button>
-      </div>
-    </section>
-
     <!-- Blog Post Detail -->
     <section class="blog-detail" v-if="post">
       <div class="container">
@@ -21,6 +11,11 @@
           <div class="hero-image">
             <img :src="post.imageUrl" :alt="post.imageAlt" />
             <div class="hero-overlay">
+              <!-- Back Button in top-left corner -->
+              <button @click="goBack" class="back-button">
+                <span class="back-icon">←</span>
+                Back to Blog
+              </button>
               <div class="hero-content">
                 <div class="hero-date">{{ formatDate(post.publishDate) }}</div>
                 <h1 class="hero-title">{{ post.title }}</h1>
@@ -85,6 +80,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@import '@/styles/content-styles.css';
 /* 全局样式 */
 .blog-detail-page {
   background: #0a0a0a;
@@ -93,36 +89,38 @@ onMounted(() => {
   line-height: 1.6;
 }
 
-/* Back Section */
-.back-section {
-  padding: 20px 0;
-  background: #1a1a1a;
-  border-bottom: 1px solid #333;
-}
-
+/* Back Button in Hero Overlay */
 .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: transparent;
-  color: #9b59b6;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.7);
   border: 2px solid #9b59b6;
+  color: #9b59b6;
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.3s ease;
-  font-size: 16px;
-  font-weight: bold;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
 }
 
 .back-button:hover {
   background: #9b59b6;
   color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.4);
 }
 
 .back-icon {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* Blog Detail Section */
@@ -205,80 +203,15 @@ onMounted(() => {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.post-content {
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.post-content :deep(h2) {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 40px 0 20px 0;
-  color: #ffffff;
-  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.post-content :deep(h3) {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 30px 0 15px 0;
-  color: #ffffff;
-  background: linear-gradient(45deg, #9b59b6, #8e44ad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.post-content :deep(h4) {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 25px 0 10px 0;
-  color: #4ecdc4;
-}
-
-.post-content :deep(p) {
-  color: #b0b0b0;
-  margin-bottom: 20px;
-}
-
-.post-content :deep(ul) {
-  margin: 20px 0;
-  padding-left: 30px;
-}
-
-.post-content :deep(li) {
-  color: #b0b0b0;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.post-content :deep(li::marker) {
-  color: #9b59b6;
-}
-
-.post-content :deep(strong) {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.post-content :deep(em) {
-  color: #4ecdc4;
-  font-style: italic;
-}
+/* 内容样式已移至公共样式文件 */
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .back-section {
-    padding: 20px 0;
-  }
-
   .back-button {
-    padding: 10px 20px;
-    font-size: 14px;
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 12px;
   }
 
   .hero-image {
@@ -305,35 +238,15 @@ onMounted(() => {
     font-size: 16px;
   }
 
-  .post-content :deep(h2) {
-    font-size: 28px;
-  }
-
-  .post-content :deep(h3) {
-    font-size: 22px;
-  }
-
-  .post-content :deep(h4) {
-    font-size: 18px;
-  }
-
-  .post-content :deep(p) {
-    font-size: 16px;
-  }
-
-  .post-content :deep(li) {
-    font-size: 16px;
-  }
+  /* 响应式内容样式已移至公共样式文件 */
 }
 
 @media (max-width: 768px) {
-  .back-section {
-    padding: 15px 0;
-  }
-
   .back-button {
-    padding: 8px 16px;
-    font-size: 12px;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 11px;
   }
 
   .hero-image {
@@ -368,25 +281,7 @@ onMounted(() => {
     font-size: 14px;
   }
 
-  .post-content :deep(h2) {
-    font-size: 24px;
-  }
-
-  .post-content :deep(h3) {
-    font-size: 20px;
-  }
-
-  .post-content :deep(h4) {
-    font-size: 16px;
-  }
-
-  .post-content :deep(p) {
-    font-size: 14px;
-  }
-
-  .post-content :deep(li) {
-    font-size: 14px;
-  }
+  /* 响应式内容样式已移至公共样式文件 */
 }
 
 @media (max-width: 480px) {
@@ -415,16 +310,6 @@ onMounted(() => {
     font-size: 13px;
   }
 
-  .post-content :deep(h2) {
-    font-size: 20px;
-  }
-
-  .post-content :deep(h3) {
-    font-size: 18px;
-  }
-
-  .post-content :deep(h4) {
-    font-size: 14px;
-  }
+  /* 响应式内容样式已移至公共样式文件 */
 }
 </style>

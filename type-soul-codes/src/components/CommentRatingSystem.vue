@@ -1,26 +1,26 @@
 <template>
   <div class="comment-rating-system">
-    <!-- 评分区域 -->
-    <div class="rating-section">
+    <!-- 评分显示区域 -->
+    <div class="rating-section" v-if="ratingStats.count > 0">
       <h3 class="section-title">
-        <i class="fas fa-star"></i>
-        指南评分
+        <span class="star-icon">★</span>
+        Guide Rating
       </h3>
       
       <!-- 评分显示 -->
-      <div class="rating-display" v-if="ratingStats.count > 0">
+      <div class="rating-display">
         <div class="rating-summary">
           <div class="average-rating">
             <span class="rating-number">{{ ratingStats.average }}</span>
             <div class="stars-display">
-              <i 
+              <span 
                 v-for="star in 5" 
                 :key="star"
-                class="fas fa-star"
+                class="star-symbol"
                 :class="{ 'filled': star <= Math.round(ratingStats.average) }"
-              ></i>
+              >★</span>
             </div>
-            <span class="rating-count">({{ ratingStats.count }} 人评分)</span>
+            <span class="rating-count">({{ ratingStats.count }} ratings)</span>
           </div>
         </div>
         
@@ -31,7 +31,7 @@
             :key="rating"
             class="rating-bar-item"
           >
-            <span class="rating-label">{{ rating }}星</span>
+            <span class="rating-label">{{ rating }}★</span>
             <div class="rating-bar">
               <div 
                 class="rating-fill"
@@ -42,41 +42,13 @@
           </div>
         </div>
       </div>
-      
-      <!-- 评分输入 -->
-      <div class="rating-input">
-        <p class="input-label">为这个指南评分：</p>
-        <div class="star-input">
-          <button
-            v-for="star in 5"
-            :key="star"
-            type="button"
-            class="star-button"
-            :class="{ 'active': star <= userRating }"
-            @click="selectRating(star)"
-            :disabled="isSubmitting"
-          >
-            <i class="fas fa-star"></i>
-          </button>
-        </div>
-        <button 
-          v-if="userRating > 0"
-          @click="submitRating"
-          :disabled="isSubmitting"
-          class="submit-rating-btn"
-        >
-          <i class="fas fa-check" v-if="!isSubmitting"></i>
-          <i class="fas fa-spinner fa-spin" v-else></i>
-          {{ isSubmitting ? '提交中...' : '提交评分' }}
-        </button>
-      </div>
     </div>
 
     <!-- 评论区域 -->
     <div class="comments-section">
       <h3 class="section-title">
-        <i class="fas fa-comments"></i>
-        用户评论 ({{ comments.length }})
+        <span class="comment-icon">💬</span>
+        User Comments ({{ comments.length }})
       </h3>
       
       <!-- 评论表单 -->
@@ -85,7 +57,7 @@
           <input
             v-model="commentForm.name"
             type="text"
-            placeholder="您的姓名 *"
+            placeholder="Your Name *"
             class="form-input"
             :disabled="isSubmitting"
             required
@@ -93,7 +65,7 @@
           <input
             v-model="commentForm.email"
             type="email"
-            placeholder="邮箱地址（可选）"
+            placeholder="Email (Optional)"
             class="form-input"
             :disabled="isSubmitting"
           />
@@ -101,7 +73,7 @@
         <div class="form-row">
           <textarea
             v-model="commentForm.text"
-            placeholder="分享您的使用体验... *"
+            placeholder="Share your experience... *"
             class="form-textarea"
             :disabled="isSubmitting"
             rows="4"
@@ -110,29 +82,35 @@
         </div>
         <div class="form-row">
           <div class="comment-rating">
-            <span>同时评分：</span>
-            <div class="star-input small">
+            <span>Rate this guide:</span>
+            <div class="star-input" @mouseleave="clearHoverRating">
               <button
                 v-for="star in 5"
                 :key="star"
                 type="button"
                 class="star-button"
-                :class="{ 'active': star <= commentForm.rating }"
+                :class="{ 
+                  'active': star <= commentForm.rating,
+                  'hover': star <= hoverRating 
+                }"
                 @click="commentForm.rating = star"
+                @mouseenter="setHoverRating(star)"
                 :disabled="isSubmitting"
               >
-                <i class="fas fa-star"></i>
+                <span class="star-symbol">★</span>
               </button>
             </div>
           </div>
+        </div>
+        <div class="form-row">
           <button 
             @click="submitComment"
             :disabled="isSubmitting || !commentForm.name.trim() || !commentForm.text.trim()"
             class="submit-comment-btn"
           >
-            <i class="fas fa-paper-plane" v-if="!isSubmitting"></i>
-            <i class="fas fa-spinner fa-spin" v-else></i>
-            {{ isSubmitting ? '提交中...' : '发表评论' }}
+            <span v-if="!isSubmitting">📤</span>
+            <span v-else class="spinner">⟳</span>
+            {{ isSubmitting ? 'Submitting...' : 'Post Comment' }}
           </button>
         </div>
       </div>
@@ -146,15 +124,15 @@
         >
           <div class="comment-header">
             <div class="comment-user">
-              <i class="fas fa-user"></i>
+              <span class="user-icon">👤</span>
               <span class="user-name">{{ comment.name }}</span>
               <span v-if="comment.rating" class="comment-rating-display">
-                <i 
+                <span 
                   v-for="star in 5"
                   :key="star"
-                  class="fas fa-star"
+                  class="star-symbol"
                   :class="{ 'filled': star <= comment.rating }"
-                ></i>
+                >★</span>
               </span>
             </div>
             <span class="comment-time">{{ formatTime(comment.timestamp) }}</span>
@@ -165,8 +143,8 @@
       
       <!-- 空状态 -->
       <div v-else class="empty-comments">
-        <i class="fas fa-comment-slash"></i>
-        <p>还没有评论，来发表第一个评论吧！</p>
+        <span class="empty-icon">💭</span>
+        <p>No comments yet, be the first to comment!</p>
       </div>
     </div>
   </div>
@@ -191,7 +169,7 @@ export default {
         ratings: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }
       },
       comments: [],
-      userRating: 0,
+      hoverRating: 0,
       isSubmitting: false,
       commentForm: {
         name: '',
@@ -217,34 +195,21 @@ export default {
         this.comments = commentData;
       } catch (error) {
         console.error('加载数据失败:', error);
-        this.$emit('error', '加载评分和评论数据失败');
+        this.$emit('error', 'Failed to load rating and comment data');
       }
     },
     
-    selectRating(rating) {
-      this.userRating = rating;
+    setHoverRating(rating) {
+      this.hoverRating = rating;
     },
     
-    async submitRating() {
-      if (this.userRating === 0) return;
-      
-      this.isSubmitting = true;
-      try {
-        await apiService.submitRating(this.guideId, this.userRating);
-        this.userRating = 0;
-        await this.loadData();
-        this.$emit('success', '评分提交成功！');
-      } catch (error) {
-        console.error('提交评分失败:', error);
-        this.$emit('error', '评分提交失败，请重试');
-      } finally {
-        this.isSubmitting = false;
-      }
+    clearHoverRating() {
+      this.hoverRating = 0;
     },
     
     async submitComment() {
       if (!this.commentForm.name.trim() || !this.commentForm.text.trim()) {
-        this.$emit('error', '请填写姓名和评论内容');
+        this.$emit('error', 'Please fill in name and comment content');
         return;
       }
       
@@ -266,10 +231,10 @@ export default {
         };
         
         await this.loadData();
-        this.$emit('success', '评论发表成功！');
+        this.$emit('success', 'Comment posted successfully!');
       } catch (error) {
         console.error('提交评论失败:', error);
-        this.$emit('error', '评论发表失败，请重试');
+        this.$emit('error', 'Failed to post comment, please try again');
       } finally {
         this.isSubmitting = false;
       }
@@ -297,140 +262,164 @@ export default {
 
 <style scoped>
 .comment-rating-system {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #9b59b6;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.comment-rating-system::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(155, 89, 182, 0.05) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-  font-size: 1.25rem;
-  font-weight: 600;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #9b59b6, #ff6b9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 2;
 }
 
-.section-title i {
-  color: #3498db;
+.star-icon, .comment-icon {
+  color: #9b59b6;
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 /* 评分区域 */
 .rating-section {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
-}
-
-.rating-display {
-  margin-bottom: 1rem;
-}
-
-.rating-summary {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(155, 89, 182, 0.3);
+  position: relative;
+  z-index: 2;
+  line-height: 1.5;
 }
 
 .average-rating {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .rating-number {
-  font-size: 2rem;
+  font-size: 26px;
   font-weight: bold;
-  color: #f39c12;
+  color: #ff6b9d;
+  text-shadow: 0 0 10px rgba(255, 107, 157, 0.3);
 }
 
 .stars-display {
   display: flex;
-  gap: 0.25rem;
+  gap: 5px;
 }
 
-.stars-display .fas {
-  color: #ddd;
-  font-size: 1.2rem;
+.star-symbol {
+  color: #999;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  display: inline-block;
 }
 
-.stars-display .fas.filled {
-  color: #f39c12;
+.star-symbol.filled {
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
 .rating-count {
-  color: #666;
-  font-size: 0.9rem;
+  color: #b0b0b0;
+  font-size: 14px;
 }
 
 .rating-breakdown {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 5px;
 }
 
 .rating-bar-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  gap: 10px;
+  font-size: 14px;
 }
 
 .rating-label {
-  width: 3rem;
-  color: #666;
+  width: 50px;
+  color: #b0b0b0;
+  font-weight: 500;
 }
 
 .rating-bar {
   flex: 1;
-  height: 8px;
-  background: #eee;
-  border-radius: 4px;
+  height: 12px;
+  background: #333;
+  border-radius: 6px;
   overflow: hidden;
+  border: 1px solid #444;
 }
 
 .rating-fill {
   height: 100%;
-  background: #f39c12;
+  background: linear-gradient(45deg, #9b59b6, #ff6b9d);
   transition: width 0.3s ease;
+  border-radius: 5px;
 }
 
-/* 评分输入 */
-.rating-input {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.input-label {
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
-}
-
+/* 星星输入样式 */
 .star-input {
   display: flex;
-  gap: 0.25rem;
+  gap: 5px;
 }
 
 .star-button {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.25rem;
-  font-size: 1.5rem;
-  color: #ddd;
-  transition: color 0.2s ease;
+  font-size: 14px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .star-button:hover:not(:disabled) {
-  color: #f39c12;
+  transform: scale(1.1);
 }
 
-.star-button.active {
-  color: #f39c12;
+.star-button:hover:not(:disabled) .star-symbol {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.star-button.active .star-symbol {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.star-button.hover .star-symbol {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 .star-button:disabled {
@@ -438,205 +427,269 @@ export default {
   opacity: 0.5;
 }
 
-.submit-rating-btn {
-  align-self: flex-start;
-  background: #3498db;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
-}
-
-.submit-rating-btn:hover:not(:disabled) {
-  background: #2980b9;
-}
-
-.submit-rating-btn:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
 /* 评论区域 */
 .comments-section {
-  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .comment-form {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-}
-
-.form-row {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.form-row:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 15px;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .form-input {
-  flex: 1;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  transition: border-color 0.2s ease;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #2a2a2a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .form-input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #9b59b6;
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.3);
+}
+
+.form-input::placeholder {
+  color: #888;
 }
 
 .form-textarea {
-  flex: 1;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 14px;
   resize: vertical;
   font-family: inherit;
-  transition: border-color 0.2s ease;
+  background: #2a2a2a;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .form-textarea:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #9b59b6;
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.3);
+}
+
+.form-textarea::placeholder {
+  color: #888;
 }
 
 .comment-rating {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #666;
-  font-size: 0.9rem;
+  color: #b0b0b0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .comment-rating .star-input.small .star-button {
-  font-size: 1rem;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.comment-rating .star-input.small .star-symbol {
+  font-size: 16px;
+}
+
+.user-icon {
+  color: #9b59b6;
+  font-size: 16px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #9b59b6;
+  opacity: 0.7;
+  display: block;
 }
 
 .submit-comment-btn {
-  background: #27ae60;
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+  width: 100%;
+  max-width: 200px;
+  display: block;
 }
 
 .submit-comment-btn:hover:not(:disabled) {
-  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
 }
 
 .submit-comment-btn:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+  transform: none;
 }
 
 /* 评论列表 */
 .comments-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .comment-item {
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border-left: 3px solid #3498db;
+  padding: 10px;
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 15px;
+  border-left: 4px solid #9b59b6;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .comment-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .comment-user {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 10px;
 }
 
 .comment-user i {
-  color: #3498db;
+  color: #9b59b6;
+  font-size: 16px;
 }
 
 .user-name {
   font-weight: 600;
-  color: #2c3e50;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .comment-rating-display {
   display: flex;
-  gap: 0.1rem;
+  gap: 2px;
 }
 
-.comment-rating-display .fas {
-  color: #ddd;
-  font-size: 0.8rem;
+.comment-rating-display .star-symbol {
+  color: #999;
+  font-size: 12px;
 }
 
-.comment-rating-display .fas.filled {
-  color: #f39c12;
+.comment-rating-display .star-symbol.filled {
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
 .comment-time {
-  color: #666;
-  font-size: 0.8rem;
+  color: #b0b0b0;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .comment-content {
-  color: #444;
-  line-height: 1.5;
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
 /* 空状态 */
 .empty-comments {
   text-align: center;
-  padding: 2rem;
-  color: #666;
+  padding: 40px;
+  color: #b0b0b0;
 }
 
-.empty-comments i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #bdc3c7;
+/* 空状态图标样式已在上面定义 */
+
+.empty-comments p {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
   .comment-rating-system {
-    padding: 1rem;
+    padding: 10px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .rating-number {
+    font-size: 28px;
+  }
+  
+  .stars-display .fas {
+    font-size: 16px;
+  }
+  
+  .star-button {
+    font-size: 20px;
+    padding: 6px;
   }
   
   .form-row {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 15px;
   }
   
   .comment-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 10px;
+  }
+
+  .rating-number{
+    font-size: 20px;
+  }
+
+  .rating-section{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   
-  .average-rating {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .comment-form {
+    padding: 10px;
+  }
+  
+  .comment-item {
+    padding: 10px;
   }
 }
 </style>

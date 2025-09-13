@@ -1,0 +1,292 @@
+/* 公共内容样式 - 用于博客详情页和指南详情页的v-html内容 */
+
+/* 基础内容容器 */
+.post-content {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* 标题样式 */
+.post-content :deep(h1) {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  color: #ffffff;
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.post-content :deep(h2) {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  color: #ffffff;
+  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.post-content :deep(h3) {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+  color: #ffffff;
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.post-content :deep(h4) {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px 0 10px 0;
+  color: #4ecdc4;
+}
+
+/* 段落样式 */
+.post-content :deep(p) {
+  color: #b0b0b0;
+  margin-bottom: 20px;
+}
+
+/* 列表样式 */
+.post-content :deep(ul) {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.post-content :deep(ol) {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.post-content :deep(li) {
+  margin-bottom: 10px;
+  color: #b0b0b0;
+  position: relative;
+}
+
+.post-content :deep(li::marker) {
+  color: #9b59b6;
+}
+
+/* 强调样式 */
+.post-content :deep(strong) {
+  color: #9b59b6;
+  font-weight: bold;
+}
+
+.post-content :deep(em) {
+  color: #f39c12;
+  font-style: italic;
+}
+
+/* 表格样式 */
+.post-content :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.post-content :deep(th) {
+  background: linear-gradient(45deg, #9b59b6, #8e44ad);
+  color: #ffffff;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-content :deep(td) {
+  padding: 12px 15px;
+  color: #b0b0b0;
+  border-bottom: 1px solid rgba(155, 89, 182, 0.2);
+}
+
+.post-content :deep(tr:last-child td) {
+  border-bottom: none;
+}
+
+.post-content :deep(tr:nth-child(even)) {
+  background: rgba(155, 89, 182, 0.05);
+}
+
+/* 代码样式 */
+.post-content :deep(code) {
+  background: rgba(42, 42, 42, 0.8);
+  color: #4ecdc4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  border: 1px solid rgba(78, 205, 196, 0.3);
+}
+
+.post-content :deep(pre) {
+  background: rgba(42, 42, 42, 0.8);
+  color: #b0b0b0;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.post-content :deep(pre code) {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+}
+
+/* 链接样式 */
+.post-content :deep(a) {
+  color: #4ecdc4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post-content :deep(a:hover) {
+  color: #ff6b9d;
+  text-decoration: underline;
+}
+
+/* 引用样式 */
+.post-content :deep(blockquote) {
+  border-left: 4px solid #9b59b6;
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: rgba(155, 89, 182, 0.1);
+  border-radius: 0 10px 10px 0;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* 分割线样式 */
+.post-content :deep(hr) {
+  border: none;
+  height: 2px;
+  background: linear-gradient(45deg, #9b59b6, #ff6b9d);
+  margin: 30px 0;
+  border-radius: 1px;
+}
+
+/* 图片样式 */
+.post-content :deep(img) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .post-content :deep(h1) {
+    font-size: 28px;
+  }
+
+  .post-content :deep(h2) {
+    font-size: 28px;
+  }
+
+  .post-content :deep(h3) {
+    font-size: 22px;
+  }
+
+  .post-content :deep(h4) {
+    font-size: 18px;
+  }
+
+  .post-content :deep(p) {
+    font-size: 16px;
+  }
+
+  .post-content :deep(li) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    font-size: 16px;
+  }
+
+  .post-content :deep(h1) {
+    font-size: 24px;
+  }
+
+  .post-content :deep(h2) {
+    font-size: 24px;
+  }
+
+  .post-content :deep(h3) {
+    font-size: 20px;
+  }
+
+  .post-content :deep(h4) {
+    font-size: 16px;
+  }
+
+  .post-content :deep(p) {
+    font-size: 14px;
+  }
+
+  .post-content :deep(li) {
+    font-size: 14px;
+  }
+
+  .post-content :deep(table) {
+    font-size: 12px;
+  }
+
+  .post-content :deep(th),
+  .post-content :deep(td) {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-content {
+    font-size: 14px;
+  }
+
+  .post-content :deep(h1) {
+    font-size: 20px;
+  }
+
+  .post-content :deep(h2) {
+    font-size: 20px;
+  }
+
+  .post-content :deep(h3) {
+    font-size: 18px;
+  }
+
+  .post-content :deep(h4) {
+    font-size: 14px;
+  }
+
+  .post-content :deep(p) {
+    font-size: 12px;
+  }
+
+  .post-content :deep(li) {
+    font-size: 12px;
+  }
+
+  .post-content :deep(ul),
+  .post-content :deep(ol) {
+    padding-left: 15px;
+  }
+}
