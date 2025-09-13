@@ -26,6 +26,5 @@ export default defineConfig({
     }
   },
   assetsInclude: ['**/*.webp'],
-  publicDir: 'public',
-  base: './'
+  publicDir: 'public'
 })

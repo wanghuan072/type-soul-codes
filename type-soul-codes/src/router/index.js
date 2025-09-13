@@ -10,12 +10,12 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue')
     },
     {
-      path: '/emotes',
+      path: '/type-soul-emotes',
       name: 'emotes',
       component: () => import('@/views/EmotesView.vue')
     },
     {
-      path: '/wiki',
+      path: '/type-soul-wiki',
       name: 'wiki',
       component: () => import('@/views/WikiView.vue')
     },
@@ -25,12 +25,12 @@ const router = createRouter({
       component: () => import('@/views/BlogView.vue')
     },
     {
-      path: '/guides',
+      path: '/type-soul-guides',
       name: 'guides',
       component: () => import('@/views/GuidesView.vue')
     },
     {
-      path: '/guides/:slug',
+      path: '/type-soul-guides/:slug',
       name: 'guide-detail',
       component: () => import('@/views/GuideDetailView.vue')
     },

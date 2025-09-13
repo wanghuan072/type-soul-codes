@@ -209,7 +209,7 @@ const getCategoryLabel = (category) => {
 
 const viewGuide = (guide) => {
   // 跳转到指南详情页面
-  router.push(`/guides/${guide.addressBar}`)
+  router.push(`/type-soul-guides/${guide.addressBar}`)
 }
 
 // 生命周期

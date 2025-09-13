@@ -88,7 +88,7 @@ const formatDate = (dateString) => {
 }
 
 const goBack = () => {
-  router.push('/guides')
+  router.push('/type-soul-guides')
 }
 
 const getCategoryLabel = (category) => {
@@ -116,12 +116,12 @@ const fetchGuideData = (slug) => {
       title: foundGuide.seo.title,
       description: foundGuide.seo.description,
       keywords: foundGuide.seo.keywords,
-      canonical: `/guides/${foundGuide.addressBar}`,
+      canonical: `/type-soul-guides/${foundGuide.addressBar}`,
       type: 'article',
     })
   } else {
     // 如果找不到指南，重定向到指南列表页
-    router.push('/guides')
+    router.push('/type-soul-guides')
   }
 }
 

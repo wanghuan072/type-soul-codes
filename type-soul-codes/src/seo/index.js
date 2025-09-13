@@ -71,14 +71,14 @@ export const getPageSEOConfig = (routeName) => {
       title: 'Type Soul Emotes List - All Commands & Animations | typesoulcodes.org',
       description: 'Complete list of Type Soul emotes with commands and descriptions. Express yourself with character animations and poses in Type Soul game.',
       keywords: 'type soul emotes, type soul commands, type soul animations, roblox emotes, character poses, roleplay emotes',
-      canonical: '/emotes',
+      canonical: '/type-soul-emotes',
       type: 'website'
     },
     wiki: {
       title: 'Type Soul Wiki - Complete Game Guide | Races, Locations & Abilities',
       description: 'Complete Type Soul wiki with guides for all races (Soul Reaper, Quincy, Arrancar, Fullbringer), locations, abilities, and game mechanics.',
       keywords: 'type soul wiki, type soul guide, soul reaper guide, quincy guide, arrancar guide, fullbringer guide, type soul locations, type soul abilities',
-      canonical: '/wiki',
+      canonical: '/type-soul-wiki',
       type: 'website'
     },
     blog: {

@@ -16,10 +16,10 @@
           <div class="link-column">
             <h4>QUICK LINKS</h4>
             <a href="/">Home</a>
-            <a href="/emotes">Emotes</a>
-            <a href="/wiki">Wiki</a>
+            <a href="/type-soul-emotes">Emotes</a>
+            <a href="/type-soul-wiki">Wiki</a>
             <a href="/blog">Blog</a>
-            <a href="/guides">Guides</a>
+            <a href="/type-soul-guides">Guides</a>
           </div>
           <div class="link-column">
             <h4>Legal</h4>

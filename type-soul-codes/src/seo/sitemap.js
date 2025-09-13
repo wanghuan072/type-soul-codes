@@ -54,13 +54,13 @@ export const getStaticRoutes = () => {
       lastmod: currentDate
     },
     {
-      path: '/emotes',
+      path: '/type-soul-emotes',
       changefreq: 'weekly',
       priority: 0.8,
       lastmod: currentDate
     },
     {
-      path: '/wiki',
+      path: '/type-soul-wiki',
       changefreq: 'weekly',
       priority: 0.8,
       lastmod: currentDate

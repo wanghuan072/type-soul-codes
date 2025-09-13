@@ -8,21 +8,21 @@
 
         <!-- Desktop Navigation -->
         <nav class="desktop-nav">
-          <router-link to="/" class="nav-link">
+          <a href="/" class="nav-link">
             Home
-          </router-link>
-          <router-link to="/emotes" class="nav-link">
+          </a>
+          <a href="/type-soul-emotes" class="nav-link">
             Emotes
-          </router-link>
-          <router-link to="/wiki" class="nav-link">
+          </a>
+          <a href="/type-soul-wiki" class="nav-link">
             Wiki
-          </router-link>
-          <router-link to="/blog" class="nav-link">
-            Blog
-          </router-link>
-          <router-link to="/guides" class="nav-link">
+          </a>
+          <a href="/type-soul-guides" class="nav-link">
             Guides
-          </router-link>
+          </a>
+          <a href="/blog" class="nav-link">
+            Blog
+          </a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -53,21 +53,21 @@
         </div>
       </div>
       <div class="mobile-nav-links">
-        <router-link to="/" class="mobile-nav-link" @click="closeMobileMenu">
+        <a href="/" class="mobile-nav-link" @click="closeMobileMenu">
           Home
-        </router-link>
-        <router-link to="/emotes" class="mobile-nav-link" @click="closeMobileMenu">
+        </a>
+        <a href="/type-soul-emotes" class="mobile-nav-link" @click="closeMobileMenu">
           Emotes
-        </router-link>
-        <router-link to="/wiki" class="mobile-nav-link" @click="closeMobileMenu">
+        </a>
+        <a href="/type-soul-wiki" class="mobile-nav-link" @click="closeMobileMenu">
           Wiki
-        </router-link>
-        <router-link to="/blog" class="mobile-nav-link" @click="closeMobileMenu">
-          Blog
-        </router-link>
-        <router-link to="/guides" class="mobile-nav-link" @click="closeMobileMenu">
+        </a>
+        <a href="/type-soul-guides" class="mobile-nav-link" @click="closeMobileMenu">
           Guides
-        </router-link>
+        </a>
+        <a href="/blog" class="mobile-nav-link" @click="closeMobileMenu">
+          Blog
+        </a>
       </div>
     </nav>
   </section>
@@ -145,7 +145,6 @@ const closeMobileMenu = () => {
   font-weight: 500;
   padding: 12px 0;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
