@@ -3,7 +3,29 @@
  * 用于与后端评分评论系统通信
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+// 自动检测环境并设置API基础URL
+const getApiBaseUrl = () => {
+  // 如果设置了环境变量，优先使用
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL;
+  }
+  
+  // 自动检测环境
+  if (import.meta.env.PROD) {
+    // 生产环境 - 使用Vercel后端
+    return 'https://type-soul-codes-api.vercel.app';
+  } else {
+    // 开发环境 - 使用本地后端
+    return 'http://localhost:3001';
+  }
+};
+
+const API_BASE_URL = getApiBaseUrl();
+
+// 开发环境下输出API URL用于调试
+if (import.meta.env.DEV) {
+  console.log('🔗 API Base URL:', API_BASE_URL);
+}
 
 /**
  * API 请求封装
