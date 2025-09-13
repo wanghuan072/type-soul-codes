@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
+  ],
   "env": {
     "VITE_API_BASE_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_SITE_NAME": "Type Soul Codes",
@@ -8,17 +9,6 @@
     "VITE_LOCAL_API_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_NODE_ENV": "production"
   },
-  "headers": [
-    {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
