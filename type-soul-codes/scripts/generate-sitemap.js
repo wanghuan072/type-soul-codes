@@ -1,9 +1,14 @@
-import { writeFileSync } from 'fs'
+import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import { getStaticRoutes } from '../src/seo/sitemap.js'
 
 // 生成站点地图
 const routes = getStaticRoutes()
 const sitemap = generateSitemap(routes)
+
+// 确保 dist 目录存在
+if (!existsSync('dist')) {
+  mkdirSync('dist')
+}
 
 // 写入文件
 writeFileSync('dist/sitemap.xml', sitemap)
