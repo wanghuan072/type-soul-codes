@@ -1,0 +1,19 @@
+# Fish-Games 项目 - 不上传到 GitHub
+Fish-Games/
+
+# 其他常见的忽略文件
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db

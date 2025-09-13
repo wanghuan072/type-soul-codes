@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build && npm run build:sitemap",
-  "outputDirectory": "dist",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
+  ],
   "env": {
     "VITE_API_BASE_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_SITE_NAME": "Type Soul Codes",
@@ -9,13 +10,6 @@
     "VITE_NODE_ENV": "production"
   },
   "rewrites": [
-    {
-      "source": "/images/(.*)",
-      "destination": "/images/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
