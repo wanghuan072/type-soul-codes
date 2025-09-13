@@ -4,7 +4,7 @@ export const emotes = [
     title: "Sit",
     publishDate: "2025-09-12",
     description: "Basic sitting animation",
-    imageUrl: "/images/emotes/Rest1.webp",
+    imageUrl: "./images/emotes/Rest1.webp",
     imageAlt: "Basic sitting animation",
     code: "/e sit"
   },
@@ -13,7 +13,7 @@ export const emotes = [
     title: "Rest",
     publishDate: "2025-09-12",
     description: "Resting pose",
-    imageUrl: "/images/emotes/Rest2.webp",
+    imageUrl: "./images/emotes/Rest2.webp",
     imageAlt: "Resting pose",
     code: "/e rest"
   },
@@ -22,7 +22,7 @@ export const emotes = [
     title: "Rest2",
     publishDate: "2025-09-12",
     description: "Alternative resting pose",
-    imageUrl: "/images/emotes/Rest3.webp",
+    imageUrl: "./images/emotes/Rest3.webp",
     imageAlt: "Alternative resting pose",
     code: "/e rest2"
   },
@@ -31,7 +31,7 @@ export const emotes = [
     title: "Rest3",
     publishDate: "2025-09-12",
     description: "Third resting pose",
-    imageUrl: "/images/emotes/Rest4.webp",
+    imageUrl: "./images/emotes/Rest4.webp",
     imageAlt: "Third resting pose",
     code: "/e rest3"
   },
@@ -40,7 +40,7 @@ export const emotes = [
     title: "Kneel",
     publishDate: "2025-09-12",
     description: "Kneeling animation",
-    imageUrl: "/images/emotes/Rest5.webp",
+    imageUrl: "./images/emotes/Rest5.webp",
     imageAlt: "Kneeling animation",
     code: "/e kneel"
   },
@@ -49,7 +49,7 @@ export const emotes = [
     title: "Lean",
     publishDate: "2025-09-12",
     description: "Leaning against wall pose",
-    imageUrl: "/images/emotes/Rest6.webp",
+    imageUrl: "./images/emotes/Rest6.webp",
     imageAlt: "Leaning against wall pose",
     code: "/e lean"
   },
@@ -58,7 +58,7 @@ export const emotes = [
     title: "Wave",
     publishDate: "2025-09-12",
     description: "Waving animation",
-    imageUrl: "/images/emotes/Rest7.webp",
+    imageUrl: "./images/emotes/Rest7.webp",
     imageAlt: "Waving animation",
     code: "/e wave"
   },
@@ -67,7 +67,7 @@ export const emotes = [
     title: "Point",
     publishDate: "2025-09-12",
     description: "Pointing gesture",
-    imageUrl: "/images/emotes/Rest8.webp",
+    imageUrl: "./images/emotes/Rest8.webp",
     imageAlt: "Pointing gesture",
     code: "/e point"
   },
@@ -76,7 +76,7 @@ export const emotes = [
     title: "Dance",
     publishDate: "2025-09-12",
     description: "Dancing animation",
-    imageUrl: "/images/emotes/Rest9.webp",
+    imageUrl: "./images/emotes/Rest9.webp",
     imageAlt: "Dancing animation",
     code: "/e dance"
   },
@@ -85,7 +85,7 @@ export const emotes = [
     title: "Dance2",
     publishDate: "2025-09-12",
     description: "Second dancing animation",
-    imageUrl: "/images/emotes/Rest10.webp",
+    imageUrl: "./images/emotes/Rest10.webp",
     imageAlt: "Second dancing animation",
     code: "/e dance2"
   },
@@ -94,7 +94,7 @@ export const emotes = [
     title: "Dance3",
     publishDate: "2025-09-12",
     description: "Third dancing animation",
-    imageUrl: "/images/emotes/Rest11.webp",
+    imageUrl: "./images/emotes/Rest11.webp",
     imageAlt: "Third dancing animation",
     code: "/e dance3"
   },
@@ -103,7 +103,7 @@ export const emotes = [
     title: "Freestyle",
     publishDate: "2025-09-12",
     description: "Freestyle dance",
-    imageUrl: "/images/emotes/Rest12.webp",
+    imageUrl: "./images/emotes/Rest12.webp",
     imageAlt: "Freestyle dance",
     code: "/e freestyle"
   },
@@ -112,7 +112,7 @@ export const emotes = [
     title: "Cry",
     publishDate: "2025-09-12",
     description: "Crying animation",
-    imageUrl: "/images/emotes/Rest13.webp",
+    imageUrl: "./images/emotes/Rest13.webp",
     imageAlt: "Crying animation",
     code: "/e cry"
   },
@@ -121,7 +121,7 @@ export const emotes = [
     title: "Laugh",
     publishDate: "2025-09-12",
     description: "Laughing animation",
-    imageUrl: "/images/emotes/Rest14.webp",
+    imageUrl: "./images/emotes/Rest14.webp",
     imageAlt: "Laughing animation",
     code: "/e laugh"
   },
@@ -130,7 +130,7 @@ export const emotes = [
     title: "Shy",
     publishDate: "2025-09-12",
     description: "Shy gesture",
-    imageUrl: "/images/emotes/Rest15.webp",
+    imageUrl: "./images/emotes/Rest15.webp",
     imageAlt: "Shy gesture",
     code: "/e shy"
   },
@@ -139,7 +139,7 @@ export const emotes = [
     title: "Cheer",
     publishDate: "2025-09-12",
     description: "Cheering animation",
-    imageUrl: "/images/emotes/Rest1.webp",
+    imageUrl: "./images/emotes/Rest1.webp",
     imageAlt: "Cheering animation",
     code: "/e cheer"
   },
@@ -148,7 +148,7 @@ export const emotes = [
     title: "Warrior",
     publishDate: "2025-09-12",
     description: "Warrior stance",
-    imageUrl: "/images/emotes/Rest17.webp",
+    imageUrl: "./images/emotes/Rest17.webp",
     imageAlt: "Warrior stance",
     code: "/e warrior"
   },
@@ -157,7 +157,7 @@ export const emotes = [
     title: "Sturdy",
     publishDate: "2025-09-12",
     description: "Sturdy pose",
-    imageUrl: "/images/emotes/Rest18.webp",
+    imageUrl: "./images/emotes/Rest18.webp",
     imageAlt: "Sturdy pose",
     code: "/e sturdy"
   },
@@ -166,7 +166,7 @@ export const emotes = [
     title: "Caramell",
     publishDate: "2025-09-12",
     description: "Caramell dance",
-    imageUrl: "/images/emotes/Rest19.webp",
+    imageUrl: "./images/emotes/Rest19.webp",
     imageAlt: "Caramell dance",
     code: "/e caramell"
   },
@@ -179,7 +179,7 @@ export const emotes = [
   //   title: "",
   //   publishDate: "2025-09-12",
   //   description: "",
-  //   imageUrl: "/images/emotes/Rest1.webp",
+  //   imageUrl: "./images/emotes/Rest1.webp",
   //   imageAlt: "",
   //   code: ""
   // },
