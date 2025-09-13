@@ -203,7 +203,7 @@
                 </div>
               </div>
               <div class="redeem-placeholder">
-                <img class="redeem-image" src="/images/roblox-type-soul-codes-button.webp" alt="Redeem Codes in Type Soul">
+                <img class="redeem-image" :src="robloxButtonImage" alt="Redeem Codes in Type Soul">
               </div>
             </div>
           </div>
@@ -449,6 +449,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 // 响应式数据
 const codes = ref(codesData)
+const robloxButtonImage = '/images/roblox-type-soul-codes-button.webp'
 
 // 计算属性
 const currentDateTime = ref('')
