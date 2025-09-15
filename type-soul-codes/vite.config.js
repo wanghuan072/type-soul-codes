@@ -20,7 +20,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: []
-    }
+    },
+    copyPublicDir: true
   },
   assetsInclude: ['**/*.webp'],
   publicDir: 'public'

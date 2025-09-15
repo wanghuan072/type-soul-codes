@@ -10,6 +10,7 @@
     "VITE_NODE_ENV": "production"
   },
   "rewrites": [
+    { "source": "/robots.txt", "destination": "/robots.txt" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
