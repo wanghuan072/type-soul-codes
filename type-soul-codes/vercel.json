@@ -9,7 +9,30 @@
     "VITE_LOCAL_API_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_NODE_ENV": "production"
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt",
+      "override": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    }
   ]
 }
