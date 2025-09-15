@@ -16,7 +16,11 @@ export const guides = [
     "difficulty": "Intermediate",
     "tags": ["Type Soul", "Value List"],
     "detailsHtml": `
+      <h2>Introduction to Type Soul Value List</h2>
+      <p>The <strong>Type Soul Value List</strong> is the most reliable guide for players who want to master the trading system in Type Soul. This complete <strong>Type Soul Value List</strong> covers obtainable items, rare accessories, and buddies, providing clarity on values, demand, and trading trends. Every serious trader relies on the <strong>Type Soul Value List</strong> to ensure fair trades and maximize gains.</p>
+
       <h2>Rarity Meaning</h2>
+      <p>In the <strong>Type Soul Value List</strong>, rarity codes play an important role in understanding the value of items. These rarity markers explain whether an item is Secret, Legendary, Rare, or Common, helping players interpret the <strong>Type Soul Value List</strong> correctly.</p>
       <table>
         <tr><th>Cut</th><th>Meaning</th><th>Rarity</th></tr>
         <tr><td>SW</td><td>Soul Wars</td><td>Secret</td></tr>
@@ -30,7 +34,8 @@ export const guides = [
         <tr><td>RN</td><td>Ranked</td><td>Obtainable</td></tr>
       </table>
   
-      <h2>Obtainable Items</h2>
+       <h2>Obtainable Items in Type Soul Value List</h2>
+      <p>The <strong>Type Soul Value List</strong> includes a vast selection of obtainable items, ranging from high-value vows to rare crafting materials. Each entry in the <strong>Type Soul Value List</strong> provides accurate details such as demand score, trend rating, and method of obtaining. This ensures that traders always know the fair market value when using the <strong>Type Soul Value List</strong>.</p>
       <table>
         <tr><th>Item</th><th>Value</th><th>Demand</th><th>Trend</th><th>Obt</th></tr>
         <tr><td>Vow of Sacrifice</td><td>600k</td><td>7</td><td>5</td><td>CW/RN</td></tr>
@@ -113,7 +118,8 @@ export const guides = [
         <tr><td>Marking RR</td><td>150</td><td>1</td><td>5</td><td>RN/DV</td></tr>
       </table>
   
-      <h2>Accessories</h2>
+      <h2>Accessories in Type Soul Value List</h2>
+      <p>Accessories often carry prestige, and their worth is fully tracked within the <strong>Type Soul Value List</strong>. Whether it’s a TWK Emblem or a rare cloak, the <strong>Type Soul Value List</strong> helps players confirm trading values and avoid scams. Always cross-check accessories with the <strong>Type Soul Value List</strong> before engaging in any trade.</p>
       <table>
         <tr><th>Item</th><th>Value</th><th>Demand</th><th>Trend</th><th>Obt</th></tr>
         <tr><td>TWK Emblem</td><td>700k</td><td>5</td><td>5</td><td>Craft</td></tr>
@@ -125,7 +131,8 @@ export const guides = [
         <tr><td>MRE Pin</td><td>70k</td><td>4</td><td>5</td><td>UNOB</td></tr>
       </table>
   
-      <h2>Buddies</h2>
+      <h2>Buddies in Type Soul Value List</h2>
+      <p>Buddies are a special part of the <strong>Type Soul Value List</strong>, as they represent both rarity and personal prestige. With companions like Dripmonger or GreenAnotherDay, the <strong>Type Soul Value List</strong> shows their true market standing. Using the <strong>Type Soul Value List</strong> for buddies ensures no player undervalues or overpays in trades.</p>
       <table>
         <tr><th>Item</th><th>Value</th><th>Demand</th><th>Trend</th><th>Obt</th></tr>
         <tr><td>Dripmonger</td><td>700k</td><td>7</td><td>5</td><td>BuddyRR</td></tr>
@@ -143,112 +150,118 @@ export const guides = [
         <tr><td>Entvari</td><td>150k</td><td>6</td><td>5</td><td>BuddyRR</td></tr>
         <tr><td>SlimLua</td><td>100k</td><td>6</td><td>5</td><td>UNOB</td></tr>
       </table>
+
+      <h2>Conclusion</h2>
+      <p>The <strong>Type Soul Value List</strong> is the ultimate tool for traders in Type Soul. Covering rarity meanings, obtainable items, accessories, and buddies, this guide ensures you always stay informed. By consulting the <strong>Type Soul Value List</strong>, you gain an edge in trading, avoid mistakes, and maximize your success. Bookmark this <strong>Type Soul Value List</strong> and return often for the latest updates and market trends.</p>
     `
   },
 
   {
-    id: 2,
-    title: "Bankai Type Soul",
-    addressBar: "bankai-type-soul",
-    seo: {
-      title: "Bankai Type Soul Guide - Unlock Bankai Stages, Weapons, and Elements",
-      description: "Complete Bankai Type Soul guide with full stages, weapon variants, element rarities, and strategies to win the Bankai fight in Type Soul.",
-      keywords: "Bankai Type Soul, Type Soul Bankai guide, Bankai unlock, Bankai stages, Bankai weapon variants, Bankai element variants, Type Soul"
+    "id": 2,
+    "title": "Bankai Type Soul",
+    "addressBar": "bankai-type-soul",
+    "seo": {
+      "title": "Bankai Type Soul Guide - Unlock Bankai Stages, Weapons, and Elements",
+      "description": "Complete Bankai Type Soul guide with full stages, weapon variants, element rarities, and strategies to win the Bankai fight in Type Soul.",
+      "keywords": "Bankai Type Soul, Type Soul Bankai guide, Bankai unlock, Bankai stages, Bankai weapon variants, Bankai element variants, Type Soul"
     },
-    description: "A complete guide for Bankai in Type Soul, including how to unlock it through multiple stages, weapon and element rarities, and the best tips to win your Bankai fight.",
-    imageUrl: "/images/guides/guides-02.webp",
-    imageAlt: "Bankai Type Soul Guide",
-    publishDate: "2025-09-15",
-    category: "Guides",
-    difficulty: "Hard",
-    tags: ["Bankai", "Type Soul"],
-    detailsHtml: `
-      <h2>Bankai Overview</h2>
-      <p><strong>"THE BLADE IS ME"</strong></p>
-      <p>Bankai is the manifestation and main power of a Zanpakuto. It is also the answer to an Arrancar's Segunda, or a Quincy's Vollständig. Only the best Shinigami unlock their Bankai, which usually evolves from their Shikai element. Although very difficult to obtain, Bankai is extremely powerful.</p>
-      <p>After unlocking Bankai, you may gain <strong>True Bankai</strong> if your Bankai has it. Note: once activated, Bankai has a 30-minute cooldown. No bar can be obtained during this time, and it cannot be reused until the cooldown ends.</p>
+    "description": "A complete guide for Bankai in Type Soul, including how to unlock it through multiple stages, weapon and element rarities, and the best tips to win your Bankai fight.",
+    "imageUrl": "/images/guides/guides-02.webp",
+    "imageAlt": "Bankai Type Soul Guide",
+    "publishDate": "2025-09-15",
+    "category": "Guides",
+    "difficulty": "Hard",
+    "tags": ["Bankai", "Type Soul"],
+    "detailsHtml": `
+        <h2>Bankai Type Soul Overview</h2>
+        <p><strong>"THE BLADE IS ME"</strong></p>
+        <p><strong>Bankai Type Soul</strong> represents the manifestation and ultimate power of a Zanpakuto. Within the <strong>Bankai Type Soul</strong> system, Bankai serves as the counterpart to an Arrancar's Segunda or a Quincy's Vollständig. Only the best Shinigami unlock their Bankai, and the <strong>Bankai Type Soul</strong> path usually evolves from the Shikai element. Although extremely difficult to obtain, Bankai in <strong>Bankai Type Soul</strong> is immensely powerful.</p>
+        <p>After unlocking Bankai in <strong>Bankai Type Soul</strong>, you may also gain <strong>True Bankai</strong> if your weapon allows it. Note: once activated, Bankai has a 30-minute cooldown. During this time, no bar can be obtained, and it cannot be reused until the cooldown ends.</p>
+    
+        <h2>Bankai Type Soul Obtainment</h2>
+        <h3>Stage 1</h3>
+        <p>To complete Stage 1 in <strong>Bankai Type Soul</strong>, you must earn 13 points from one of the following:</p>
+        <ul>
+          <li>7 Clan War Wins</li>
+          <li>26 Ranked Wins</li>
+          <li>13 Raid Wins (Karakura Town raids don’t count)</li>
+        </ul>
+        <p>A ranked win = 0.5 point, a raid win = 1 point, a clan war = 2 points. You need <strong>26 points total</strong> to pass Stage 1 of <strong>Bankai Type Soul</strong>.</p>
+        <p>Track progress by pressing <code>N</code> (last menu) or by talking to the NPC in Karakura Town. Arrancars must use the NPC.</p>
+    
+        <h4>NPC Dialogue Progression (V - Unequaled Unrivaled)</h4>
+        <table>
+          <tr><th>Quote</th><th>% Progress</th></tr>
+          <tr><td>You will never become anything, compared to what I am.</td><td>0%</td></tr>
+          <tr><td>A couple of kills won't get you anywhere, stop bothering me</td><td>20%</td></tr>
+          <tr><td>Why do you keep coming back? You are still pathetic.</td><td>40%</td></tr>
+          <tr><td>Maybe you are not so bad after all, but I'm still not impressed.</td><td>60%</td></tr>
+          <tr><td>You are quite unbelievable, you know that?</td><td>80%</td></tr>
+          <tr><td>Unequaled... Unrivaled... Go make me proud, lil bro.</td><td>100%</td></tr>
+        </table>
+    
+        <h3>Stage 2</h3>
+        <p>After Stage 1 in <strong>Bankai Type Soul</strong>, meditate and talk to your Innerworld NPC. If you die, progress resets. Stay in Soul Society during this stage. Combat logging counts as death.</p>
+        <ul>
+          <li>Kill Bawabawa or Jidambo</li>
+          <li>Get 50 Hollow kills (only NPCs count)</li>
+          <li>Get 10 Elite Grips of the opposite faction (Quincy, Arrancar, or Fullbringer)</li>
+        </ul>
+        <p>NPC dialogue clues in <strong>Bankai Type Soul</strong>:</p>
+        <ul>
+          <li>"Sacrifice the promise of rivals" → need more Elite kills</li>
+          <li>"Great Bawabawa slain, then I will consider you worthy" → kill Bawabawa</li>
+          <li>"Those once pure must be felled" → need more Hollow kills</li>
+        </ul>
+        <p>Completed dialogue examples in <strong>Bankai Type Soul</strong>:</p>
+        <ul>
+          <li>"Great Bawabawa no longer roams." → world boss task complete</li>
+          <li>"Those once pure have been guided to the afterlife" → hollow task complete</li>
+          <li>"The promises of the rivals have extinguished" → elite grips complete</li>
+        </ul>
+    
+        <h3>Stage 2.5</h3>
+        <p>Talk to Kisuke in Karakura Town (behind Nel Tu / Bank NPC). He will teleport you into a minigame unique to <strong>Bankai Type Soul</strong> where you must find 3 real Zanpakuto among fakes. You have three chances.</p>
+        <ul>
+          <li>Correct sword = fades blue (glows green when confirmed)</li>
+          <li>Wrong sword = fades red and creates a fleeting blue trail</li>
+        </ul>
+        <p>Tips for <strong>Bankai Type Soul</strong>: Choose swords near the center for easier trail following. Using Senkaimon to teleport out can bypass cooldown if near failure. Failure gives ~1-hour cooldown (reset by gripping someone).</p>
+    
+        <h3>Stage 3</h3>
+        <p>Stage 3 of <strong>Bankai Type Soul</strong> is similar to Shikai unlock, but harder. Meditate and fight your Innerworld NPC using Bankai. Defeat them to unlock your Bankai. You will exit with Bankai activated. Currently, there is no cooldown if you fail the Bankai fight. Rerolling your element requires refighting the Bankai boss, but rerolling Shikai does not reset progress.</p>
+    
+        <h2>Bankai Type Soul Weapon Variants</h2>
+        <table>
+          <tr><th>Rarity</th><th>Weapons</th></tr>
+          <tr><td>Mythic (0.5%)</td><td>Rapier, Odachi</td></tr>
+          <tr><td>Legendary (3%)</td><td>Longsword, Dagger, Scythe</td></tr>
+          <tr><td>Common (96.5%)</td><td>Greatsword, Hammer, Katana, Spear, Twin Blades, Dual Swords, Hakuda Gauntlets</td></tr>
+        </table>
+    
+        <h2>Bankai Type Soul Element Variants</h2>
+        <table>
+          <tr><th>Rarity</th><th>Elements</th></tr>
+          <tr><td>Mythic (0.5%)</td><td>Benihime, Kyokasuigetsu, Duality, Snow</td></tr>
+          <tr><td>Legendary (3%)</td><td>Blood, Ink, Ice, Flower, Theatre, Suzumebachi, Assimilation</td></tr>
+          <tr><td>Rare (10%)</td><td>Fire, Berserk, Wind, Zangetsu, Poison, Judgement, Confusion, Shinso</td></tr>
+          <tr><td>Common (86.5%)</td><td>Water, Lightning, Shadow, Creation</td></tr>
+        </table>
+    
+        <h2>Tips for Winning the Bankai Type Soul Fight</h2>
+        <ul>
+          <li>Using Abyss Innerworld is easier for Kido builds in <strong>Bankai Type Soul</strong>.</li>
+          <li>Unlock Vizard beforehand; use it mid-fight for ~20% healing during the <strong>Bankai Type Soul</strong> battle.</li>
+          <li>Use Shikai weapons with block-breaking crits for stuns. Longsword and Odachi are recommended for <strong>Bankai Type Soul</strong>.</li>
+          <li>Twinblade counters can be punished; watch for crit startup when facing them in <strong>Bankai Type Soul</strong>.</li>
+          <li>Run back after triggering the Bankai Boss to avoid activation damage in <strong>Bankai Type Soul</strong>.</li>
+          <li>M1 spamming + occasional abilities is a safe method inside <strong>Bankai Type Soul</strong>.</li>
+          <li>Bugged Wandenreich servers allow free damage in <strong>Bankai Type Soul</strong> (working as of 30/08/25).</li>
+        </ul>
   
-      <h2>Obtainment</h2>
-      <h3>Stage 1</h3>
-      <p>To complete Stage 1, you must earn 13 points from one of the following:</p>
-      <ul>
-        <li>7 Clan War Wins</li>
-        <li>26 Ranked Wins</li>
-        <li>13 Raid Wins (Karakura Town raids don’t count)</li>
-      </ul>
-      <p>A ranked win = 0.5 point, a raid win = 1 point, a clan war = 2 points. You need <strong>26 points total</strong> to pass Stage 1.</p>
-      <p>Track progress by pressing <code>N</code> (last menu) or by talking to the NPC in Karakura Town. Arrancars must use the NPC.</p>
-  
-      <h4>NPC Dialogue Progression (V - Unequaled Unrivaled)</h4>
-      <table>
-        <tr><th>Quote</th><th>% Progress</th></tr>
-        <tr><td>You will never become anything, compared to what I am.</td><td>0%</td></tr>
-        <tr><td>A couple of kills won't get you anywhere, stop bothering me</td><td>20%</td></tr>
-        <tr><td>Why do you keep coming back? You are still pathetic.</td><td>40%</td></tr>
-        <tr><td>Maybe you are not so bad after all, but I'm still not impressed.</td><td>60%</td></tr>
-        <tr><td>You are quite unbelievable, you know that?</td><td>80%</td></tr>
-        <tr><td>Unequaled... Unrivaled... Go make me proud, lil bro.</td><td>100%</td></tr>
-      </table>
-  
-      <h3>Stage 2</h3>
-      <p>After Stage 1, meditate and talk to your Innerworld NPC. If you die, progress resets. Stay in Soul Society during this stage. Combat logging counts as death.</p>
-      <ul>
-        <li>Kill Bawabawa or Jidambo</li>
-        <li>Get 50 Hollow kills (only NPCs count)</li>
-        <li>Get 10 Elite Grips of the opposite faction (Quincy, Arrancar, or Fullbringer)</li>
-      </ul>
-      <p>NPC dialogue clues:</p>
-      <ul>
-        <li>"Sacrifice the promise of rivals" → need more Elite kills</li>
-        <li>"Great Bawabawa slain, then I will consider you worthy" → kill Bawabawa</li>
-        <li>"Those once pure must be felled" → need more Hollow kills</li>
-      </ul>
-      <p>Completed dialogue examples:</p>
-      <ul>
-        <li>"Great Bawabawa no longer roams." → world boss task complete</li>
-        <li>"Those once pure have been guided to the afterlife" → hollow task complete</li>
-        <li>"The promises of the rivals have extinguished" → elite grips complete</li>
-      </ul>
-  
-      <h3>Stage 2.5</h3>
-      <p>Talk to Kisuke in Karakura Town (behind Nel Tu / Bank NPC). He will teleport you into a minigame with multiple white Zanpakuto. Find 3 real Zanpakuto among fakes. You have three chances.</p>
-      <ul>
-        <li>Correct sword = fades blue (glows green when confirmed)</li>
-        <li>Wrong sword = fades red and creates a fleeting blue trail</li>
-      </ul>
-      <p>Tips: Choose swords near the center for easier trail following. Using Senkaimon to teleport out can bypass cooldown if near failure. As of 30/08/2025, failure gives ~1-hour cooldown (reset by gripping someone).</p>
-  
-      <h3>Stage 3</h3>
-      <p>Similar to Shikai unlock, but harder. Meditate and fight your Innerworld NPC using Bankai. Defeat them to unlock your Bankai. You will exit with Bankai activated. As of 8/30/2025, there is no cooldown if you fail the Bankai fight. Rerolling your element requires refighting the Bankai boss, but rerolling Shikai does not reset progress.</p>
-  
-      <h2>Bankai Weapon Variants</h2>
-      <table>
-        <tr><th>Rarity</th><th>Weapons</th></tr>
-        <tr><td>Mythic (0.5%)</td><td>Rapier, Odachi</td></tr>
-        <tr><td>Legendary (3%)</td><td>Longsword, Dagger, Scythe</td></tr>
-        <tr><td>Common (96.5%)</td><td>Greatsword, Hammer, Katana, Spear, Twin Blades, Dual Swords, Hakuda Gauntlets</td></tr>
-      </table>
-  
-      <h2>Bankai Element Variants</h2>
-      <table>
-        <tr><th>Rarity</th><th>Elements</th></tr>
-        <tr><td>Mythic (0.5%)</td><td>Benihime, Kyokasuigetsu, Duality, Snow</td></tr>
-        <tr><td>Legendary (3%)</td><td>Blood, Ink, Ice, Flower, Theatre, Suzumebachi, Assimilation</td></tr>
-        <tr><td>Rare (10%)</td><td>Fire, Berserk, Wind, Zangetsu, Poison, Judgement, Confusion, Shinso</td></tr>
-        <tr><td>Common (86.5%)</td><td>Water, Lightning, Shadow, Creation</td></tr>
-      </table>
-  
-      <h2>Tips for Winning the Bankai Fight</h2>
-      <ul>
-        <li>Using Abyss Innerworld is easier for Kido builds.</li>
-        <li>Unlock Vizard beforehand; use it mid-fight for ~20% healing.</li>
-        <li>Use Shikai weapons with block-breaking crits for stuns. Longsword and Odachi are recommended.</li>
-        <li>Twinblade counters can be punished; watch for crit startup.</li>
-        <li>Run back after triggering Bankai Boss to avoid activation damage.</li>
-        <li>M1 spamming + occasional abilities is a safe method.</li>
-        <li>Bugged Wandenreich servers allow free damage (working as of 30/08/25).</li>
-      </ul>
-    `
+        <h2>Conclusion</h2>
+        <p>The <strong>Bankai Type Soul</strong> system offers one of the most challenging yet rewarding mechanics in Type Soul. From Stage 1 through Stage 3, weapon and element rarities, to the strategies needed for victory, this <strong>Bankai Type Soul Guide</strong> ensures you are fully prepared. Master the <strong>Bankai Type Soul</strong> process, respect the cooldowns, and use the right strategies to secure your triumph in every battle.</p>
+      `
   },
 
   {
@@ -268,59 +281,60 @@ export const guides = [
     "difficulty": "Advanced",
     "tags": ["Vizard Type Soul","Visored"],
     "detailsHtml": `
-      <h2>Overview of Vizard Type Soul</h2>
-      <p>In <strong>Vizard Type Soul</strong>, players can unlock three unique states of transformation: False, Standard, and True. These states determine how powerful your Visored Mask becomes and how it interacts with your combat abilities in Type Soul.</p>
-      
-      <p>When equipping the Visored Mask in <strong>Vizard Type Soul</strong>, you gain a health pack of around 5% and access to the Visored Cero, a devastating ability similar to Oscuras but only usable with the mask on. Mastering these states is essential to maximizing your gameplay potential.</p>
-      
-      <h2>Visored States in Vizard Type Soul</h2>
-      <ul>
-        <li><strong>False Visored:</strong> The initial state after unlocking. Grants a global stat debuff, with a small buff while the mask is equipped.</li>
-        <li><strong>Standard Visored:</strong> After completing the dedicated Visored Quest, you regain your Shinigami stats, and the mask further buffs them.</li>
-        <li><strong>True Visored:</strong> Achieved after using a True Hogyoku. This represents the highest form of <strong>Vizard Type Soul</strong> mastery.</li>
-      </ul>
-      
-      <p>To equip the Visored Mask, you must fill the green mask bar, located next to your Bankai bar. The bar is filled by dealing damage, and once full, pressing <strong>K</strong> activates the mask.</p>
-      
-      <h2>Obtainment and Mastery</h2>
-      <p>Mastering <strong>Vizard Type Soul</strong> requires using 10 Hogyoku Fragments to summon your Visored Shinigami in Hueco Mundo. After defeating it, you’ll receive one of several objectives:</p>
-      <ul>
-        <li>Win 3-5 raids while wearing the mask.</li>
-        <li>Defeat 20 Shinigami players.</li>
-        <li>Kill your Inner Hollow spirit 15 times.</li>
-        <li>Meditate and kill 7 NPCs in your Inner World.</li>
-      </ul>
-      <p>After completing these whispers, you can use a True Hogyoku to fully unlock True Visored in <strong>Vizard Type Soul</strong>.</p>
-      
-      <h2>Buffed Moves</h2>
-      <p>While in the Visored state, certain abilities are buffed. In <strong>Vizard Type Soul</strong>, these moves gain enhanced damage, speed, or additional effects. Examples include:</p>
-      <ul>
-        <li><strong>Rising Swallow:</strong> More damage, ragdoll effect.</li>
-        <li><strong>Delayed Crossing:</strong> Turns red, true stun, and damage buff.</li>
-        <li><strong>Overpowering Slash:</strong> Enhanced damage output.</li>
-        <li><strong>Crescent Relief:</strong> Faster with more damage.</li>
-        <li><strong>Mortal Ties:</strong> Extra damage boost.</li>
-        <li><strong>Pulse:</strong> Turns black, homes in on targets.</li>
-        <li><strong>Unseen Blade Core:</strong> Deals 1.5x more damage.</li>
-        <li><strong>Fast Fang, Time Cut, Zangerin:</strong> Enhanced properties and faster execution.</li>
-      </ul>
-      
-      <h2>Visored Variants</h2>
-      <p>There are five primary Visored variants in <strong>Vizard Type Soul</strong>, each providing unique buffs and debuffs. These can be viewed by pressing N in your stats menu. Examples include:</p>
-      <ul>
-        <li><strong>Speed & Defense Buffs</strong> with Reiatsu debuff.</li>
-        <li><strong>Damage & Health Buffs</strong> with Speed debuff.</li>
-        <li><strong>Speed & Damage Buffs</strong> with Health debuff.</li>
-        <li><strong>Damage & Defense Buffs</strong> with Reiatsu debuff.</li>
-      </ul>
-      
-      <h3>True Visored Variants</h3>
-      <p>True Visored unlocks even stronger variants such as Regen (Health & Speed), Defense (incoming damage reduction), Weave/Soul Halt, and Damage specialization. Since the Hell Update, new active variants like Speed/Halt, Armor, and Soul Resonance have been added, greatly expanding build options in <strong>Vizard Type Soul</strong>.</p>
-      
-      <h2>Conclusion</h2>
-      <p>The <strong>Vizard Type Soul</strong> transformation is one of the most powerful paths in Type Soul. Whether you are working through False, Standard, or True Visored, each progression brings new abilities and combat advantages. Mastery of the Visored Mask, buffed moves, and variants makes Vizard a top-tier choice for players aiming to dominate battles.</p>
-    `
+        <h2>Overview of Vizard Type Soul</h2>
+        <p>In <strong>Vizard Type Soul</strong>, players can unlock three unique states of transformation: False, Standard, and True. These states determine how powerful your Visored Mask becomes and how it interacts with your combat abilities in Type Soul. The <strong>Vizard Type Soul</strong> journey is a core part of mastering hybrid Shinigami and Hollow powers.</p>
+        
+        <p>When equipping the Visored Mask in <strong>Vizard Type Soul</strong>, you gain a health pack of around 5% and access to the Visored Cero, a devastating ability similar to Oscuras but only usable with the mask on. Mastering these states in <strong>Vizard Type Soul</strong> is essential to maximizing your gameplay potential.</p>
+        
+        <h2>Visored States in Vizard Type Soul</h2>
+        <ul>
+          <li><strong>False Visored:</strong> The initial state after unlocking. Grants a global stat debuff, with a small buff while the mask is equipped in <strong>Vizard Type Soul</strong>.</li>
+          <li><strong>Standard Visored:</strong> After completing the dedicated Visored Quest, you regain your Shinigami stats, and the mask further buffs them. This is the balanced form of <strong>Vizard Type Soul</strong>.</li>
+          <li><strong>True Visored:</strong> Achieved after using a True Hogyoku. This represents the highest form of <strong>Vizard Type Soul</strong> mastery.</li>
+        </ul>
+        
+        <p>To equip the Visored Mask in <strong>Vizard Type Soul</strong>, you must fill the green mask bar, located next to your Bankai bar. The bar is filled by dealing damage, and once full, pressing <strong>K</strong> activates the mask.</p>
+        
+        <h2>Obtainment and Mastery</h2>
+        <p>Mastering <strong>Vizard Type Soul</strong> requires using 10 Hogyoku Fragments to summon your Visored Shinigami in Hueco Mundo. After defeating it, you’ll receive one of several objectives unique to <strong>Vizard Type Soul</strong> progression:</p>
+        <ul>
+          <li>Win 3-5 raids while wearing the mask.</li>
+          <li>Defeat 20 Shinigami players.</li>
+          <li>Kill your Inner Hollow spirit 15 times.</li>
+          <li>Meditate and kill 7 NPCs in your Inner World.</li>
+        </ul>
+        <p>After completing these whispers, you can use a True Hogyoku to fully unlock True Visored in <strong>Vizard Type Soul</strong>.</p>
+        
+        <h2>Buffed Moves</h2>
+        <p>While in the Visored state, certain abilities are buffed. In <strong>Vizard Type Soul</strong>, these moves gain enhanced damage, speed, or additional effects, making combat more dynamic:</p>
+        <ul>
+          <li><strong>Rising Swallow:</strong> More damage, ragdoll effect.</li>
+          <li><strong>Delayed Crossing:</strong> Turns red, true stun, and damage buff.</li>
+          <li><strong>Overpowering Slash:</strong> Enhanced damage output.</li>
+          <li><strong>Crescent Relief:</strong> Faster with more damage.</li>
+          <li><strong>Mortal Ties:</strong> Extra damage boost.</li>
+          <li><strong>Pulse:</strong> Turns black, homes in on targets.</li>
+          <li><strong>Unseen Blade Core:</strong> Deals 1.5x more damage.</li>
+          <li><strong>Fast Fang, Time Cut, Zangerin:</strong> Enhanced properties and faster execution.</li>
+        </ul>
+        
+        <h2>Visored Variants</h2>
+        <p>There are five primary Visored variants in <strong>Vizard Type Soul</strong>, each providing unique buffs and debuffs. These can be viewed by pressing N in your stats menu within <strong>Vizard Type Soul</strong>. Examples include:</p>
+        <ul>
+          <li><strong>Speed & Defense Buffs</strong> with Reiatsu debuff.</li>
+          <li><strong>Damage & Health Buffs</strong> with Speed debuff.</li>
+          <li><strong>Speed & Damage Buffs</strong> with Health debuff.</li>
+          <li><strong>Damage & Defense Buffs</strong> with Reiatsu debuff.</li>
+        </ul>
+        
+        <h3>True Visored Variants</h3>
+        <p>True Visored unlocks even stronger variants in <strong>Vizard Type Soul</strong> such as Regen (Health & Speed), Defense (incoming damage reduction), Weave/Soul Halt, and Damage specialization. Since the Hell Update, new active variants like Speed/Halt, Armor, and Soul Resonance have been added, greatly expanding build options in <strong>Vizard Type Soul</strong>.</p>
+        
+        <h2>Conclusion</h2>
+        <p>The <strong>Vizard Type Soul</strong> transformation is one of the most powerful paths in Type Soul. Whether you are working through False, Standard, or True Visored, each progression brings new abilities and combat advantages. Mastery of the Visored Mask, buffed moves, and variants makes <strong>Vizard Type Soul</strong> a top-tier choice for players aiming to dominate battles. This <strong>Vizard Type Soul Guide</strong> ensures you fully understand every mechanic and can maximize your potential.</p>
+      `
   },
+  
 
   {
     "id": 4,
@@ -340,40 +354,40 @@ export const guides = [
     "tags": ["Trello Type Soul","Type Soul"],
     "detailsHtml": `
       <h2>Overview of Trello Type Soul</h2>
-      <p><strong>Trello Type Soul</strong> is the main resource hub for players of the Roblox game Type Soul, which is heavily inspired by the Bleach anime and manga series. With so many races, weapons, and mechanics to explore, the <strong>Trello Type Soul</strong> board provides essential guidance for both new and experienced players. Because of its reliability, <strong>Trello Type Soul</strong> has become the number one destination for anyone looking to learn the game efficiently.</p>
+      <p><strong>Trello Type Soul</strong> is the main resource hub for players of the Roblox game Type Soul. With countless races, weapons, quests, and mechanics to explore, the <strong>Trello Type Soul</strong> board acts as a structured guide for both beginners and experienced players. Because of its consistency and detail, <strong>Trello Type Soul</strong> has become the top destination for anyone wanting to understand the game effectively.</p>
       
       <h2>What Is the Trello Type Soul Link?</h2>
-      <p>The official <strong>Trello Type Soul</strong> link directs players to the Trello Info V2 board. This board replaced the older version on April 18, 2024, to reflect the game’s re-release updates. Since Type Soul was re-released on July 31, 2025, with major changes, the <strong>Trello Type Soul</strong> link has become a key tool to understand the game’s updated systems. Players now depend on the <strong>Trello Type Soul</strong> guide more than ever before.</p>
+      <p>The official <strong>Trello Type Soul</strong> link redirects players to the Trello Info V2 board. This updated board replaced the older version on April 18, 2024, and it reflects the game’s latest re-release changes. Since Type Soul was re-released on July 31, 2025, the <strong>Trello Type Soul</strong> link has been more important than ever. For updates, patch notes, and progression guidance, the <strong>Trello Type Soul</strong> link is the most trusted reference.</p>
       
       <h2>What Can You Find on the Trello Type Soul Board?</h2>
-      <p>The <strong>Trello Type Soul</strong> board provides a wide range of information, including:</p>
+      <p>The <strong>Trello Type Soul</strong> board provides all critical details that a player may need. Some of the most important sections include:</p>
       <ul>
         <li>Guides for Soul Reaper, Hollow/Arrancar, and Quincy classes explained in <strong>Trello Type Soul</strong>.</li>
-        <li>Skill tree breakdowns and progression paths available through <strong>Trello Type Soul</strong>.</li>
-        <li>Details about Shikai elements, Hollow or Spirit weapons, and Essences in <strong>Trello Type Soul</strong>.</li>
-        <li>Loot box and item categorizations by rarity, including Hollow Boxes with cost and rewards, all organized on the <strong>Trello Type Soul</strong> board.</li>
-        <li>A work-in-progress section highlighting upcoming features in <strong>Trello Type Soul</strong>.</li>
+        <li>Skill tree breakdowns and progression paths shown step by step on <strong>Trello Type Soul</strong>.</li>
+        <li>Details about Shikai elements, Hollow or Spirit weapons, and Essences organized clearly on <strong>Trello Type Soul</strong>.</li>
+        <li>Loot box and item rarity categories, such as Hollow Boxes, costs, and rewards — all inside <strong>Trello Type Soul</strong>.</li>
+        <li>Work-in-progress updates and upcoming features previewed in <strong>Trello Type Soul</strong>.</li>
       </ul>
-      
-      <p>New players can follow the <strong>Trello Type Soul</strong> guides to progress smoothly, while veterans can stay updated with changes, codes, and future content by checking the <strong>Trello Type Soul</strong> link regularly.</p>
+      <p>New players can follow the <strong>Trello Type Soul</strong> guides to advance without confusion, while veterans can depend on the <strong>Trello Type Soul</strong> link to keep track of new updates, codes, and roadmaps.</p>
       
       <h2>Extra Features on the Trello Type Soul Board</h2>
-      <p>In addition to gameplay guides, the <strong>Trello Type Soul</strong> board includes:</p>
+      <p>In addition to game mechanics, the <strong>Trello Type Soul</strong> board includes many extra features:</p>
       <ul>
-        <li>Important game-related links collected inside <strong>Trello Type Soul</strong>.</li>
-        <li>A Q&A section to answer common questions directly within <strong>Trello Type Soul</strong>.</li>
-        <li>Information about Type Soul codes, useful for unlocking in-game rewards, clearly listed in <strong>Trello Type Soul</strong>.</li>
-        <li>The official roadmap for upcoming updates and expansions, always updated on <strong>Trello Type Soul</strong>.</li>
+        <li>A full collection of important game-related links inside <strong>Trello Type Soul</strong>.</li>
+        <li>A dedicated Q&A section to answer common questions directly in <strong>Trello Type Soul</strong>.</li>
+        <li>A complete list of Type Soul codes and rewards, updated in <strong>Trello Type Soul</strong>.</li>
+        <li>The official roadmap for future expansions and balance changes, always available on <strong>Trello Type Soul</strong>.</li>
       </ul>
+      <p>Players who return to <strong>Trello Type Soul</strong> regularly never miss out on any new additions or hidden details in the Roblox game.</p>
       
       <h2>Official Type Soul Discord Link</h2>
-      <p>Alongside the <strong>Trello Type Soul</strong> board, players can join the official Type Soul Discord. While the Discord server has scattered information across multiple channels, it allows for direct communication with other players, clan-building, and staying engaged with the community. However, for structured knowledge, <strong>Trello Type Soul</strong> is much easier to navigate. There is also a dedicated section in Discord for reporting cheaters or script users, complementing the information found in <strong>Trello Type Soul</strong>.</p>
+      <p>Alongside the <strong>Trello Type Soul</strong> guide, the official Type Soul Discord allows players to communicate directly with others, build clans, and share strategies. However, unlike Discord, which can be scattered, <strong>Trello Type Soul</strong> is structured and organized for fast reference. Both resources complement each other, but for structured mastery, <strong>Trello Type Soul</strong> remains the superior option.</p>
       
       <h2>Conclusion</h2>
-      <p>The <strong>Trello Type Soul</strong> board is the most reliable guide for navigating the complex systems of Type Soul. Whether you are just beginning your journey as a Soul Reaper, exploring the Hollow path, or mastering Quincy mechanics, this Trello board ensures you never get lost. With its detailed guides, codes, and roadmap, <strong>Trello Type Soul</strong> remains the ultimate companion for all players of this Roblox game. The best way to stay ahead in the game is by visiting <strong>Trello Type Soul</strong> frequently and applying the strategies provided there.</p>
+      <p>The <strong>Trello Type Soul</strong> board is the ultimate guide for navigating the world of Type Soul. Whether you are a Soul Reaper exploring Shikai powers, a Hollow mastering Arrancar skills, or a Quincy focusing on unique abilities, the <strong>Trello Type Soul</strong> link ensures you stay on track. With constant updates, detailed guides, and future roadmaps, <strong>Trello Type Soul</strong> stands as the most reliable and essential tool. Visiting <strong>Trello Type Soul</strong> often will guarantee that you are always prepared for the latest challenges in Roblox Type Soul.</p>
     `
   },
-
+  
   {
     "id": 5,
     "title": "How to Get Bankai Type Soul",
@@ -392,7 +406,7 @@ export const guides = [
     "tags": ["Bankai Type Soul","Type Soul"],
     "detailsHtml": `
       <h2>Overview of Bankai Type Soul</h2>
-      <p><strong>Bankai Type Soul</strong> is the ultimate transformation for Shinigami players in the Roblox game Type Soul. It represents the manifestation of a Zanpakuto’s true power. Unlocking <strong>Bankai Type Soul</strong> is a long and challenging process, requiring dedication and mastery over multiple trials. After achieving Bankai, players can even aim for True Bankai if their Bankai variant allows it.</p>
+      <p><strong>Bankai Type Soul</strong> is the ultimate transformation for Shinigami players in the Roblox game Type Soul. It represents the manifestation of a Zanpakuto’s true power. Unlocking <strong>Bankai Type Soul</strong> is a long and challenging process, requiring dedication and mastery over multiple trials. After achieving Bankai, players can even aim for True Bankai if their <strong>Bankai Type Soul</strong> variant allows it.</p>
   
       <h2>Stage 1 – Earning Points</h2>
       <p>To begin your journey toward <strong>Bankai Type Soul</strong>, you must complete Stage 1. This stage requires you to earn 13 points out of a total of 26 possible points. The breakdown is as follows:</p>
@@ -401,31 +415,31 @@ export const guides = [
         <li>26 Ranked Wins = 13 points</li>
         <li>13 Raid Wins (not Karakura Town raids) = 13 points</li>
       </ul>
-      <p>You can track your <strong>Bankai Type Soul</strong> progress by pressing “N” or talking to an NPC in Karakura Town. Arrancar players must talk to their respective NPC. Progress is displayed through unique NPC quotes at different percentage milestones.</p>
+      <p>You can track your <strong>Bankai Type Soul</strong> progress by pressing “N” or talking to an NPC in Karakura Town. Arrancar players must talk to their respective NPC. Progress in <strong>Bankai Type Soul</strong> is displayed through unique NPC quotes at different percentage milestones.</p>
   
       <h2>Stage 2 – Innerworld Trials</h2>
-      <p>Once Stage 1 is complete, you begin Stage 2 of <strong>Bankai Type Soul</strong>. To advance, meditate and speak to your Innerworld NPC. Stage 2 requires:</p>
+      <p>Once Stage 1 is complete, you begin Stage 2 of <strong>Bankai Type Soul</strong>. To advance further in <strong>Bankai Type Soul</strong>, meditate and speak to your Innerworld NPC. Stage 2 requires:</p>
       <ul>
         <li>Killing Bawabawa or Jidambo</li>
         <li>Defeating 50 Hollow NPCs</li>
         <li>Getting 10 Elite Grips of an opposing faction (Quincy, Arrancar, Fullbringer)</li>
       </ul>
-      <p>If you die during Stage 2, your progress resets. Combat logging counts as death. Staying in Soul Society is highly recommended while working on Stage 2 for <strong>Bankai Type Soul</strong>.</p>
+      <p>If you die during Stage 2 of <strong>Bankai Type Soul</strong>, your progress resets. Combat logging counts as death. Staying in Soul Society is highly recommended while working on Stage 2 for <strong>Bankai Type Soul</strong>.</p>
   
       <h2>Stage 2.5 – Kisuke’s Minigame</h2>
-      <p>Stage 2.5 of <strong>Bankai Type Soul</strong> introduces a unique trial. Travel to Karakura Town and find Kisuke near the Nel Tu (Bank) NPC. Kisuke teleports you into a minigame with multiple white Zanpakuto. Your task is to identify the 3 real Zanpakuto. You only get 3 chances. Real swords glow green, fake ones turn red with a trail hint. If you fail, there is about a 1-hour cooldown, which can be bypassed by gripping someone.</p>
+      <p>Stage 2.5 of <strong>Bankai Type Soul</strong> introduces a unique trial. Travel to Karakura Town and find Kisuke near the Nel Tu (Bank) NPC. Kisuke teleports you into a minigame with multiple white Zanpakuto. Your task in this <strong>Bankai Type Soul</strong> trial is to identify the 3 real Zanpakuto. You only get 3 chances. Real swords glow green, fake ones turn red with a trail hint. If you fail, there is about a 1-hour cooldown, which can be bypassed by gripping someone.</p>
   
       <h2>Stage 3 – The Bankai Fight</h2>
-      <p>The final step for unlocking <strong>Bankai Type Soul</strong> is a battle against your Innerworld NPC, who now wields Bankai. To start:</p>
+      <p>The final step for unlocking <strong>Bankai Type Soul</strong> is a battle against your Innerworld NPC, who now wields Bankai. To start the last <strong>Bankai Type Soul</strong> challenge:</p>
       <ul>
         <li>Meditate using “M”</li>
         <li>Enter your Innerworld and challenge your spirit</li>
         <li>Defeat them in combat to unlock <strong>Bankai Type Soul</strong></li>
       </ul>
-      <p>Upon victory, you immediately exit with your Bankai activated. If you fail, you can retry without cooldown. Note: rerolling your Shikai does not reset Stage 2/2.5 progress, but rerolling your element requires fighting your Bankai boss again.</p>
+      <p>Upon victory, you immediately exit with your <strong>Bankai Type Soul</strong> activated. If you fail, you can retry without cooldown. Note: rerolling your Shikai does not reset Stage 2/2.5 progress, but rerolling your element requires fighting your <strong>Bankai Type Soul</strong> boss again.</p>
   
       <h2>Bankai Weapon Variants</h2>
-      <p>When unlocking <strong>Bankai Type Soul</strong>, you receive one of several weapon variants:</p>
+      <p>When unlocking <strong>Bankai Type Soul</strong>, you receive one of several weapon variants. The rarity of your <strong>Bankai Type Soul</strong> weapon determines your future combat potential:</p>
       <ul>
         <li><strong>Mythic (0.5%):</strong> Rapier, Odachi</li>
         <li><strong>Legendary (3%):</strong> Longsword, Dagger, Scythe</li>
@@ -433,7 +447,7 @@ export const guides = [
       </ul>
   
       <h2>Bankai Element Variants</h2>
-      <p>Alongside weapons, <strong>Bankai Type Soul</strong> comes with element variants:</p>
+      <p>Alongside weapons, <strong>Bankai Type Soul</strong> comes with element variants. These <strong>Bankai Type Soul</strong> elements shape the style of your power:</p>
       <ul>
         <li><strong>Mythic (0.5%):</strong> Benihime, Kyokasuigetsu, Duality, Snow</li>
         <li><strong>Legendary (3%):</strong> Blood, Ink, Ice, Flower, Theatre, Suzumebachi, Assimilation</li>
@@ -441,9 +455,10 @@ export const guides = [
       </ul>
   
       <h2>Conclusion</h2>
-      <p>Unlocking <strong>Bankai Type Soul</strong> is one of the most rewarding experiences in Roblox Type Soul. From Clan Wars and Raids to Innerworld duels and Kisuke’s puzzle, each stage tests your dedication. Whether you aim for rare weapon or element variants, mastering <strong>Bankai Type Soul</strong> will greatly enhance your power and prove your status as a top Shinigami.</p>
+      <p>Unlocking <strong>Bankai Type Soul</strong> is one of the most rewarding experiences in Roblox Type Soul. From Clan Wars and Raids to Innerworld duels and Kisuke’s puzzle, each stage of <strong>Bankai Type Soul</strong> tests your patience and skill. Whether you aim for rare weapon or element variants, mastering <strong>Bankai Type Soul</strong> will greatly enhance your strength and prove your status as a top Shinigami. For anyone wondering how to get <strong>Bankai Type Soul</strong>, this guide ensures you understand every step clearly.</p>
     `
   }
+  
   
   
   

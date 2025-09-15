@@ -7,17 +7,16 @@
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-wrap">
-          <div class="hero-content">
+          <div class="content">
+            <h1 class="main-title">
+              Type Soul Codes - All Active Codes List
+            </h1>
             <div class="update-info">
               <span class="live-tag">LIVE</span>
               <span class="update-text"
                 >Last Updated: {{ currentDateTime }} - {{ activeCodesCount }} Active Codes</span
               >
             </div>
-            <h1 class="main-title">
-              Type Soul Codes<br />
-              - All Active Codes List
-            </h1>
             <p class="hero-description">
               Welcome to the fastest and most comprehensive Type Soul codes website, updated daily!
               Get verified Type Soul codes rewards with 99.9% success rate. Discover the latest Type
@@ -583,12 +582,6 @@ onMounted(() => {
   width: 100%;
 }
 
-.hero-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .update-info {
   display: inline-flex;
   align-items: center;
@@ -596,7 +589,7 @@ onMounted(() => {
   background: rgba(155, 89, 182, 0.2);
   padding: 12px 30px;
   border-radius: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   border: 1px solid #9b59b6;
 }
 
@@ -615,10 +608,10 @@ onMounted(() => {
 }
 
 .main-title {
-  font-size: 72px;
+  font-size: 62px;
   font-weight: bold;
   margin-bottom: 40px;
-  line-height: 1.1;
+  line-height: 1.5;
   background: linear-gradient(45deg, #ffffff, #ff6b9d, #4ecdc4, #9b59b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1427,7 +1420,7 @@ onMounted(() => {
   background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 12px;
-  padding: 20px;
+  padding: 23px;
   display: flex;
   align-items: flex-start;
   gap: 15px;
@@ -1465,7 +1458,7 @@ onMounted(() => {
   background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 12px;
-  padding: 20px;
+  padding: 14px;
 }
 
 .tip-item {

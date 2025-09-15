@@ -4,15 +4,15 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
+    <section class="hero-inner">
+      <div class="hero-wrap">
         <div class="hero-content">
           <h1 class="page-title">Copyright Notice</h1>
           <p class="page-subtitle">Last updated: September 12, 2025</p>
         </div>
       </div>
     </section>
-
+    
     <!-- Content Section -->
     <section class="content">
       <div class="container">

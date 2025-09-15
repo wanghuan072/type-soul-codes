@@ -4,14 +4,16 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
+    <section class="hero-inner">
+      <div class="hero-wrap">
         <div class="hero-content">
           <h1 class="page-title">Contact Us</h1>
           <p class="page-subtitle">Get in touch with our team</p>
         </div>
       </div>
     </section>
+
+    
 
     <!-- Content Section -->
     <section class="content">

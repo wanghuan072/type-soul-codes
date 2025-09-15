@@ -3,12 +3,11 @@
     <!-- Header Component -->
     <HeaderComponent />
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
+    <section class="hero-inner">
+      <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="page-title">About Us</h1>
-          <p class="page-subtitle">Your trusted source for Type Soul codes and guides</p>
+          <h1 class="hero-title">About Us</h1>
+          <p class="hero-description">Your trusted source for Type Soul codes and guides</p>
         </div>
       </div>
     </section>
@@ -116,12 +115,6 @@ import FooterComponent from '@/components/FooterComponent.vue'
   line-height: 1.6;
 }
 
-.hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d1b69 50%, #1a1a1a 100%);
-  padding: 120px 0 80px;
-  text-align: center;
-}
-
 .page-title {
   font-size: 48px;
   font-weight: bold;
@@ -194,10 +187,6 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero {
-    padding: 80px 0 40px;
-  }
-
   .page-title {
     font-size: 32px;
   }

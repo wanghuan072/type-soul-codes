@@ -3,6 +3,7 @@
     <div class="container">
       <div class="header-wrap">
         <div class="logo">
+          <div class="logo-icon"><img src="/images/logo.png" alt="Type Soul Codes"></div>
           <div class="logo-text">Type Soul Codes</div>
         </div>
 
@@ -115,6 +116,16 @@ const closeMobileMenu = () => {
   height: 50px;
 }
 
+.logo-icon {
+  overflow: hidden;
+}
+
+.logo-icon img {
+  width: 60px;
+  height: auto;
+}
+
+
 .logo-text {
   font-size: 28px;
   font-weight: 800;
@@ -122,8 +133,8 @@ const closeMobileMenu = () => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.5px;
   transition: all 0.3s ease;
+  
 }
 
 .logo-text:hover {

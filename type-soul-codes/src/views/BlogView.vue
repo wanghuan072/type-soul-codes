@@ -2,18 +2,15 @@
   <div class="blog-page">
     <!-- Header Component -->
     <HeaderComponent />
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-wrap">
-          <div class="hero-content">
-            <h1 class="main-title">Type Soul Blog</h1>
-            <p class="hero-description">
+    
+    <section class="hero-inner">
+      <div class="hero-wrap">
+        <div class="hero-content">
+          <h1 class="main-title">Type Soul Blog</h1>
+          <p class="hero-description">
               Stay updated with the latest Type Soul news, guides, strategies, and community
-              insights. Your ultimate source for everything Type Soul.
+              insights on our Type Soul Blog. Your ultimate source for everything Type Soul.
             </p>
-          </div>
         </div>
       </div>
     </section>
@@ -22,9 +19,9 @@
     <section class="blog-posts" id="blog-list">
       <div class="container">
         <div class="blog-wrap">
-          <h2 class="section-title">Latest Blog Posts</h2>
+          <h2 class="section-title">Latest Type Soul Blog Posts</h2>
           <p class="section-description">
-            Discover our comprehensive collection of Type Soul guides, strategies, and community
+            Discover our comprehensive Type Soul Blog collection of guides, strategies, and community
             content.
           </p>
           <div class="posts-grid">
@@ -56,31 +53,31 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-wrap">
-          <h2 class="section-title">About Our Blog</h2>
+          <h2 class="section-title">About Our Type Soul Blog</h2>
           <p class="section-description">
-            Our Type Soul blog is dedicated to providing high-quality content that helps players
+            Our Type Soul Blog is dedicated to providing high-quality content that helps players
             improve their gameplay and stay informed about the latest developments.
           </p>
           <div class="about-content">
             <div class="about-text">
-              <h3>Quality Content</h3>
+              <h3>Quality Type Soul Blog Content</h3>
               <p>
-                Every article is carefully researched and written by experienced Type Soul players
+                Every Type Soul Blog article is carefully researched and written by experienced Type Soul players
                 and community experts. We focus on providing accurate, up-to-date information that
                 actually helps you improve your gameplay.
               </p>
-              <h3>Regular Updates</h3>
+              <h3>Regular Type Soul Blog Updates</h3>
               <p>
-                We publish new content regularly, covering everything from beginner guides to
+                We publish new Type Soul Blog content regularly, covering everything from beginner guides to
                 advanced strategies, meta analysis, and community highlights. Stay tuned for the
-                latest insights and tips.
+                latest insights and tips on our Type Soul Blog.
               </p>
             </div>
           </div>
           <div class="about-features">
             <div class="feature-item">
               <div class="feature-icon">📝</div>
-              <h4>Expert Writers</h4>
+              <h4>Expert Type Soul Blog Writers</h4>
               <p>Content by experienced players</p>
             </div>
             <div class="feature-item">
@@ -102,53 +99,53 @@
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="faq-wrap">
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <h2 class="section-title">Type Soul Blog FAQ</h2>
           <p class="section-description">
-            Common questions about our blog content and how to get the most out of our guides.
+            Common questions about our Type Soul Blog content and how to get the most out of our guides.
           </p>
           <div class="faq-content">
             <div class="faq-list">
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">❓</span>
-                  How often do you publish new blog posts?
+                  How often do you publish new Type Soul Blog posts?
                 </h3>
                 <p class="faq-answer">
-                  We publish new content weekly, with additional posts during major game updates or
-                  when significant meta changes occur. Subscribe to our updates to never miss a new
+                  We publish new Type Soul Blog content weekly, with additional posts during major game updates or
+                  when significant meta changes occur. Subscribe to our Type Soul Blog updates to never miss a new
                   post.
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">📚</span>
-                  What types of content do you cover?
+                  What types of content does our Type Soul Blog cover?
                 </h3>
                 <p class="faq-answer">
-                  Our blog covers beginner guides, advanced strategies, meta analysis, character
+                  Our Type Soul Blog covers beginner guides, advanced strategies, meta analysis, character
                   builds, PvP tactics, PvE guides, community highlights, and game updates. We aim to
-                  provide comprehensive coverage of all aspects of Type Soul.
+                  provide comprehensive coverage of all aspects of Type Soul through our Type Soul Blog.
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">👥</span>
-                  Can I contribute to the blog?
+                  Can I contribute to our Type Soul Blog?
                 </h3>
                 <p class="faq-answer">
-                  We welcome contributions from experienced players! If you have unique insights,
-                  strategies, or guides you'd like to share, please contact us through our community
+                  We welcome contributions from experienced players to our Type Soul Blog! If you have unique insights,
+                  strategies, or guides you'd like to share on our Type Soul Blog, please contact us through our community
                   channels.
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🔍</span>
-                  How do I find specific topics?
+                  How do I find specific topics on our Type Soul Blog?
                 </h3>
                 <p class="faq-answer">
-                  Use our search function or browse by categories. We also use tags to help you find
-                  related content quickly. Each post is carefully categorized for easy navigation.
+                  Use our search function or browse by categories on our Type Soul Blog. We also use tags to help you find
+                  related content quickly. Each Type Soul Blog post is carefully categorized for easy navigation.
                 </p>
               </div>
             </div>

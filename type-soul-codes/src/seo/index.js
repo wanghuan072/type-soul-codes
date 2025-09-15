@@ -61,23 +61,23 @@ export const generateDynamicSitemap = (routes) => {
 export const getPageSEOConfig = (routeName) => {
   const seoConfigs = {
     home: {
-      title: 'Type Soul Codes - Get Free Codes & Rewards | 99.9% Success Rate',
-      description: 'Get the latest Type Soul codes with 99.9% success rate. Daily updated codes, guides, emotes, and wiki for Type Soul game on Roblox. Free rewards and exclusive items.',
+      title: 'Type Soul Codes - Get Free Codes & Rewards',
+      description: 'Get the latest Type Soul codes. Daily updated codes, guides, emotes, and wiki for Type Soul game on Roblox. Free rewards and exclusive items.',
       keywords: 'type soul, type soul codes, roblox codes, type soul guide, type soul wiki, type soul emotes, free codes, game codes, soul reaper, quincy, arrancar, fullbringer',
       canonical: '/',
       type: 'website'
     },
     emotes: {
-      title: 'Type Soul Emotes List - All Commands & Animations | typesoulcodes.org',
-      description: 'Complete list of Type Soul emotes with commands and descriptions. Express yourself with character animations and poses in Type Soul game.',
+      title: 'Type Soul Emotes List - All Commands & Animations',
+      description: 'Explore our ultimate Type Soul Emotes List! Learn how to get and use every emote to express yourself and enhance your Roblox Type Soul gameplay.',
       keywords: 'type soul emotes, type soul commands, type soul animations, roblox emotes, character poses, roleplay emotes',
       canonical: '/type-soul-emotes',
       type: 'website'
     },
     wiki: {
-      title: 'Type Soul Wiki - Complete Game Guide | Races, Locations & Abilities',
-      description: 'Complete Type Soul wiki with guides for all races (Soul Reaper, Quincy, Arrancar, Fullbringer), locations, abilities, and game mechanics.',
-      keywords: 'type soul wiki, type soul guide, soul reaper guide, quincy guide, arrancar guide, fullbringer guide, type soul locations, type soul abilities',
+      title: 'Type Soul Wiki - Your Ultimate Guide to Roblox Type Soul',
+      description: 'The official Type Soul Wiki is your go-to resource for everything in the game. Find detailed information on races, abilities, weapons, quests, and more!',
+      keywords: 'Type Soul, Wiki, Roblox, game guide, Type Soul game, races, abilities, weapons, quests, lore, factions, characters, walkthrough, tips, tricks',
       canonical: '/type-soul-wiki',
       type: 'website'
     },
@@ -89,17 +89,17 @@ export const getPageSEOConfig = (routeName) => {
       type: 'website'
     },
     guides: {
-      title: 'Type Soul Guides - Complete Game Tutorials & Strategies | typesoulcodes.org111',
-      description: 'Master Type Soul with our comprehensive collection of guides, tutorials, and strategies. From beginner guides to advanced techniques for all races.',
-      keywords: 'type soul guides, type soul tutorials, type soul strategies, soul reaper guide, quincy guide, arrancar guide, fullbringer guide, type soul tips, game guides',
-      canonical: '/guides',
+      title: 'Type Soul Guides - Tips, Tricks & Walkthroughs for Roblox Type Soul',
+      description: 'Master Type Soul with our in-depth guides! Learn about leveling, combat, abilities, quests, and hidden secrets to dominate the Roblox Type Soul universe.',
+      keywords: 'Type Soul, guides, Roblox, game guide, Type Soul game, tips, tricks, walkthroughs, leveling, combat, abilities, quests, secret, progression, beginners, advanced',
+      canonical: '/type-soul-guides',
       type: 'website'
     },
     'guide-detail': {
       title: 'Type Soul Guide - Complete Tutorial & Strategy | typesoulcodes.org',
       description: 'Master Type Soul with our detailed guide. Learn advanced strategies, techniques, and tips to improve your gameplay and dominate the battlefield.',
       keywords: 'type soul guide, type soul tutorial, type soul strategy, game guide, type soul tips',
-      canonical: '/guides',
+      canonical: '/type-soul-guides',
       type: 'article'
     },
     'privacy-policy': {

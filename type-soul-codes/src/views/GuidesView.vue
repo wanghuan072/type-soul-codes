@@ -4,16 +4,14 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-wrap">
-          <div class="hero-content">
-            <h1 class="main-title">Type Soul Guides</h1>
-            <p class="hero-description">
-              Master Type Soul with our comprehensive collection of guides, strategies, and tips.
-              From beginner tutorials to advanced techniques, we've got you covered.
+    <section class="hero-inner">
+      <div class="hero-wrap">
+        <div class="hero-content">
+          <h1 class="main-title">Type Soul Guides</h1>
+          <p class="hero-description">
+              Master Type Soul with our comprehensive Type Soul Guides collection, strategies, and tips.
+              From beginner tutorials to advanced techniques, our Type Soul Guides have you covered.
             </p>
-          </div>
         </div>
       </div>
     </section>
@@ -22,9 +20,9 @@
     <section class="guides-posts" id="guides-list">
       <div class="container">
         <div class="guides-wrap">
-          <h2 class="section-title">All Guides</h2>
+          <h2 class="section-title">Complete Type Soul Guides Collection</h2>
           <p class="section-description">
-            Browse through our complete collection of Type Soul guides. Each guide includes detailed
+            Browse through our complete Type Soul Guides collection. Each Type Soul Guide includes detailed
             instructions, tips, and strategies to help you master the game.
           </p>
           <div class="guides-grid">
@@ -66,24 +64,24 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-wrap">
-          <h2 class="section-title">About Our Guides</h2>
+          <h2 class="section-title">About Our Type Soul Guides</h2>
           <p class="section-description">
-            Our Type Soul guides are created by experienced players and community experts to help you
-            improve your gameplay and master every aspect of the game.
+            Our Type Soul Guides are created by experienced players and community experts to help you
+            improve your gameplay and master every aspect of the game. These Type Soul Guides provide comprehensive coverage.
           </p>
           <div class="about-content">
             <div class="about-text">
-              <h3>Expert-Created Content</h3>
+              <h3>Expert-Created Type Soul Guides</h3>
               <p>
-                Every guide is carefully crafted by experienced Type Soul players who have mastered
+                Every Type Soul Guide is carefully crafted by experienced Type Soul players who have mastered
                 the techniques they teach. We focus on providing accurate, tested strategies that
                 actually work in real gameplay situations.
               </p>
-              <h3>Comprehensive Coverage</h3>
+              <h3>Comprehensive Type Soul Guides Coverage</h3>
               <p>
-                From basic mechanics to advanced strategies, our guides cover every aspect of Type
+                From basic mechanics to advanced strategies, our Type Soul Guides cover every aspect of Type
                 Soul. Whether you're a complete beginner or a seasoned player, you'll find valuable
-                content to improve your skills.
+                content in our Type Soul Guides to improve your skills.
               </p>
             </div>
           </div>
@@ -95,7 +93,7 @@
             </div>
             <div class="feature-item">
               <div class="feature-icon">📚</div>
-              <h4>Comprehensive Guides</h4>
+              <h4>Comprehensive Type Soul Guides</h4>
               <p>Complete coverage of all game aspects</p>
             </div>
             <div class="feature-item">
@@ -112,29 +110,29 @@
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="faq-wrap">
-          <h2 class="section-title">Frequently Asked Questions</h2>
+          <h2 class="section-title">Type Soul Guides FAQ</h2>
           <p class="section-description">
-            Common questions about our guides and how to get the most out of our content.
+            Common questions about our Type Soul Guides and how to get the most out of our content.
           </p>
           <div class="faq-content">
             <div class="faq-list">
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">❓</span>
-                  How often are the guides updated?
+                  How often are the Type Soul Guides updated?
                 </h3>
                 <p class="faq-answer">
-                  We regularly update our guides to reflect the latest game changes and meta
+                  We regularly update our Type Soul Guides to reflect the latest game changes and meta
                   developments. Major updates are reviewed within 24-48 hours of release.
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🎮</span>
-                  What difficulty levels do you cover?
+                  What difficulty levels do our Type Soul Guides cover?
                 </h3>
                 <p class="faq-answer">
-                  Our guides cover all difficulty levels from beginner to expert. Each guide is
+                  Our Type Soul Guides cover all difficulty levels from beginner to expert. Each Type Soul Guide is
                   clearly marked with its difficulty level to help you find content appropriate for
                   your skill level.
                 </p>
@@ -142,23 +140,23 @@
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">👥</span>
-                  Can I request specific guides?
+                  Can I request specific Type Soul Guides?
                 </h3>
                 <p class="faq-answer">
-                  Absolutely! We welcome suggestions for new guide topics. If you have a specific
-                  strategy or technique you'd like us to cover, please contact us through our
+                  Absolutely! We welcome suggestions for new Type Soul Guides topics. If you have a specific
+                  strategy or technique you'd like us to cover in our Type Soul Guides, please contact us through our
                   community channels.
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🔍</span>
-                  How do I find guides for my skill level?
+                  How do I find Type Soul Guides for my skill level?
                 </h3>
                 <p class="faq-answer">
-                  Use our difficulty filters or browse by category. Each guide is clearly marked with
+                  Use our difficulty filters or browse by category. Each Type Soul Guide is clearly marked with
                   its difficulty level and includes prerequisites to help you choose the right
-                  content.
+                  content from our Type Soul Guides collection.
                 </p>
               </div>
             </div>

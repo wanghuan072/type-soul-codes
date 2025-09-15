@@ -4,7 +4,9 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">
-            <div class="logo-icon">⚡</div>
+            <div class="logo-icon">
+              <img src="/images/logo.png" alt="Type Soul Codes">
+            </div>
             <div class="logo-text">Type Soul Codes</div>
           </div>
           <p class="footer-description">
@@ -67,6 +69,16 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  font-size: 0;
+}
+
+.logo-icon {
+  overflow: hidden;
+}
+
+.logo-icon img {
+  width: 60px;
+  height: auto;
 }
 
 .logo-text {
@@ -76,6 +88,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  line-height: 1.5;
 }
 
 .logo-full {

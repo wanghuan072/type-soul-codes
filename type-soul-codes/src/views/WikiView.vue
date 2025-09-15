@@ -4,41 +4,39 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-wrap">
-          <div class="hero-content">
-            <h1 class="main-title">Type Soul Wiki</h1>
-            <p class="hero-description">
-              The complete Type Soul Wiki guide for all races, locations, abilities, and game
-              mechanics. Master your spiritual journey in the world of Type Soul.
-            </p>
-            <div class="hero-nav">
-              <a href="javascript:void(0)" @click="scrollToSection('races')" class="nav-link">
-                <span class="nav-icon">⚔️</span>
-                Races
-              </a>
-              <a href="javascript:void(0)" @click="scrollToSection('locations')" class="nav-link">
-                <span class="nav-icon">🌍</span>
-                Locations
-              </a>
-              <a href="javascript:void(0)" @click="scrollToSection('abilities')" class="nav-link">
-                <span class="nav-icon">💪</span>
-                Abilities
-              </a>
-              <a href="javascript:void(0)" @click="scrollToSection('mechanics')" class="nav-link">
-                <span class="nav-icon">⚙️</span>
-                Mechanics
-              </a>
-              <a href="javascript:void(0)" @click="scrollToSection('about')" class="nav-link">
-                <span class="nav-icon">📖</span>
-                About
-              </a>
-              <a href="javascript:void(0)" @click="scrollToSection('faq')" class="nav-link">
-                <span class="nav-icon">❓</span>
-                FAQ
-              </a>
-            </div>
+    <section class="hero-inner" >
+      <div class="hero-wrap">
+        <div class="hero-content">
+          <h1 class="hero-title">Type Soul Wiki</h1>
+          <p class="hero-description">
+            The complete Type Soul Wiki guide for all races, locations, abilities, and game
+            mechanics. Master your spiritual journey in the world of Type Soul.
+          </p>
+          <div class="hero-nav">
+            <a href="javascript:void(0)" @click="scrollToSection('races')" class="nav-link">
+              <span class="nav-icon">⚔️</span>
+              Races
+            </a>
+            <a href="javascript:void(0)" @click="scrollToSection('locations')" class="nav-link">
+              <span class="nav-icon">🌍</span>
+              Locations
+            </a>
+            <a href="javascript:void(0)" @click="scrollToSection('abilities')" class="nav-link">
+              <span class="nav-icon">💪</span>
+              Abilities
+            </a>
+            <a href="javascript:void(0)" @click="scrollToSection('mechanics')" class="nav-link">
+              <span class="nav-icon">⚙️</span>
+              Mechanics
+            </a>
+            <a href="javascript:void(0)" @click="scrollToSection('about')" class="nav-link">
+              <span class="nav-icon">📖</span>
+              About
+            </a>
+            <a href="javascript:void(0)" @click="scrollToSection('faq')" class="nav-link">
+              <span class="nav-icon">❓</span>
+              FAQ
+            </a>
           </div>
         </div>
       </div>
