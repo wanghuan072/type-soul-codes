@@ -1,218 +1,324 @@
 export const codes = [
   {
     id: 1,
-    title: "200K67",
-    code: "200K67",
-    reward: "5 Traits",
-    publishDate: "2025-09-12",
+    title: "ithoughtupdateswereweekly",
+    code: "ithoughtupdateswereweekly",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 2,
-    title: "500KLIKES",
-    code: "500KLIKES",
-    reward: "100,000 Coins",
-    publishDate: "2025-09-12",
+    title: "thewhatorwhat",
+    code: "thewhatorwhat",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 3,
-    title: "HZCrafting",
-    code: "HZCrafting",
-    reward: "5 Weapon Lucky Spins",
-    publishDate: "2025-09-12",
+    title: "cristi2ktwitch",
+    code: "cristi2ktwitch",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 4,
-    title: "B4UPD3",
-    code: "B4UPD3",
-    reward: "100,000 Coins",
-    publishDate: "2025-09-12",
+    title: "corneaburdenbday",
+    code: "corneaburdenbday",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 5,
-    title: "EMOTEISHERE",
-    code: "EMOTEISHERE",
-    reward: "100,000 Coins",
-    publishDate: "2025-09-12",
+    title: "andyismysonnn",
+    code: "andyismysonnn",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 6,
-    title: "HZCrafting2",
-    code: "HZCrafting2",
-    reward: "5 Perks Lucky Spins",
-    publishDate: "2025-09-12",
+    title: "whatagoodcode",
+    code: "whatagoodcode",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 7,
-    title: "NEWPLAYER1",
-    code: "NEWPLAYER1",
-    reward: "10,000 Coins",
-    publishDate: "2025-09-12",
+    title: "broyouareopdude",
+    code: "broyouareopdude",
+    publishDate: "2025-09-15",
     category: "active"
   },
   {
     id: 8,
-    title: "WHYJUMP",
-    code: "WHYJUMP",
-    reward: "250,000 Coins",
-    publishDate: "2025-09-12",
-    category: "expired"
+    title: "cellorsell",
+    code: "cellorsell",
+    publishDate: "2025-09-15",
+    category: "active"
   },
   {
     id: 9,
-    title: "MUHAHA",
-    code: "MUHAHA",
-    reward: "200,000 Coins",
-    publishDate: "2025-09-12",
+    title: "thesecretisstillinsoulsociety",
+    code: "thesecretisstillinsoulsociety",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 10,
-    title: "SUPERWDEV",
-    code: "SUPERWDEV",
-    reward: "5 Traits",
-    publishDate: "2025-09-12",
+    title: "mangolordking700mangos",
+    code: "mangolordking700mangos",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 11,
-    title: "400KLIKES",
-    code: "400KLIKES",
-    reward: "199,999 Coins",
-    publishDate: "2025-09-12",
+    title: "thisiswhyweclash1m",
+    code: "thisiswhyweclash1m",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 12,
-    title: "sorryforbug",
-    code: "sorryforbug",
-    reward: "150k Coins",
-    publishDate: "2025-09-12",
+    title: "baragganintorisingswallow",
+    code: "baragganintorisingswallow",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 13,
-    title: "200KCCU",
-    code: "200KCCU",
-    reward: "200k Coins",
-    publishDate: "2025-09-12",
+    title: "yayfirstweekly",
+    code: "yayfirstweekly",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 14,
-    title: "DAGGER",
-    code: "DAGGER",
-    reward: "50k Coins",
-    publishDate: "2025-09-12",
+    title: "cristibday",
+    code: "cristibday",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 15,
-    title: "200KIN",
-    code: "200KIN",
-    reward: "5 Traits",
-    publishDate: "2025-09-12",
+    title: "vdekuglobalban",
+    code: "vdekuglobalban",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 16,
-    title: "300KLIKES",
-    code: "300KLIKES",
-    reward: "30,000 Coins",
-    publishDate: "2025-09-12",
+    title: "canyouletusbalance",
+    code: "canyouletusbalance",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 17,
-    title: "FIXBUGS67",
-    code: "FIXBUGS67",
-    reward: "50,000 Coins",
-    publishDate: "2025-09-12",
+    title: "butisitenough",
+    code: "butisitenough",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 18,
-    title: "200KLIKES",
-    code: "200KLIKES",
-    reward: "20,000 Coins",
-    publishDate: "2025-09-12",
+    title: "jambajuice1v1",
+    code: "jambajuice1v1",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 19,
-    title: "Hugecode",
-    code: "Hugecode",
-    reward: "150,000 Coins",
-    publishDate: "2025-09-12",
+    title: "codecodecode",
+    code: "codecodecode",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 20,
-    title: "100KMEMBERS",
-    code: "100KMEMBERS",
-    reward: "100,000 Coins",
-    publishDate: "2025-09-12",
+    title: "codelolhaha",
+    code: "codelolhaha",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 21,
-    title: "40KLIKES",
-    code: "40KLIKES",
-    reward: "5 Traits",
-    publishDate: "2025-09-12",
+    title: "codeofdoom",
+    code: "codeofdoom",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 22,
-    title: "30KLIKES",
-    code: "30KLIKES",
-    reward: "10 Lucky Perk Spins",
-    publishDate: "2025-09-12",
+    title: "600MVisits",
+    code: "600MVisits",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 23,
-    title: "20KLIKES",
-    code: "20KLIKES",
-    reward: "5 Traits",
-    publishDate: "2025-09-12",
+    title: "300KLikes",
+    code: "300KLikes",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 24,
-    title: "Release",
-    code: "Release",
-    reward: "5 Lucky Weapon Spins",
-    publishDate: "2025-09-12",
+    title: "serverlistfixed",
+    code: "serverlistfixed",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 25,
-    title: "Release2",
-    code: "Release2",
-    reward: "20,000 Cash",
-    publishDate: "2025-09-12",
+    title: "thosewhoknowemblem",
+    code: "thosewhoknowemblem",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 26,
-    title: "10KEVENT",
-    code: "10KEVENT",
-    reward: "30,000 Cash",
-    publishDate: "2025-09-12",
+    title: "superduperfunsecretcode",
+    code: "superduperfunsecretcode",
+    publishDate: "2025-09-15",
     category: "expired"
   },
   {
     id: 27,
-    title: "Sorryhaha",
-    code: "Sorryhaha",
-    reward: "5 Lucky Perk Spins",
-    publishDate: "2025-09-12",
+    title: "wowshutdowncodeyeah",
+    code: "wowshutdowncodeyeah",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 28,
+    title: "codeforshutdownisuppose",
+    code: "codeforshutdownisuppose",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 29,
+    title: "yesterdayshutdown",
+    code: "yesterdayshutdown",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 30,
+    title: "thanksfor900k",
+    code: "thanksfor900k",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 31,
+    title: "setrona1vertagzeu0",
+    code: "setrona1vertagzeu0",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 32,
+    title: "excaliburfool",
+    code: "excaliburfool",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 33,
+    title: "higuyscode",
+    code: "higuyscode",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 34,
+    title: "thisiswhywetestthosewhoknow",
+    code: "thisiswhywetestthosewhoknow",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 35,
+    title: "goplayranked",
+    code: "goplayranked",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 36,
+    title: "somebugsfixes",
+    code: "somebugsfixes",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 37,
+    title: "800kcodeyeah",
+    code: "800kcodeyeah",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 38,
+    title: "thanksforpatience",
+    code: "thanksforpatience",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 39,
+    title: "raidsfixed",
+    code: "raidsfixed",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 40,
+    title: "compensationforinconvenientrelease",
+    code: "compensationforinconvenientrelease",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 41,
+    title: "sorryforthebankbugs",
+    code: "sorryforthebankbugs",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 42,
+    title: "mythoughtsonthislater",
+    code: "mythoughtsonthislater",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 43,
+    title: "3daysthosewhoknow",
+    code: "3daysthosewhoknow",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 44,
+    title: "rerererelease",
+    code: "rerererelease",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 45,
+    title: "privateservercompensation",
+    code: "privateservercompensation",
+    publishDate: "2025-09-15",
+    category: "expired"
+  },
+  {
+    id: 46,
+    title: "promiseddecembercode",
+    code: "promiseddecembercode",
+    publishDate: "2025-09-15",
     category: "expired"
   },
 

@@ -79,7 +79,6 @@
               </div>
               <div class="code-content">
                 <div class="code-string">{{ code.code }}</div>
-                <div class="code-reward">{{ code.reward }}</div>
               </div>
               <button class="copy-button" @click="copyCode(code.code)">
                 <span class="copy-icon">
