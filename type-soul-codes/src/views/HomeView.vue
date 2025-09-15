@@ -445,6 +445,7 @@ import { ref, computed, onMounted } from 'vue'
 import { codes as codesData } from '@/data/codes.js'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { showSuccess, showError } from '@/utils/message.js'
 
 // 响应式数据
 const codes = ref(codesData)
@@ -476,10 +477,10 @@ const formatDate = (dateString) => {
 const copyCode = async (code) => {
   try {
     await navigator.clipboard.writeText(code)
-    message.success(`code "${code}" Copied to clipboard`)
+    showSuccess(`Code "${code}" copied to clipboard`)
   } catch (err) {
-    console.error('Replication failed:', err)
-    message.error('Copy failed, please copy manually')
+    console.error('Copy failed:', err)
+    showError('Copy failed, please copy manually')
   }
 }
 

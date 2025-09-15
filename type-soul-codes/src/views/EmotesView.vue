@@ -182,6 +182,7 @@ import { ref, onMounted } from 'vue'
 import { emotes as emotesData } from '@/data/emotes.js'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { showSuccess, showError } from '@/utils/message.js'
 
 // 响应式数据
 const emotes = ref(emotesData)
@@ -199,10 +200,10 @@ const formatDate = (dateString) => {
 const copyCommand = async (command) => {
   try {
     await navigator.clipboard.writeText(command)
-    message.success(`Emotes "${command}" Copied to clipboard`)
+    showSuccess(`Emotes "${command}" copied to clipboard`)
   } catch (err) {
     console.error('Copy failed:', err)
-    message.error('Copy failed, please copy manually')
+    showError('Copy failed, please copy manually')
   }
 }
 </script>
