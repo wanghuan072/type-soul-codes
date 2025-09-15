@@ -72,6 +72,12 @@ export const getStaticRoutes = () => {
       lastmod: currentDate
     },
     {
+      path: '/type-soul-guides',
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: currentDate
+    },
+    {
       path: '/privacy-policy',
       changefreq: 'monthly',
       priority: 0.3,
