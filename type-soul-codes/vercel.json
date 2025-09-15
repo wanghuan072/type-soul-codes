@@ -9,15 +9,10 @@
     "VITE_LOCAL_API_URL": "https://type-soul-codes-api.vercel.app",
     "VITE_NODE_ENV": "production"
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/robots.txt",
-      "dest": "/robots.txt",
-      "override": true
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
