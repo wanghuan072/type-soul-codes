@@ -19,11 +19,11 @@ if (!existsSync('dist')) {
   mkdirSync('dist')
 }
 
-// 写入文件
+// 写入文件到 dist 和 public 目录
 writeFileSync('dist/sitemap.xml', sitemap)
+writeFileSync('public/sitemap.xml', sitemap)
 console.log('站点地图已生成:', routes.length, '个页面')
-
-// 只生成站点地图，不处理 robots.txt
+console.log('✅ 站点地图已复制到 public 和 dist 目录')
 
 function generateSitemap(routes) {
   const baseUrl = 'https://typesoulcodes.org'
