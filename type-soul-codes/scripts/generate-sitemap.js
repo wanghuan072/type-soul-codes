@@ -23,6 +23,33 @@ if (!existsSync('dist')) {
 writeFileSync('dist/sitemap.xml', sitemap)
 console.log('站点地图已生成:', routes.length, '个页面')
 
+// 生成正确的 robots.txt 文件，覆盖任何动态生成的内容
+const robotsContent = `User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://typesoulcodes.org/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all other content
+Allow: /emotes
+Allow: /wiki
+Allow: /blog
+Allow: /privacy-policy
+Allow: /terms-of-use
+Allow: /copyright
+Allow: /about-us
+Allow: /contact-us
+
+# Crawl delay
+Crawl-delay: 1`
+
+writeFileSync('dist/robots.txt', robotsContent)
+console.log('robots.txt 已生成并覆盖动态内容')
+
 function generateSitemap(routes) {
   const baseUrl = 'https://typesoulcodes.org'
   
