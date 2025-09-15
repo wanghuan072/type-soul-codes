@@ -1,8 +1,17 @@
 import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import { getStaticRoutes } from '../src/seo/sitemap.js'
+import { guides } from '../src/data/guides.js'
 
 // 生成站点地图
-const routes = getStaticRoutes()
+const staticRoutes = getStaticRoutes()
+const guideRoutes = guides.map(guide => ({
+  path: `/type-soul-guides/${guide.addressBar}`,
+  changefreq: 'monthly',
+  priority: 0.7,
+  lastmod: guide.publishDate || new Date().toISOString()
+}))
+
+const routes = [...staticRoutes, ...guideRoutes]
 const sitemap = generateSitemap(routes)
 
 // 确保 dist 目录存在
