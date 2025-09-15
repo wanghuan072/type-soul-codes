@@ -8,10 +8,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run build:sitemap && npm run force-robots && npm run post-build",
+    "build": "vite build",
     "build:sitemap": "node scripts/generate-sitemap.js",
-    "force-robots": "node scripts/force-robots-override.js",
-    "post-build": "node scripts/post-build-robots.js",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"

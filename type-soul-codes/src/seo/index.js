@@ -30,8 +30,7 @@ export const updatePageSEO = (seoData) => {
     keywords,
     canonical,
     author: 'Type Soul Codes',
-    // 暂时移除 robots 标签，避免触发 Vercel 保护机制
-    // robots: 'index, follow',
+    robots: 'index, follow',
     themeColor: '#9b59b6'
   })
 
