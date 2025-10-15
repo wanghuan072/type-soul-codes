@@ -14,7 +14,7 @@
               <!-- Back Button in top-left corner -->
               <button @click="goBack" class="back-button">
                 <span class="back-icon">←</span>
-                Back to Guides
+                {{ $t('common.backToList') }}
               </button>
               <div class="hero-content">
                 <div class="hero-meta">
@@ -63,15 +63,20 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { guides as guidesData } from '@/data/guides.js'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedData } from '@/composables/useLocalizedData'
+import { setSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import CommentRatingSystem from '@/components/CommentRatingSystem.vue'
-import { updatePageSEO } from '@/seo/index.js'
 import { showMessage } from '@/utils/message.js'
 
 const route = useRoute()
 const router = useRouter()
+const { t, locale } = useI18n()
+
+// 使用 Composable 加载本地化数据
+const { data: guidesData, loading, error } = useLocalizedData('guides')
 
 // 响应式数据
 const guide = ref(null)
@@ -106,19 +111,22 @@ const getCategoryLabel = (category) => {
 
 // 获取指南数据的函数
 const fetchGuideData = (slug) => {
-  const foundGuide = guidesData.find((g) => g.addressBar === slug)
+  if (!guidesData.value) return
+  
+  const foundGuide = guidesData.value.find((g) => g.addressBar === slug)
 
   if (foundGuide) {
     guide.value = foundGuide
-
-    // 更新页面SEO信息
-    updatePageSEO({
-      title: foundGuide.seo.title,
-      description: foundGuide.seo.description,
-      keywords: foundGuide.seo.keywords,
-      canonical: `/type-soul-guides/${foundGuide.addressBar}`,
-      type: 'article',
-    })
+    
+    // 更新页面SEO信息 - 使用普通函数
+    if (foundGuide.seo) {
+      setSEO({
+        title: foundGuide.seo.title,
+        description: foundGuide.seo.description,
+        keywords: foundGuide.seo.keywords,
+        canonical: route.path
+      }, locale.value)
+    }
   } else {
     // 如果找不到指南，重定向到指南列表页
     router.push('/type-soul-guides')
@@ -137,6 +145,11 @@ watch(
     fetchGuideData(newSlug)
   }
 )
+
+// 监听数据变化
+watch(guidesData, () => {
+  fetchGuideData(route.params.slug)
+})
 </script>
 
 <style scoped>

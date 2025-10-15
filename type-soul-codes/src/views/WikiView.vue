@@ -7,35 +7,34 @@
     <section class="hero-inner" >
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="hero-title">Type Soul Wiki</h1>
+          <h1 class="hero-title">{{ $t('wikiPage.heroTitle') }}</h1>
           <p class="hero-description">
-            The complete Type Soul Wiki guide for all races, locations, abilities, and game
-            mechanics. Master your spiritual journey in the world of Type Soul.
+            {{ $t('wikiPage.heroDescription') }}
           </p>
           <div class="hero-nav">
             <a href="javascript:void(0)" @click="scrollToSection('races')" class="nav-link">
               <span class="nav-icon">⚔️</span>
-              Races
+              {{ $t('wikiPage.navRaces') }}
             </a>
             <a href="javascript:void(0)" @click="scrollToSection('locations')" class="nav-link">
               <span class="nav-icon">🌍</span>
-              Locations
+              {{ $t('wikiPage.navLocations') }}
             </a>
             <a href="javascript:void(0)" @click="scrollToSection('abilities')" class="nav-link">
               <span class="nav-icon">💪</span>
-              Abilities
+              {{ $t('wikiPage.navAbilities') }}
             </a>
             <a href="javascript:void(0)" @click="scrollToSection('mechanics')" class="nav-link">
               <span class="nav-icon">⚙️</span>
-              Mechanics
+              {{ $t('wikiPage.navMechanics') }}
             </a>
             <a href="javascript:void(0)" @click="scrollToSection('about')" class="nav-link">
               <span class="nav-icon">📖</span>
-              About
+              {{ $t('wikiPage.navAbout') }}
             </a>
             <a href="javascript:void(0)" @click="scrollToSection('faq')" class="nav-link">
               <span class="nav-icon">❓</span>
-              FAQ
+              {{ $t('wikiPage.navFAQ') }}
             </a>
           </div>
         </div>
@@ -46,120 +45,105 @@
     <section class="races-section" id="races">
       <div class="container">
         <div class="races-wrap">
-          <h2 class="section-title">Type Soul Wiki Races Guide</h2>
-          <p class="section-description">
-            Choose your path in the spiritual world. Each race offers unique abilities, progression
-            systems, and playstyles to master.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.racesTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.racesDesc') }}</p>
           <div class="races-grid">
             <div class="race-card">
               <div class="race-icon">⚔️</div>
-              <h3 class="race-title">Soul Reaper (Shinigami)</h3>
-              <p class="race-description">
-                The most versatile and popular race in Type Soul Wiki. Masters of spiritual combat
-                with diverse fighting styles and Zanpakuto abilities.
-              </p>
+              <h3 class="race-title">{{ $t('wikiPage.soulReaperTitle') }}</h3>
+              <p class="race-description">{{ $t('wikiPage.soulReaperDesc') }}</p>
               <div class="race-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Difficulty:</span>
-                  <span class="stat-value difficulty-medium">Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.difficultyLabel') }}</span>
+                  <span class="stat-value difficulty-medium">{{ $t('wikiPage.difficultyMedium') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Popularity:</span>
-                  <span class="stat-value popularity-highest">Highest</span>
+                  <span class="stat-label">{{ $t('wikiPage.popularityLabel') }}</span>
+                  <span class="stat-value popularity-highest">{{ $t('wikiPage.popularityHighest') }}</span>
                 </div>
               </div>
               <div class="race-features">
-                <h4>Key Features:</h4>
+                <h4>{{ $t('wikiPage.soulReaperFeatures') }}</h4>
                 <ul>
-                  <li>Hakuda fighting styles exclusive</li>
-                  <li>Diverse skill tree options</li>
-                  <li>Shikai and Bankai progression</li>
-                  <li>Kido spell casting abilities</li>
+                  <li>{{ $t('wikiPage.soulReaperFeature1') }}</li>
+                  <li>{{ $t('wikiPage.soulReaperFeature2') }}</li>
+                  <li>{{ $t('wikiPage.soulReaperFeature3') }}</li>
+                  <li>{{ $t('wikiPage.soulReaperFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="race-card">
               <div class="race-icon">💀</div>
-              <h3 class="race-title">Arrancar (Hollow)</h3>
-              <p class="race-description">
-                Powerful hollow beings with mask fragments. Strong early game progression with
-                unique resurrection abilities in Type Soul Wiki.
-              </p>
+              <h3 class="race-title">{{ $t('wikiPage.arrancarTitle') }}</h3>
+              <p class="race-description">{{ $t('wikiPage.arrancarDesc') }}</p>
               <div class="race-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Difficulty:</span>
-                  <span class="stat-value difficulty-easy">Easy-Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.difficultyLabel') }}</span>
+                  <span class="stat-value difficulty-easy">{{ $t('wikiPage.difficultyEasy') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Popularity:</span>
-                  <span class="stat-value popularity-high">High</span>
+                  <span class="stat-label">{{ $t('wikiPage.popularityLabel') }}</span>
+                  <span class="stat-value popularity-high">{{ $t('wikiPage.popularityHigh') }}</span>
                 </div>
               </div>
               <div class="race-features">
-                <h4>Key Features:</h4>
+                <h4>{{ $t('wikiPage.soulReaperFeatures') }}</h4>
                 <ul>
-                  <li>Strong early game stats</li>
-                  <li>Resurrection (Segunda Etapa)</li>
-                  <li>Cero and Bala techniques</li>
-                  <li>Hierro defensive abilities</li>
+                  <li>{{ $t('wikiPage.arrancarFeature1') }}</li>
+                  <li>{{ $t('wikiPage.arrancarFeature2') }}</li>
+                  <li>{{ $t('wikiPage.arrancarFeature3') }}</li>
+                  <li>{{ $t('wikiPage.arrancarFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="race-card">
               <div class="race-icon">🏹</div>
-              <h3 class="race-title">Quincy</h3>
-              <p class="race-description">
-                Spiritual archers with powerful ranged abilities. High risk, high reward race with
-                overpowered late-game potential in Type Soul Wiki.
-              </p>
+              <h3 class="race-title">{{ $t('wikiPage.quincyTitle') }}</h3>
+              <p class="race-description">{{ $t('wikiPage.quincyDesc') }}</p>
               <div class="race-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Difficulty:</span>
-                  <span class="stat-value difficulty-hard">Hard</span>
+                  <span class="stat-label">{{ $t('wikiPage.difficultyLabel') }}</span>
+                  <span class="stat-value difficulty-hard">{{ $t('wikiPage.difficultyHard') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Popularity:</span>
-                  <span class="stat-value popularity-medium">Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.popularityLabel') }}</span>
+                  <span class="stat-value popularity-medium">{{ $t('wikiPage.popularityMedium') }}</span>
                 </div>
               </div>
               <div class="race-features">
-                <h4>Key Features:</h4>
+                <h4>{{ $t('wikiPage.soulReaperFeatures') }}</h4>
                 <ul>
-                  <li>Powerful ranged attacks</li>
-                  <li>Vollständig transformation</li>
-                  <li>Spirit weapon mastery</li>
-                  <li>Unique progression system</li>
+                  <li>{{ $t('wikiPage.quincyFeature1') }}</li>
+                  <li>{{ $t('wikiPage.quincyFeature2') }}</li>
+                  <li>{{ $t('wikiPage.quincyFeature3') }}</li>
+                  <li>{{ $t('wikiPage.quincyFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="race-card">
               <div class="race-icon">💎</div>
-              <h3 class="race-title">Fullbringer</h3>
-              <p class="race-description">
-                The newest race in Type Soul Wiki. Humans with object manipulation abilities and
-                unique Twin Soul mode progression.
-              </p>
+              <h3 class="race-title">{{ $t('wikiPage.fullbringerTitle') }}</h3>
+              <p class="race-description">{{ $t('wikiPage.fullbringerDesc') }}</p>
               <div class="race-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Difficulty:</span>
-                  <span class="stat-value difficulty-medium">Medium-Hard</span>
+                  <span class="stat-label">{{ $t('wikiPage.difficultyLabel') }}</span>
+                  <span class="stat-value difficulty-medium">{{ $t('wikiPage.difficultyMediumHard') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Popularity:</span>
-                  <span class="stat-value popularity-growing">Growing</span>
+                  <span class="stat-label">{{ $t('wikiPage.popularityLabel') }}</span>
+                  <span class="stat-value popularity-growing">{{ $t('wikiPage.popularityGrowing') }}</span>
                 </div>
               </div>
               <div class="race-features">
-                <h4>Key Features:</h4>
+                <h4>{{ $t('wikiPage.soulReaperFeatures') }}</h4>
                 <ul>
-                  <li>Object soul manipulation</li>
-                  <li>Twin Soul mode</li>
-                  <li>Unique minigame trials</li>
-                  <li>Fullbring elements system</li>
+                  <li>{{ $t('wikiPage.fullbringerFeature1') }}</li>
+                  <li>{{ $t('wikiPage.fullbringerFeature2') }}</li>
+                  <li>{{ $t('wikiPage.fullbringerFeature3') }}</li>
+                  <li>{{ $t('wikiPage.fullbringerFeature4') }}</li>
                 </ul>
               </div>
             </div>
@@ -172,170 +156,149 @@
     <section class="locations-section" id="locations">
       <div class="container">
         <div class="locations-wrap">
-          <h2 class="section-title">Type Soul Wiki Locations</h2>
-          <p class="section-description">
-            Explore the vast spiritual world of Type Soul. Each location offers unique challenges,
-            rewards, and opportunities for growth.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.locationsTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.locationsDesc') }}</p>
           <div class="locations-grid">
             <div class="location-card">
-              <h3 class="location-title">Soul Society</h3>
-              <p class="location-description">
-                The spiritual realm and home of the Soul Reapers. Central hub for Shinigami training
-                and missions in Type Soul Wiki.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.soulSocietyTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.soulSocietyDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
-                  <span class="stat-value race-soul-reaper">Soul Reaper</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
+                  <span class="stat-value race-soul-reaper">{{ $t('wikiPage.soulReaperTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-medium">Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-medium">{{ $t('wikiPage.dangerMedium') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>Soul Reaper Academy</li>
-                  <li>Division headquarters</li>
-                  <li>Training grounds</li>
-                  <li>Mission boards</li>
+                  <li>{{ $t('wikiPage.soulSocietyFeature1') }}</li>
+                  <li>{{ $t('wikiPage.soulSocietyFeature2') }}</li>
+                  <li>{{ $t('wikiPage.soulSocietyFeature3') }}</li>
+                  <li>{{ $t('wikiPage.soulSocietyFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="location-card">
-              <h3 class="location-title">Hueco Mundo</h3>
-              <p class="location-description">
-                The desolate realm of Hollows and Arrancars. Desert wasteland with Las Noches palace
-                in Type Soul Wiki.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.huecoMundoTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.huecoMundoDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
-                  <span class="stat-value race-arrancar">Hollow/Arrancar</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
+                  <span class="stat-value race-arrancar">Hollow/{{ $t('wikiPage.arrancarTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-high">High</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-high">{{ $t('wikiPage.dangerHigh') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>Las Noches palace</li>
-                  <li>Hollow spawning grounds</li>
-                  <li>Arrancar territories</li>
-                  <li>Menos Forest</li>
+                  <li>{{ $t('wikiPage.huecoMundoFeature1') }}</li>
+                  <li>{{ $t('wikiPage.huecoMundoFeature2') }}</li>
+                  <li>{{ $t('wikiPage.huecoMundoFeature3') }}</li>
+                  <li>{{ $t('wikiPage.huecoMundoFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="location-card">
-              <h3 class="location-title">Karakura Town</h3>
-              <p class="location-description">
-                The main setting from Bleach. Human world location with spiritual activity in Type
-                Soul Wiki.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.karakuraTownTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.karakuraTownDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
                   <span class="stat-value race-mixed">Mixed</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-low">Low-Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-low">{{ $t('wikiPage.dangerLow') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>Human world access</li>
-                  <li>Spiritual hotspot</li>
-                  <li>Mixed race encounters</li>
-                  <li>Story missions</li>
+                  <li>{{ $t('wikiPage.karakuraTownFeature1') }}</li>
+                  <li>{{ $t('wikiPage.karakuraTownFeature2') }}</li>
+                  <li>{{ $t('wikiPage.karakuraTownFeature3') }}</li>
+                  <li>{{ $t('wikiPage.karakuraTownFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="location-card">
-              <h3 class="location-title">Fake Karakura</h3>
-              <p class="location-description">
-                Special realm for Fullbringers in Type Soul Wiki. Training ground for object
-                manipulation abilities.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.fakeKarakuraTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.fakeKarakuraDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
-                  <span class="stat-value race-fullbringer">Fullbringer</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
+                  <span class="stat-value race-fullbringer">{{ $t('wikiPage.fullbringerTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-low">Low-Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-low">{{ $t('wikiPage.dangerLow') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>Fullbringer training</li>
-                  <li>Object manipulation practice</li>
-                  <li>Unique trials</li>
-                  <li>Spiritual exercises</li>
+                  <li>{{ $t('wikiPage.fakeKarakuraFeature1') }}</li>
+                  <li>{{ $t('wikiPage.fakeKarakuraFeature2') }}</li>
+                  <li>{{ $t('wikiPage.fakeKarakuraFeature3') }}</li>
+                  <li>{{ $t('wikiPage.fakeKarakuraFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="location-card">
-              <h3 class="location-title">Wandenreich</h3>
-              <p class="location-description">
-                The hidden Quincy empire. Advanced spiritual realm for Quincy training and
-                progression in Type Soul Wiki.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.wandenreichTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.wandenreichDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
-                  <span class="stat-value race-quincy">Quincy</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
+                  <span class="stat-value race-quincy">{{ $t('wikiPage.quincyTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-high">High</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-high">{{ $t('wikiPage.dangerHigh') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>Quincy headquarters</li>
-                  <li>Advanced training facilities</li>
-                  <li>Spirit weapon mastery</li>
-                  <li>Vollständig chambers</li>
+                  <li>{{ $t('wikiPage.wandenreichFeature1') }}</li>
+                  <li>{{ $t('wikiPage.wandenreichFeature2') }}</li>
+                  <li>{{ $t('wikiPage.wandenreichFeature3') }}</li>
+                  <li>{{ $t('wikiPage.wandenreichFeature4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="location-card">
-              <h3 class="location-title">Hell</h3>
-              <p class="location-description">
-                The ultimate endgame location in Type Soul Wiki. Where players achieve True Bankai,
-                True Segunda, and Sklavrei.
-              </p>
+              <h3 class="location-title">{{ $t('wikiPage.hellTitle') }}</h3>
+              <p class="location-description">{{ $t('wikiPage.hellDesc') }}</p>
               <div class="location-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Primary Race:</span>
-                  <span class="stat-value race-all">All</span>
+                  <span class="stat-label">{{ $t('wikiPage.primaryRace') }}</span>
+                  <span class="stat-value race-all">{{ $t('wikiPage.raceAll') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Danger Level:</span>
-                  <span class="stat-value danger-extreme">Extreme</span>
+                  <span class="stat-label">{{ $t('wikiPage.dangerLevel') }}</span>
+                  <span class="stat-value danger-extreme">{{ $t('wikiPage.dangerExtreme') }}</span>
                 </div>
               </div>
               <div class="location-features">
-                <h4>Notable Features:</h4>
+                <h4>{{ $t('wikiPage.notableFeatures') }}</h4>
                 <ul>
-                  <li>True form achievements</li>
-                  <li>Ultimate transformations</li>
-                  <li>Endgame challenges</li>
-                  <li>Legendary rewards</li>
+                  <li>{{ $t('wikiPage.hellFeature1') }}</li>
+                  <li>{{ $t('wikiPage.hellFeature2') }}</li>
+                  <li>{{ $t('wikiPage.hellFeature3') }}</li>
+                  <li>{{ $t('wikiPage.hellFeature4') }}</li>
                 </ul>
               </div>
             </div>
@@ -348,176 +311,155 @@
     <section class="abilities-section" id="abilities">
       <div class="container">
         <div class="abilities-wrap">
-          <h2 class="section-title">Type Soul Wiki Abilities & Powers</h2>
-          <p class="section-description">
-            Master the powerful abilities and transformations available in Type Soul. Each ability
-            offers unique advantages and requires specific conditions to unlock.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.abilitiesTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.abilitiesDesc') }}</p>
           <div class="abilities-grid">
             <div class="ability-card">
               <div class="ability-icon">⚔️</div>
-              <h3 class="ability-title">Shikai</h3>
-              <p class="ability-description">
-                The initial release of a Soul Reaper's Zanpakuto. Essential progression step in Type
-                Soul Wiki guides.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.shikaiTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.shikaiDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-soul-reaper">Soul Reaper</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-soul-reaper">{{ $t('wikiPage.soulReaperTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-medium">Medium</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-medium">{{ $t('wikiPage.powerMedium') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Reach Grade 2</li>
-                  <li>Complete Inner World trial</li>
-                  <li>Defeat Zanpakuto spirit</li>
-                  <li>Learn release command</li>
+                  <li>{{ $t('wikiPage.shikaiReq1') }}</li>
+                  <li>{{ $t('wikiPage.shikaiReq2') }}</li>
+                  <li>{{ $t('wikiPage.shikaiReq3') }}</li>
+                  <li>{{ $t('wikiPage.shikaiReq4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="ability-card">
               <div class="ability-icon">🗡️</div>
-              <h3 class="ability-title">Bankai</h3>
-              <p class="ability-description">
-                The ultimate form of Zanpakuto release. True Bankai available in Hell according to
-                Type Soul Wiki.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.bankaiTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.bankaiDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-soul-reaper">Soul Reaper</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-soul-reaper">{{ $t('wikiPage.soulReaperTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-very-high">Very High</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-very-high">{{ $t('wikiPage.powerVeryHigh') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Master Shikai form</li>
-                  <li>Complete Bankai trials</li>
-                  <li>High spiritual pressure</li>
-                  <li>Advanced combat experience</li>
+                  <li>{{ $t('wikiPage.bankaiReq1') }}</li>
+                  <li>{{ $t('wikiPage.bankaiReq2') }}</li>
+                  <li>{{ $t('wikiPage.bankaiReq3') }}</li>
+                  <li>{{ $t('wikiPage.bankaiReq4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="ability-card">
               <div class="ability-icon">💀</div>
-              <h3 class="ability-title">Resurrection</h3>
-              <p class="ability-description">
-                Arrancar's release form. Segunda Etapa is the advanced stage covered in Type Soul
-                Wiki.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.resurrectionTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.resurrectionDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-arrancar">Arrancar</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-arrancar">{{ $t('wikiPage.arrancarTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-high">High</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-high">{{ $t('wikiPage.powerHigh') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Become Arrancar</li>
-                  <li>Complete resurrection trials</li>
-                  <li>High Hollow power</li>
-                  <li>Master Cero techniques</li>
+                  <li>{{ $t('wikiPage.resurrectionReq1') }}</li>
+                  <li>{{ $t('wikiPage.resurrectionReq2') }}</li>
+                  <li>{{ $t('wikiPage.resurrectionReq3') }}</li>
+                  <li>{{ $t('wikiPage.resurrectionReq4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="ability-card">
               <div class="ability-icon">🏹</div>
-              <h3 class="ability-title">Vollständig</h3>
-              <p class="ability-description">
-                Quincy's ultimate transformation. Powerful angelic form detailed in Type Soul Wiki
-                progression.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.vollstandigTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.vollstandigDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-quincy">Quincy</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-quincy">{{ $t('wikiPage.quincyTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-very-high">Very High</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-very-high">{{ $t('wikiPage.powerVeryHigh') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Master Spirit Weapon</li>
-                  <li>High Reishi manipulation</li>
-                  <li>Complete Quincy trials</li>
-                  <li>Advanced spiritual pressure</li>
+                  <li>{{ $t('wikiPage.vollstandigReq1') }}</li>
+                  <li>{{ $t('wikiPage.vollstandigReq2') }}</li>
+                  <li>{{ $t('wikiPage.vollstandigReq3') }}</li>
+                  <li>{{ $t('wikiPage.vollstandigReq4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="ability-card">
               <div class="ability-icon">💎</div>
-              <h3 class="ability-title">Twin Soul Mode</h3>
-              <p class="ability-description">
-                Fullbringer's unique transformation. Three-stage progression system in Type Soul
-                Wiki.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.twinSoulTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.twinSoulDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-fullbringer">Fullbringer</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-fullbringer">{{ $t('wikiPage.fullbringerTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-high">High</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-high">{{ $t('wikiPage.powerHigh') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Master object manipulation</li>
-                  <li>Complete Twin Soul trials</li>
-                  <li>High spiritual awareness</li>
-                  <li>Unique minigame mastery</li>
+                  <li>{{ $t('wikiPage.twinSoulReq1') }}</li>
+                  <li>{{ $t('wikiPage.twinSoulReq2') }}</li>
+                  <li>{{ $t('wikiPage.twinSoulReq3') }}</li>
+                  <li>{{ $t('wikiPage.twinSoulReq4') }}</li>
                 </ul>
               </div>
             </div>
 
             <div class="ability-card">
               <div class="ability-icon">✨</div>
-              <h3 class="ability-title">Kido Mastery</h3>
-              <p class="ability-description">
-                Soul Reaper spell casting abilities. Essential for combat and utility in Type Soul
-                Wiki.
-              </p>
+              <h3 class="ability-title">{{ $t('wikiPage.kidoTitle') }}</h3>
+              <p class="ability-description">{{ $t('wikiPage.kidoDesc') }}</p>
               <div class="ability-stats">
                 <div class="stat-item">
-                  <span class="stat-label">Race:</span>
-                  <span class="stat-value race-soul-reaper">Soul Reaper</span>
+                  <span class="stat-label">{{ $t('wikiPage.raceLabel') }}</span>
+                  <span class="stat-value race-soul-reaper">{{ $t('wikiPage.soulReaperTitle') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Power Level:</span>
-                  <span class="stat-value power-medium-high">Medium-High</span>
+                  <span class="stat-label">{{ $t('wikiPage.powerLevelLabel') }}</span>
+                  <span class="stat-value power-medium-high">{{ $t('wikiPage.powerMediumHigh') }}</span>
                 </div>
               </div>
               <div class="ability-requirements">
-                <h4>Requirements:</h4>
+                <h4>{{ $t('wikiPage.requirementsLabel') }}</h4>
                 <ul>
-                  <li>Complete Kido training</li>
-                  <li>Master incantations</li>
-                  <li>High spiritual pressure</li>
-                  <li>Practice spell casting</li>
+                  <li>{{ $t('wikiPage.kidoReq1') }}</li>
+                  <li>{{ $t('wikiPage.kidoReq2') }}</li>
+                  <li>{{ $t('wikiPage.kidoReq3') }}</li>
+                  <li>{{ $t('wikiPage.kidoReq4') }}</li>
                 </ul>
               </div>
             </div>
@@ -530,136 +472,116 @@
     <section class="mechanics-section" id="mechanics">
       <div class="container">
         <div class="mechanics-wrap">
-          <h2 class="section-title">Type Soul Wiki Game Mechanics</h2>
-          <p class="section-description">
-            Understanding the core game mechanics is crucial for mastering Type Soul. Learn about
-            progression, combat, and customization systems.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.mechanicsTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.mechanicsDesc') }}</p>
           <div class="mechanics-grid">
             <div class="mechanic-card">
-              <h3 class="mechanic-title">Progression System</h3>
-              <p class="mechanic-description">
-                Understanding the grade and advancement system in Type Soul Wiki is crucial for
-                character development.
-              </p>
+              <h3 class="mechanic-title">{{ $t('wikiPage.progressionSystemTitle') }}</h3>
+              <p class="mechanic-description">{{ $t('wikiPage.progressionSystemDesc') }}</p>
               <div class="mechanic-features">
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Grade System</h4>
-                    <p>
-                      Progress from Grade 5 to Grade 1, unlocking new abilities and areas at each
-                      level.
-                    </p>
+                    <h4>{{ $t('wikiPage.gradeSystemTitle') }}</h4>
+                    <p>{{ $t('wikiPage.gradeSystemDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Mission Boards</h4>
-                    <p>
-                      Complete missions to gain experience, items, and progression towards next
-                      grade.
-                    </p>
+                    <h4>{{ $t('wikiPage.missionBoardsTitle') }}</h4>
+                    <p>{{ $t('wikiPage.missionBoardsDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Inner World Trials</h4>
-                    <p>Face your inner spirit to unlock powerful transformations and abilities.</p>
+                    <h4>{{ $t('wikiPage.innerWorldTrialsTitle') }}</h4>
+                    <p>{{ $t('wikiPage.innerWorldTrialsDesc') }}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="mechanic-card">
-              <h3 class="mechanic-title">Combat Mechanics</h3>
-              <p class="mechanic-description">
-                Master the combat system detailed in Type Soul Wiki to dominate battles.
-              </p>
+              <h3 class="mechanic-title">{{ $t('wikiPage.combatMechanicsTitle') }}</h3>
+              <p class="mechanic-description">{{ $t('wikiPage.combatMechanicsDesc') }}</p>
               <div class="mechanic-features">
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Reiatsu System</h4>
-                    <p>
-                      Manage your spiritual pressure for powerful attacks and defensive techniques.
-                    </p>
+                    <h4>{{ $t('wikiPage.reiatsuSystemTitle') }}</h4>
+                    <p>{{ $t('wikiPage.reiatsuSystemDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Combo System</h4>
-                    <p>Chain attacks together for maximum damage and style points.</p>
+                    <h4>{{ $t('wikiPage.comboSystemTitle') }}</h4>
+                    <p>{{ $t('wikiPage.comboSystemDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Blocking & Parrying</h4>
-                    <p>Time your defensive moves perfectly to counter enemy attacks.</p>
+                    <h4>{{ $t('wikiPage.blockingParryingTitle') }}</h4>
+                    <p>{{ $t('wikiPage.blockingParryingDesc') }}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="mechanic-card">
-              <h3 class="mechanic-title">PvP & Raids</h3>
-              <p class="mechanic-description">
-                Competitive aspects of Type Soul Wiki including ranked matches and clan wars.
-              </p>
+              <h3 class="mechanic-title">{{ $t('wikiPage.pvpRaidsTitle') }}</h3>
+              <p class="mechanic-description">{{ $t('wikiPage.pvpRaidsDesc') }}</p>
               <div class="mechanic-features">
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Ranked Battles</h4>
-                    <p>Compete against other players to climb the leaderboards and earn rewards.</p>
+                    <h4>{{ $t('wikiPage.rankedBattlesTitle') }}</h4>
+                    <p>{{ $t('wikiPage.rankedBattlesDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Clan Wars</h4>
-                    <p>Participate in large-scale battles between different clans for supremacy.</p>
+                    <h4>{{ $t('wikiPage.clanWarsTitle') }}</h4>
+                    <p>{{ $t('wikiPage.clanWarsDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Tournament Mode</h4>
-                    <p>Compete in organized tournaments for exclusive rewards and recognition.</p>
+                    <h4>{{ $t('wikiPage.tournamentModeTitle') }}</h4>
+                    <p>{{ $t('wikiPage.tournamentModeDesc') }}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="mechanic-card">
-              <h3 class="mechanic-title">Customization</h3>
-              <p class="mechanic-description">
-                Character and equipment customization options covered in Type Soul Wiki.
-              </p>
+              <h3 class="mechanic-title">{{ $t('wikiPage.customizationTitle') }}</h3>
+              <p class="mechanic-description">{{ $t('wikiPage.customizationDesc') }}</p>
               <div class="mechanic-features">
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Character Creation</h4>
-                    <p>Customize your appearance, choose your starting race and initial stats.</p>
+                    <h4>{{ $t('wikiPage.characterCreationTitle') }}</h4>
+                    <p>{{ $t('wikiPage.characterCreationDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Skill Trees</h4>
-                    <p>Allocate skill points to unlock new abilities and enhance existing ones.</p>
+                    <h4>{{ $t('wikiPage.skillTreesTitle') }}</h4>
+                    <p>{{ $t('wikiPage.skillTreesDesc') }}</p>
                   </div>
                 </div>
                 <div class="feature-item">
                   <div class="feature-line"></div>
                   <div class="feature-content">
-                    <h4>Equipment System</h4>
-                    <p>Collect and upgrade weapons, armor, and accessories to boost your power.</p>
+                    <h4>{{ $t('wikiPage.equipmentSystemTitle') }}</h4>
+                    <p>{{ $t('wikiPage.equipmentSystemDesc') }}</p>
                   </div>
                 </div>
               </div>
@@ -673,42 +595,31 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-wrap">
-          <h2 class="section-title">About Type Soul Wiki</h2>
-          <p class="section-description">
-            Our comprehensive wiki provides detailed information about all aspects of Type Soul,
-            helping you master every element of the game.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.aboutTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.aboutDesc') }}</p>
           <div class="about-content">
             <div class="about-text">
-              <h3>Complete Game Guide</h3>
-              <p>
-                The Type Soul Wiki is your ultimate resource for mastering the spiritual world.
-                Whether you're a beginner starting your journey or an experienced player looking to
-                optimize your build, our guides cover everything you need to know.
-              </p>
-              <h3>Regular Updates</h3>
-              <p>
-                We continuously update our wiki with the latest information from game updates,
-                community discoveries, and developer insights. Stay ahead of the meta with our
-                up-to-date guides and strategies.
-              </p>
+              <h3>{{ $t('wikiPage.completeGuideTitle') }}</h3>
+              <p>{{ $t('wikiPage.completeGuideText') }}</p>
+              <h3>{{ $t('wikiPage.regularUpdatesTitle') }}</h3>
+              <p>{{ $t('wikiPage.regularUpdatesText') }}</p>
             </div>
           </div>
           <div class="about-features">
             <div class="feature-item">
               <div class="feature-icon">📚</div>
-              <h4>Comprehensive Guides</h4>
-              <p>Detailed information on all game aspects</p>
+              <h4>{{ $t('wikiPage.comprehensiveGuidesTitle') }}</h4>
+              <p>{{ $t('wikiPage.comprehensiveGuidesDesc') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">🔄</div>
-              <h4>Regular Updates</h4>
-              <p>Always current with latest game changes</p>
+              <h4>{{ $t('wikiPage.regularUpdatesShortTitle') }}</h4>
+              <p>{{ $t('wikiPage.regularUpdatesShortDesc') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">👥</div>
-              <h4>Community Driven</h4>
-              <p>Built by and for the Type Soul community</p>
+              <h4>{{ $t('wikiPage.communityDrivenTitle') }}</h4>
+              <p>{{ $t('wikiPage.communityDrivenDesc') }}</p>
             </div>
           </div>
         </div>
@@ -719,55 +630,37 @@
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="faq-wrap">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-description">
-            Common questions about Type Soul mechanics, strategies, and progression.
-          </p>
+          <h2 class="section-title">{{ $t('wikiPage.faqTitle') }}</h2>
+          <p class="section-description">{{ $t('wikiPage.faqDesc') }}</p>
           <div class="faq-content">
             <div class="faq-list">
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">❓</span>
-                  Which race should I choose as a beginner?
+                  {{ $t('wikiPage.faq1Question') }}
                 </h3>
-                <p class="faq-answer">
-                  Soul Reaper is the most beginner-friendly race due to its balanced stats and
-                  versatile abilities. Arrancar is also good for beginners who prefer a more
-                  aggressive playstyle.
-                </p>
+                <p class="faq-answer">{{ $t('wikiPage.faq1Answer') }}</p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">⚔️</span>
-                  How do I unlock Shikai and Bankai?
+                  {{ $t('wikiPage.faq2Question') }}
                 </h3>
-                <p class="faq-answer">
-                  To unlock Shikai, reach Grade 2, complete the Inner World trial, and defeat your
-                  Zanpakuto spirit. Bankai requires mastering Shikai and completing advanced trials
-                  with high spiritual pressure.
-                </p>
+                <p class="faq-answer">{{ $t('wikiPage.faq2Answer') }}</p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🌍</span>
-                  What's the best location for grinding experience?
+                  {{ $t('wikiPage.faq3Question') }}
                 </h3>
-                <p class="faq-answer">
-                  Soul Society is great for early game grinding, while Hueco Mundo offers
-                  higher-level challenges. Hell provides the best rewards but requires significant
-                  preparation and skill.
-                </p>
+                <p class="faq-answer">{{ $t('wikiPage.faq3Answer') }}</p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">💪</span>
-                  How do I improve my spiritual pressure?
+                  {{ $t('wikiPage.faq4Question') }}
                 </h3>
-                <p class="faq-answer">
-                  Spiritual pressure increases through combat, completing missions, and progressing
-                  through the grade system. Focus on training and challenging stronger opponents to
-                  grow your power.
-                </p>
+                <p class="faq-answer">{{ $t('wikiPage.faq4Answer') }}</p>
               </div>
             </div>
           </div>
@@ -781,8 +674,18 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+// SEO
+const { updateSEO } = useSEO('wikiPage', { canonical: route.path })
 
 // 平滑滚动到指定区域
 const scrollToSection = (sectionId) => {
@@ -794,6 +697,16 @@ const scrollToSection = (sectionId) => {
     })
   }
 }
+
+// 生命周期
+onMounted(() => {
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
+})
 </script>
 
 <style scoped>

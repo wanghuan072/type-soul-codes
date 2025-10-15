@@ -10,21 +10,24 @@
         <!-- Desktop Navigation -->
         <nav class="desktop-nav">
           <a href="/" class="nav-link">
-            Home
+            {{ $t('nav.home') }}
           </a>
           <a href="/type-soul-emotes" class="nav-link">
-            Emotes
+            {{ $t('nav.emotes') }}
           </a>
           <a href="/type-soul-wiki" class="nav-link">
-            Wiki
+            {{ $t('nav.wiki') }}
           </a>
           <a href="/type-soul-guides" class="nav-link">
-            Guides
+            {{ $t('nav.guides') }}
           </a>
           <a href="/blog" class="nav-link">
-            Blog
+            {{ $t('nav.blog') }}
           </a>
         </nav>
+
+        <!-- Language Switcher -->
+        <LanguageSwitcher />
 
         <!-- Mobile Menu Button -->
         <button
@@ -55,20 +58,25 @@
       </div>
       <div class="mobile-nav-links">
         <a href="/" class="mobile-nav-link" @click="closeMobileMenu">
-          Home
+          {{ $t('nav.home') }}
         </a>
         <a href="/type-soul-emotes" class="mobile-nav-link" @click="closeMobileMenu">
-          Emotes
+          {{ $t('nav.emotes') }}
         </a>
         <a href="/type-soul-wiki" class="mobile-nav-link" @click="closeMobileMenu">
-          Wiki
+          {{ $t('nav.wiki') }}
         </a>
         <a href="/type-soul-guides" class="mobile-nav-link" @click="closeMobileMenu">
-          Guides
+          {{ $t('nav.guides') }}
         </a>
         <a href="/blog" class="mobile-nav-link" @click="closeMobileMenu">
-          Blog
+          {{ $t('nav.blog') }}
         </a>
+        
+        <!-- Language Switcher in Mobile Menu -->
+        <div class="mobile-language-switcher">
+          <LanguageSwitcher />
+        </div>
       </div>
     </nav>
   </section>
@@ -76,6 +84,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const isMobileMenuOpen = ref(false)
 
@@ -108,6 +117,7 @@ const closeMobileMenu = () => {
   padding: 20px 0;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .logo {
@@ -392,5 +402,12 @@ const closeMobileMenu = () => {
   .logo-text {
     font-size: 22px;
   }
+}
+
+/* Mobile Language Switcher */
+.mobile-language-switcher {
+  padding: 20px 25px;
+  border-top: 1px solid rgba(155, 89, 182, 0.3);
+  margin-top: 20px;
 }
 </style>

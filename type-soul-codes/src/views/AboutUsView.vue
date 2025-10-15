@@ -6,8 +6,8 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="hero-title">About Us</h1>
-          <p class="hero-description">Your trusted source for Type Soul codes and guides</p>
+          <h1 class="hero-title">{{ $t('aboutUsPage.title') }}</h1>
+          <p class="hero-description">{{ $t('aboutUsPage.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -16,82 +16,41 @@
     <section class="content">
       <div class="container">
         <div class="content-wrapper">
-          <h2>Who We Are</h2>
-          <p>
-            typesoulcodes.org is the leading platform for Type Soul game codes, guides, and
-            community resources. We are passionate gamers dedicated to helping the Type Soul
-            community access the latest codes and improve their gaming experience.
-          </p>
+          <h2>{{ $t('aboutUsPage.whoWeAreTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.whoWeAreText') }}</p>
 
-          <h2>Our Mission</h2>
-          <p>
-            Our mission is to provide Type Soul players with accurate, up-to-date information about
-            game codes, strategies, and community resources. We strive to be the most reliable
-            source for Type Soul content, ensuring our users have access to the latest working codes
-            and comprehensive guides.
-          </p>
+          <h2>{{ $t('aboutUsPage.ourMissionTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.ourMissionText') }}</p>
 
-          <h2>What We Offer</h2>
+          <h2>{{ $t('aboutUsPage.whatWeOfferTitle') }}</h2>
           <ul>
-            <li><strong>Active Codes:</strong> Daily updated list of working Type Soul codes</li>
-            <li>
-              <strong>Game Guides:</strong> Comprehensive guides for all aspects of Type Soul
-              gameplay
-            </li>
-            <li>
-              <strong>Emotes List:</strong> Complete collection of available emotes and commands
-            </li>
-            <li>
-              <strong>Wiki Resources:</strong> Detailed information about races, locations, and
-              abilities
-            </li>
-            <li>
-              <strong>Community Blog:</strong> Latest news, tips, and strategies from experienced
-              players
-            </li>
+            <li><strong>{{ $t('aboutUsPage.offer1') }}</strong> {{ $t('aboutUsPage.offer1Desc') }}</li>
+            <li><strong>{{ $t('aboutUsPage.offer2') }}</strong> {{ $t('aboutUsPage.offer2Desc') }}</li>
+            <li><strong>{{ $t('aboutUsPage.offer3') }}</strong> {{ $t('aboutUsPage.offer3Desc') }}</li>
+            <li><strong>{{ $t('aboutUsPage.offer4') }}</strong> {{ $t('aboutUsPage.offer4Desc') }}</li>
+            <li><strong>{{ $t('aboutUsPage.offer5') }}</strong> {{ $t('aboutUsPage.offer5Desc') }}</li>
           </ul>
 
-          <h2>Our Commitment</h2>
+          <h2>{{ $t('aboutUsPage.ourCommitmentTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.ourCommitmentText') }}</p>
+
+          <h2>{{ $t('aboutUsPage.communityFocusTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.communityFocusText') }}</p>
+
+          <h2>{{ $t('aboutUsPage.qualityAssuranceTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.qualityAssuranceText') }}</p>
+
+          <h2>{{ $t('aboutUsPage.regularUpdatesTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.regularUpdatesText') }}</p>
+
+          <h2>{{ $t('aboutUsPage.contactUsTitle') }}</h2>
           <p>
-            We are committed to providing accurate, reliable, and up-to-date information. Our team
-            works around the clock to verify codes, update guides, and ensure our content remains
-            current with the latest game updates.
+            {{ $t('aboutUsPage.contactUsText') }}
+            <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a> {{ $t('aboutUsPage.contactUsText2') }}
           </p>
 
-          <h2>Community Focus</h2>
-          <p>
-            We believe in fostering a positive and helpful community. Our platform is designed to
-            bring Type Soul players together, share knowledge, and enhance everyone's gaming
-            experience.
-          </p>
-
-          <h2>Quality Assurance</h2>
-          <p>
-            Every code we publish is thoroughly tested and verified before being added to our
-            database. We maintain a 99.9% success rate for our code recommendations, ensuring our
-            users can trust the information we provide.
-          </p>
-
-          <h2>Regular Updates</h2>
-          <p>
-            We update our content daily to ensure you always have access to the latest working codes
-            and most current game information. Our team monitors game updates and community feedback
-            to keep our resources fresh and relevant.
-          </p>
-
-          <h2>Contact Us</h2>
-          <p>
-            Have questions, suggestions, or feedback? We'd love to hear from you! Contact us at
-            <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a> and we'll get back
-            to you as soon as possible.
-          </p>
-
-          <h2>Join Our Community</h2>
-          <p>
-            Stay connected with the Type Soul community by following our updates and sharing your
-            experiences. Together, we can make the Type Soul gaming experience even better for
-            everyone.
-          </p>
+          <h2>{{ $t('aboutUsPage.joinCommunityTitle') }}</h2>
+          <p>{{ $t('aboutUsPage.joinCommunityText') }}</p>
         </div>
       </div>
     </section>
@@ -102,8 +61,28 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+// SEO
+const { updateSEO } = useSEO('aboutUsPage', { canonical: route.path })
+
+// 生命周期
+onMounted(() => {
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
+})
 </script>
 
 <style scoped>

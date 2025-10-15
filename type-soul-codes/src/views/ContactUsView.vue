@@ -7,8 +7,8 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="page-title">Contact Us</h1>
-          <p class="page-subtitle">Get in touch with our team</p>
+          <h1 class="page-title">{{ $t('contactUsPage.title') }}</h1>
+          <p class="page-subtitle">{{ $t('contactUsPage.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -19,94 +19,66 @@
     <section class="content">
       <div class="container">
         <div class="content-wrapper">
-          <h2>Get in Touch</h2>
-          <p>
-            We'd love to hear from you! Whether you have questions about our services, suggestions
-            for improvement, or just want to say hello, we're here to help.
-          </p>
+          <h2>{{ $t('contactUsPage.getInTouchTitle') }}</h2>
+          <p>{{ $t('contactUsPage.getInTouchText') }}</p>
 
-          <h2>Contact Information</h2>
+          <h2>{{ $t('contactUsPage.contactInfoTitle') }}</h2>
           <div class="contact-info">
             <div class="contact-item">
-              <h3>Email</h3>
+              <h3>{{ $t('contactUsPage.emailLabel') }}</h3>
               <p><a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a></p>
-              <p>We typically respond within 24 hours</p>
+              <p>{{ $t('contactUsPage.emailResponse') }}</p>
             </div>
 
             <div class="contact-item">
-              <h3>Response Time</h3>
-              <p>Monday - Friday: Within 24 hours</p>
-              <p>Weekends: Within 48 hours</p>
+              <h3>{{ $t('contactUsPage.responseTimeLabel') }}</h3>
+              <p>{{ $t('contactUsPage.responseWeekdays') }}</p>
+              <p>{{ $t('contactUsPage.responseWeekends') }}</p>
             </div>
           </div>
 
-          <h2>What We Can Help With</h2>
+          <h2>{{ $t('contactUsPage.whatWeCanHelpTitle') }}</h2>
           <ul>
-            <li>
-              <strong>Code Issues:</strong> If you're having trouble with a code that should be
-              working
-            </li>
-            <li><strong>Website Feedback:</strong> Suggestions for improving our platform</li>
-            <li><strong>Content Requests:</strong> Ideas for new guides or resources</li>
-            <li><strong>Technical Support:</strong> Help with website functionality</li>
-            <li><strong>Partnership Inquiries:</strong> Collaboration opportunities</li>
-            <li>
-              <strong>General Questions:</strong> Anything else related to Type Soul or our services
-            </li>
+            <li><strong>{{ $t('contactUsPage.help1') }}</strong> {{ $t('contactUsPage.help1Desc') }}</li>
+            <li><strong>{{ $t('contactUsPage.help2') }}</strong> {{ $t('contactUsPage.help2Desc') }}</li>
+            <li><strong>{{ $t('contactUsPage.help3') }}</strong> {{ $t('contactUsPage.help3Desc') }}</li>
+            <li><strong>{{ $t('contactUsPage.help4') }}</strong> {{ $t('contactUsPage.help4Desc') }}</li>
+            <li><strong>{{ $t('contactUsPage.help5') }}</strong> {{ $t('contactUsPage.help5Desc') }}</li>
+            <li><strong>{{ $t('contactUsPage.help6') }}</strong> {{ $t('contactUsPage.help6Desc') }}</li>
           </ul>
 
-          <h2>Before You Contact Us</h2>
-          <p>
-            To help us provide the best assistance, please include the following information in your
-            email:
-          </p>
+          <h2>{{ $t('contactUsPage.beforeContactTitle') }}</h2>
+          <p>{{ $t('contactUsPage.beforeContactText') }}</p>
           <ul>
-            <li>Your specific question or issue</li>
-            <li>Any error messages you're seeing</li>
-            <li>Steps you've already tried</li>
-            <li>Your device and browser information (if relevant)</li>
+            <li>{{ $t('contactUsPage.beforeContact1') }}</li>
+            <li>{{ $t('contactUsPage.beforeContact2') }}</li>
+            <li>{{ $t('contactUsPage.beforeContact3') }}</li>
+            <li>{{ $t('contactUsPage.beforeContact4') }}</li>
           </ul>
 
-          <h2>Frequently Asked Questions</h2>
+          <h2>{{ $t('contactUsPage.faqTitle') }}</h2>
           <div class="faq-section">
             <div class="faq-item">
-              <h4>How often do you update codes?</h4>
-              <p>
-                We update our code database daily to ensure accuracy and provide the latest working
-                codes.
-              </p>
+              <h4>{{ $t('contactUsPage.faq1Question') }}</h4>
+              <p>{{ $t('contactUsPage.faq1Answer') }}</p>
             </div>
 
             <div class="faq-item">
-              <h4>Are your codes safe to use?</h4>
-              <p>
-                Yes, all codes we publish are verified and obtained through legitimate channels. We
-                never promote or share hacked or exploit codes.
-              </p>
+              <h4>{{ $t('contactUsPage.faq2Question') }}</h4>
+              <p>{{ $t('contactUsPage.faq2Answer') }}</p>
             </div>
 
             <div class="faq-item">
-              <h4>Can I suggest new content?</h4>
-              <p>
-                Absolutely! We welcome suggestions for new guides, features, or improvements. Send
-                us your ideas!
-              </p>
+              <h4>{{ $t('contactUsPage.faq3Question') }}</h4>
+              <p>{{ $t('contactUsPage.faq3Answer') }}</p>
             </div>
           </div>
 
-          <h2>Business Hours</h2>
-          <p>
-            Our team is available Monday through Friday, 9:00 AM to 6:00 PM (EST). While we may
-            respond outside these hours, please allow up to 24-48 hours for a response during
-            weekends and holidays.
-          </p>
+          <h2>{{ $t('contactUsPage.businessHoursTitle') }}</h2>
+          <p>{{ $t('contactUsPage.businessHoursText') }}</p>
 
-          <h2>Privacy</h2>
-          <p>
-            We respect your privacy and will never share your personal information with third
-            parties. All communications are kept confidential and used only to provide you with the
-            best possible service.
-          </p>
+          <h2>{{ $t('contactUsPage.privacyTitle') }}</h2>
+          <p>{{ $t('contactUsPage.privacyText') }}</p>
 
           <h2>Thank You</h2>
           <p>
@@ -123,8 +95,28 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+// SEO
+const { updateSEO } = useSEO('contactUsPage', { canonical: route.path })
+
+// 生命周期
+onMounted(() => {
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
+})
 </script>
 
 <style scoped>

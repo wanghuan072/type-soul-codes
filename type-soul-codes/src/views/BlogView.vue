@@ -6,11 +6,10 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="main-title">Type Soul Blog</h1>
+          <h1 class="main-title">{{ $t('blogPage.heroTitle') }}</h1>
           <p class="hero-description">
-              Stay updated with the latest Type Soul news, guides, strategies, and community
-              insights on our Type Soul Blog. Your ultimate source for everything Type Soul.
-            </p>
+            {{ $t('blogPage.heroDescription') }}
+          </p>
         </div>
       </div>
     </section>
@@ -19,17 +18,23 @@
     <section class="blog-posts" id="blog-list">
       <div class="container">
         <div class="blog-wrap">
-          <h2 class="section-title">Latest Type Soul Blog Posts</h2>
+          <h2 class="section-title">{{ $t('blogPage.sectionTitle') }}</h2>
           <p class="section-description">
-            Discover our comprehensive Type Soul Blog collection of guides, strategies, and community
-            content.
+            {{ $t('blogPage.sectionDescription') }}
           </p>
-          <div class="posts-grid">
+          
+          <!-- Loading State -->
+          <div v-if="loading" class="loading">{{ $t('common.loading') }}</div>
+          
+          <!-- Error State -->
+          <div v-else-if="error" class="error">{{ $t('common.error') }}</div>
+          
+          <div v-else class="posts-grid">
             <div v-for="post in blogPosts" :key="post.id" class="post-card" @click="viewPost(post)">
               <div class="post-image">
                 <img :src="post.imageUrl" :alt="post.imageAlt" />
                 <div class="post-overlay">
-                  <span class="read-more">Read More</span>
+                  <span class="read-more">{{ $t('blogPage.readMore') }}</span>
                 </div>
               </div>
               <div class="post-content">
@@ -39,8 +44,8 @@
                 <h3 class="post-title">{{ post.title }}</h3>
                 <p class="post-description">{{ post.description }}</p>
                 <div class="post-tags">
-                  <span class="tag">Guide</span>
-                  <span class="tag">Strategy</span>
+                  <span class="tag">{{ $t('blogPage.guideTag') }}</span>
+                  <span class="tag">{{ $t('blogPage.strategyTag') }}</span>
                 </div>
               </div>
             </div>
@@ -53,42 +58,33 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-wrap">
-          <h2 class="section-title">About Our Type Soul Blog</h2>
+          <h2 class="section-title">{{ $t('blogPage.aboutTitle') }}</h2>
           <p class="section-description">
-            Our Type Soul Blog is dedicated to providing high-quality content that helps players
-            improve their gameplay and stay informed about the latest developments.
+            {{ $t('blogPage.aboutDescription') }}
           </p>
           <div class="about-content">
             <div class="about-text">
-              <h3>Quality Type Soul Blog Content</h3>
-              <p>
-                Every Type Soul Blog article is carefully researched and written by experienced Type Soul players
-                and community experts. We focus on providing accurate, up-to-date information that
-                actually helps you improve your gameplay.
-              </p>
-              <h3>Regular Type Soul Blog Updates</h3>
-              <p>
-                We publish new Type Soul Blog content regularly, covering everything from beginner guides to
-                advanced strategies, meta analysis, and community highlights. Stay tuned for the
-                latest insights and tips on our Type Soul Blog.
-              </p>
+              <h3>{{ $t('blogPage.qualityContentTitle') }}</h3>
+              <p>{{ $t('blogPage.qualityContentDesc') }}</p>
+              <h3>{{ $t('blogPage.regularUpdatesTitle') }}</h3>
+              <p>{{ $t('blogPage.regularUpdatesDesc') }}</p>
             </div>
           </div>
           <div class="about-features">
             <div class="feature-item">
               <div class="feature-icon">📝</div>
-              <h4>Expert Type Soul Blog Writers</h4>
-              <p>Content by experienced players</p>
+              <h4>{{ $t('blogPage.expertWriters') }}</h4>
+              <p>{{ $t('blogPage.expertWritersDesc') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">🔄</div>
-              <h4>Regular Updates</h4>
-              <p>Fresh content every week</p>
+              <h4>{{ $t('blogPage.regularUpdates') }}</h4>
+              <p>{{ $t('blogPage.regularUpdatesShort') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">💡</div>
-              <h4>Pro Tips</h4>
-              <p>Advanced strategies and insights</p>
+              <h4>{{ $t('blogPage.proTips') }}</h4>
+              <p>{{ $t('blogPage.proTipsDesc') }}</p>
             </div>
           </div>
         </div>
@@ -99,53 +95,46 @@
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="faq-wrap">
-          <h2 class="section-title">Type Soul Blog FAQ</h2>
+          <h2 class="section-title">{{ $t('blogPage.faqTitle') }}</h2>
           <p class="section-description">
-            Common questions about our Type Soul Blog content and how to get the most out of our guides.
+            {{ $t('blogPage.faqDescription') }}
           </p>
           <div class="faq-content">
             <div class="faq-list">
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">❓</span>
-                  How often do you publish new Type Soul Blog posts?
+                  {{ $t('blogPage.faq1Question') }}
                 </h3>
                 <p class="faq-answer">
-                  We publish new Type Soul Blog content weekly, with additional posts during major game updates or
-                  when significant meta changes occur. Subscribe to our Type Soul Blog updates to never miss a new
-                  post.
+                  {{ $t('blogPage.faq1Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">📚</span>
-                  What types of content does our Type Soul Blog cover?
+                  {{ $t('blogPage.faq2Question') }}
                 </h3>
                 <p class="faq-answer">
-                  Our Type Soul Blog covers beginner guides, advanced strategies, meta analysis, character
-                  builds, PvP tactics, PvE guides, community highlights, and game updates. We aim to
-                  provide comprehensive coverage of all aspects of Type Soul through our Type Soul Blog.
+                  {{ $t('blogPage.faq2Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">👥</span>
-                  Can I contribute to our Type Soul Blog?
+                  {{ $t('blogPage.faq3Question') }}
                 </h3>
                 <p class="faq-answer">
-                  We welcome contributions from experienced players to our Type Soul Blog! If you have unique insights,
-                  strategies, or guides you'd like to share on our Type Soul Blog, please contact us through our community
-                  channels.
+                  {{ $t('blogPage.faq3Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🔍</span>
-                  How do I find specific topics on our Type Soul Blog?
+                  {{ $t('blogPage.faq4Question') }}
                 </h3>
                 <p class="faq-answer">
-                  Use our search function or browse by categories on our Type Soul Blog. We also use tags to help you find
-                  related content quickly. Each Type Soul Blog post is carefully categorized for easy navigation.
+                  {{ $t('blogPage.faq4Answer') }}
                 </p>
               </div>
             </div>
@@ -160,15 +149,23 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-import { posts as blogData } from '@/data/blog.js'
+import { ref, onMounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedData } from '@/composables/useLocalizedData'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import { updateBlogListSEO } from '@/seo/blog-seo.js'
 
+const route = useRoute()
 const router = useRouter()
-const blogPosts = ref(blogData)
+const { t } = useI18n()
+
+// 使用 Composable 加载本地化数据
+const { data: blogPosts, loading, error } = useLocalizedData('blog')
+
+// SEO
+const { updateSEO } = useSEO('blogPage', { canonical: route.path })
 
 // 方法
 const formatDate = (dateString) => {
@@ -186,8 +183,12 @@ const viewPost = (post) => {
 
 // 生命周期
 onMounted(() => {
-  // 更新博客列表页 SEO
-  updateBlogListSEO(blogPosts.value)
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
 })
 </script>
 

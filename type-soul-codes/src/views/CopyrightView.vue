@@ -7,8 +7,8 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="page-title">Copyright Notice</h1>
-          <p class="page-subtitle">Last updated: September 12, 2025</p>
+          <h1 class="page-title">{{ $t('copyrightPage.title') }}</h1>
+          <p class="page-subtitle">{{ $t('copyrightPage.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -17,80 +17,39 @@
     <section class="content">
       <div class="container">
         <div class="content-wrapper">
-          <h2>Copyright Information</h2>
-          <p>
-            © 2025 typesoulcodes.org. All rights reserved. The content, organization, graphics,
-            design, compilation, magnetic translation, digital conversion and other matters related
-            to the Site are protected under applicable copyrights, trademarks and other proprietary
-            rights.
-          </p>
+          <h2>{{ $t('copyrightPage.copyrightInfoTitle') }}</h2>
+          <p>{{ $t('copyrightPage.copyrightInfoText') }}</p>
 
-          <h2>Intellectual Property Rights</h2>
-          <p>
-            All content, trademarks, service marks, trade names, logos, and icons are the property
-            of typesoulcodes.org or its content suppliers and are protected by copyright laws and
-            international treaties.
-          </p>
+          <h2>{{ $t('copyrightPage.intellectualPropertyTitle') }}</h2>
+          <p>{{ $t('copyrightPage.intellectualPropertyText') }}</p>
 
-          <h2>Permitted Use</h2>
-          <p>
-            You may view, download, and print content from this site for your personal,
-            non-commercial use only, provided you do not modify the content and you retain all
-            copyright and other proprietary notices contained in the content.
-          </p>
+          <h2>{{ $t('copyrightPage.permittedUseTitle') }}</h2>
+          <p>{{ $t('copyrightPage.permittedUseText') }}</p>
 
-          <h2>Prohibited Use</h2>
-          <p>
-            You may not reproduce, distribute, display, sell, lease, transmit, create derivative
-            works from, translate, modify, reverse-engineer, disassemble, decompile or otherwise
-            exploit this Site or any portion of it unless expressly permitted by typesoulcodes.org
-            in writing.
-          </p>
+          <h2>{{ $t('copyrightPage.prohibitedUseTitle') }}</h2>
+          <p>{{ $t('copyrightPage.prohibitedUseText') }}</p>
 
-          <h2>Third-Party Content</h2>
-          <p>
-            Some content on this site may be the copyrighted work of third parties. We respect the
-            intellectual property rights of others and expect our users to do the same.
-          </p>
+          <h2>{{ $t('copyrightPage.thirdPartyTitle') }}</h2>
+          <p>{{ $t('copyrightPage.thirdPartyText') }}</p>
 
-          <h2>DMCA Notice</h2>
+          <h2>{{ $t('copyrightPage.dmcaTitle') }}</h2>
           <p>
-            If you believe that your copyrighted work has been copied in a way that constitutes
-            copyright infringement, please contact us at
-            <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a> with the following
-            information:
+            {{ $t('copyrightPage.dmcaText') }}
+            <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a> {{ $t('copyrightPage.dmcaText2') }}
           </p>
           <ul>
-            <li>A description of the copyrighted work that you claim has been infringed</li>
-            <li>
-              A description of where the material that you claim is infringing is located on the
-              site
-            </li>
-            <li>
-              Your contact information including name, address, telephone number, and email address
-            </li>
-            <li>
-              A statement that you have a good faith belief that the disputed use is not authorized
-              by the copyright owner
-            </li>
-            <li>
-              A statement that the information in your notice is accurate and that you are the
-              copyright owner or authorized to act on the copyright owner's behalf
-            </li>
+            <li>{{ $t('copyrightPage.dmcaItem1') }}</li>
+            <li>{{ $t('copyrightPage.dmcaItem2') }}</li>
+            <li>{{ $t('copyrightPage.dmcaItem3') }}</li>
+            <li>{{ $t('copyrightPage.dmcaItem4') }}</li>
+            <li>{{ $t('copyrightPage.dmcaItem5') }}</li>
           </ul>
 
-          <h2>Type Soul Game Content</h2>
-          <p>
-            This website is not affiliated with, endorsed by, or sponsored by the creators of the
-            Type Soul game. All game-related content, including codes and information, is provided
-            for informational purposes only.
-          </p>
+          <h2>{{ $t('copyrightPage.takedownTitle') }}</h2>
+          <p>{{ $t('copyrightPage.takedownText') }}</p>
 
-          <h2>Contact Information</h2>
-          <p>
-            For any copyright-related inquiries, please contact us at
-            <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a>
-          </p>
+          <h2>{{ $t('copyrightPage.counterNoticeTitle') }}</h2>
+          <p>{{ $t('copyrightPage.counterNoticeText') }}</p>
         </div>
       </div>
     </section>
@@ -101,8 +60,28 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+// SEO
+const { updateSEO } = useSEO('copyrightPage', { canonical: route.path })
+
+// 生命周期
+onMounted(() => {
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
+})
 </script>
 
 <style scoped>

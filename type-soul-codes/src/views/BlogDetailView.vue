@@ -14,7 +14,7 @@
               <!-- Back Button in top-left corner -->
               <button @click="goBack" class="back-button">
                 <span class="back-icon">←</span>
-                Back to Blog
+                {{ $t('common.backToList') }}
               </button>
               <div class="hero-content">
                 <div class="hero-date">{{ formatDate(post.publishDate) }}</div>
@@ -36,15 +36,21 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { posts as blogData } from '@/data/blog.js'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedData } from '@/composables/useLocalizedData'
+import { setSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import { updateBlogPostSEO } from '@/seo/blog-seo.js'
 
 const route = useRoute()
 const router = useRouter()
+const { t, locale } = useI18n()
+
+// 使用 Composable 加载本地化数据
+const { data: blogData, loading, error } = useLocalizedData('blog')
+
 const post = ref(null)
 
 // 计算属性
@@ -64,18 +70,36 @@ const goBack = () => {
   router.push('/blog')
 }
 
-// 生命周期
-onMounted(() => {
-  // 根据 slug 查找当前文章
-  post.value = blogData.find((p) => p.addressBar === postSlug.value)
+// 查找文章
+const findPost = () => {
+  if (!blogData.value) return
+  
+  post.value = blogData.value.find((p) => p.addressBar === postSlug.value)
 
   if (!post.value) {
     router.push('/blog')
     return
   }
 
-  // 更新博客文章 SEO
-  updateBlogPostSEO(post.value)
+  // 更新博客文章 SEO - 使用普通函数
+  if (post.value.seo) {
+    setSEO({
+      title: post.value.seo.title,
+      description: post.value.seo.description,
+      keywords: post.value.seo.keywords,
+      canonical: route.path
+    }, locale.value)
+  }
+}
+
+// 生命周期
+onMounted(() => {
+  findPost()
+})
+
+// 监听数据变化
+watch(blogData, () => {
+  findPost()
 })
 </script>
 

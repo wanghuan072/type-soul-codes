@@ -7,11 +7,10 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="main-title">Type Soul Guides</h1>
+          <h1 class="main-title">{{ $t('guidesPage.heroTitle') }}</h1>
           <p class="hero-description">
-              Master Type Soul with our comprehensive Type Soul Guides collection, strategies, and tips.
-              From beginner tutorials to advanced techniques, our Type Soul Guides have you covered.
-            </p>
+            {{ $t('guidesPage.heroDescription') }}
+          </p>
         </div>
       </div>
     </section>
@@ -20,12 +19,18 @@
     <section class="guides-posts" id="guides-list">
       <div class="container">
         <div class="guides-wrap">
-          <h2 class="section-title">Complete Type Soul Guides Collection</h2>
+          <h2 class="section-title">{{ $t('guidesPage.sectionTitle') }}</h2>
           <p class="section-description">
-            Browse through our complete Type Soul Guides collection. Each Type Soul Guide includes detailed
-            instructions, tips, and strategies to help you master the game.
+            {{ $t('guidesPage.sectionDescription') }}
           </p>
-          <div class="guides-grid">
+          
+          <!-- Loading State -->
+          <div v-if="loading" class="loading">{{ $t('common.loading') }}</div>
+          
+          <!-- Error State -->
+          <div v-else-if="error" class="error">{{ $t('common.error') }}</div>
+          
+          <div v-else class="guides-grid">
             <div
               v-for="guide in guides"
               :key="guide.id"
@@ -35,7 +40,7 @@
               <div class="guide-image">
                 <img :src="guide.imageUrl" :alt="guide.imageAlt" />
                 <div class="guide-overlay">
-                  <span class="read-more">Read Guide</span>
+                  <span class="read-more">{{ $t('guidesPage.readMore') }}</span>
                 </div>
                 <div class="guide-difficulty" :class="guide.difficulty.toLowerCase()">
                   {{ guide.difficulty }}
@@ -64,42 +69,33 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-wrap">
-          <h2 class="section-title">About Our Type Soul Guides</h2>
+          <h2 class="section-title">{{ $t('guidesPage.aboutTitle') }}</h2>
           <p class="section-description">
-            Our Type Soul Guides are created by experienced players and community experts to help you
-            improve your gameplay and master every aspect of the game. These Type Soul Guides provide comprehensive coverage.
+            {{ $t('guidesPage.aboutDescription') }}
           </p>
           <div class="about-content">
             <div class="about-text">
-              <h3>Expert-Created Type Soul Guides</h3>
-              <p>
-                Every Type Soul Guide is carefully crafted by experienced Type Soul players who have mastered
-                the techniques they teach. We focus on providing accurate, tested strategies that
-                actually work in real gameplay situations.
-              </p>
-              <h3>Comprehensive Type Soul Guides Coverage</h3>
-              <p>
-                From basic mechanics to advanced strategies, our Type Soul Guides cover every aspect of Type
-                Soul. Whether you're a complete beginner or a seasoned player, you'll find valuable
-                content in our Type Soul Guides to improve your skills.
-              </p>
+              <h3>{{ $t('guidesPage.expertCreatedTitle') }}</h3>
+              <p>{{ $t('guidesPage.expertCreatedDesc') }}</p>
+              <h3>{{ $t('guidesPage.comprehensiveCoverageTitle') }}</h3>
+              <p>{{ $t('guidesPage.comprehensiveCoverageDesc') }}</p>
             </div>
           </div>
           <div class="about-features">
             <div class="feature-item">
               <div class="feature-icon">🎯</div>
-              <h4>Expert Strategies</h4>
-              <p>Proven techniques from top players</p>
+              <h4>{{ $t('guidesPage.expertStrategies') }}</h4>
+              <p>{{ $t('guidesPage.expertStrategiesDesc') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">📚</div>
-              <h4>Comprehensive Type Soul Guides</h4>
-              <p>Complete coverage of all game aspects</p>
+              <h4>{{ $t('guidesPage.comprehensiveGuides') }}</h4>
+              <p>{{ $t('guidesPage.comprehensiveGuidesDesc') }}</p>
             </div>
             <div class="feature-item">
               <div class="feature-icon">⚡</div>
-              <h4>Quick Learning</h4>
-              <p>Easy-to-follow step-by-step instructions</p>
+              <h4>{{ $t('guidesPage.quickLearning') }}</h4>
+              <p>{{ $t('guidesPage.quickLearningDesc') }}</p>
             </div>
           </div>
         </div>
@@ -110,53 +106,46 @@
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="faq-wrap">
-          <h2 class="section-title">Type Soul Guides FAQ</h2>
+          <h2 class="section-title">{{ $t('guidesPage.faqTitle') }}</h2>
           <p class="section-description">
-            Common questions about our Type Soul Guides and how to get the most out of our content.
+            {{ $t('guidesPage.faqDescription') }}
           </p>
           <div class="faq-content">
             <div class="faq-list">
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">❓</span>
-                  How often are the Type Soul Guides updated?
+                  {{ $t('guidesPage.faq1Question') }}
                 </h3>
                 <p class="faq-answer">
-                  We regularly update our Type Soul Guides to reflect the latest game changes and meta
-                  developments. Major updates are reviewed within 24-48 hours of release.
+                  {{ $t('guidesPage.faq1Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🎮</span>
-                  What difficulty levels do our Type Soul Guides cover?
+                  {{ $t('guidesPage.faq2Question') }}
                 </h3>
                 <p class="faq-answer">
-                  Our Type Soul Guides cover all difficulty levels from beginner to expert. Each Type Soul Guide is
-                  clearly marked with its difficulty level to help you find content appropriate for
-                  your skill level.
+                  {{ $t('guidesPage.faq2Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">👥</span>
-                  Can I request specific Type Soul Guides?
+                  {{ $t('guidesPage.faq3Question') }}
                 </h3>
                 <p class="faq-answer">
-                  Absolutely! We welcome suggestions for new Type Soul Guides topics. If you have a specific
-                  strategy or technique you'd like us to cover in our Type Soul Guides, please contact us through our
-                  community channels.
+                  {{ $t('guidesPage.faq3Answer') }}
                 </p>
               </div>
               <div class="faq-item">
                 <h3 class="faq-question">
                   <span class="faq-icon">🔍</span>
-                  How do I find Type Soul Guides for my skill level?
+                  {{ $t('guidesPage.faq4Question') }}
                 </h3>
                 <p class="faq-answer">
-                  Use our difficulty filters or browse by category. Each Type Soul Guide is clearly marked with
-                  its difficulty level and includes prerequisites to help you choose the right
-                  content from our Type Soul Guides collection.
+                  {{ $t('guidesPage.faq4Answer') }}
                 </p>
               </div>
             </div>
@@ -171,16 +160,23 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-import { guides as guidesData } from '@/data/guides.js'
+import { ref, onMounted, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedData } from '@/composables/useLocalizedData'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
+const route = useRoute()
 const router = useRouter()
+const { t } = useI18n()
 
-// 响应式数据
-const guides = ref(guidesData)
+// 使用 Composable 加载本地化数据
+const { data: guides, loading, error } = useLocalizedData('guides')
+
+// SEO
+const { updateSEO } = useSEO('guidesPage', { canonical: route.path })
 
 // 方法
 const formatDate = (dateString) => {
@@ -212,7 +208,12 @@ const viewGuide = (guide) => {
 
 // 生命周期
 onMounted(() => {
-  // 页面加载时的初始化逻辑
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
 })
 </script>
 

@@ -7,8 +7,8 @@
     <section class="hero-inner">
       <div class="hero-wrap">
         <div class="hero-content">
-          <h1 class="page-title">Terms of Use</h1>
-          <p class="page-subtitle">Last updated: September 12, 2025</p>
+          <h1 class="page-title">{{ $t('termsOfUsePage.title') }}</h1>
+          <p class="page-subtitle">{{ $t('termsOfUsePage.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -17,67 +17,33 @@
     <section class="content">
       <div class="container">
         <div class="content-wrapper">
-          <h2>Acceptance of Terms</h2>
-          <p>
-            By accessing and using typesoulcodes.org, you accept and agree to be bound by the terms
-            and provision of this agreement.
-          </p>
+          <h2>{{ $t('termsOfUsePage.acceptanceTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.acceptanceText') }}</p>
 
-          <h2>Use License</h2>
-          <p>
-            Permission is granted to temporarily download one copy of the materials on
-            typesoulcodes.org for personal, non-commercial transitory viewing only.
-          </p>
+          <h2>{{ $t('termsOfUsePage.useLicenseTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.useLicenseText') }}</p>
 
-          <h2>Disclaimer</h2>
-          <p>
-            The materials on typesoulcodes.org are provided on an 'as is' basis. typesoulcodes.org
-            makes no warranties, expressed or implied, and hereby disclaims and negates all other
-            warranties including without limitation, implied warranties or conditions of
-            merchantability, fitness for a particular purpose, or non-infringement of intellectual
-            property or other violation of rights.
-          </p>
+          <h2>{{ $t('termsOfUsePage.disclaimerTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.disclaimerText') }}</p>
 
-          <h2>Limitations</h2>
-          <p>
-            In no event shall typesoulcodes.org or its suppliers be liable for any damages
-            (including, without limitation, damages for loss of data or profit, or due to business
-            interruption) arising out of the use or inability to use the materials on
-            typesoulcodes.org, even if typesoulcodes.org or an authorized representative has been
-            notified orally or in writing of the possibility of such damage.
-          </p>
+          <h2>{{ $t('termsOfUsePage.limitationsTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.limitationsText') }}</p>
 
-          <h2>Accuracy of Materials</h2>
-          <p>
-            The materials appearing on typesoulcodes.org could include technical, typographical, or
-            photographic errors. typesoulcodes.org does not warrant that any of the materials on its
-            website are accurate, complete or current.
-          </p>
+          <h2>{{ $t('termsOfUsePage.accuracyTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.accuracyText') }}</p>
 
-          <h2>Links</h2>
-          <p>
-            typesoulcodes.org has not reviewed all of the sites linked to our website and is not
-            responsible for the contents of any such linked site. The inclusion of any link does not
-            imply endorsement by typesoulcodes.org of the site.
-          </p>
+          <h2>{{ $t('termsOfUsePage.linksTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.linksText') }}</p>
 
-          <h2>Modifications</h2>
-          <p>
-            typesoulcodes.org may revise these terms of service for its website at any time without
-            notice. By using this website you are agreeing to be bound by the then current version
-            of these terms of service.
-          </p>
+          <h2>{{ $t('termsOfUsePage.modificationsTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.modificationsText') }}</p>
 
-          <h2>Governing Law</h2>
-          <p>
-            These terms and conditions are governed by and construed in accordance with the laws and
-            you irrevocably submit to the exclusive jurisdiction of the courts in that state or
-            location.
-          </p>
+          <h2>{{ $t('termsOfUsePage.governingLawTitle') }}</h2>
+          <p>{{ $t('termsOfUsePage.governingLawText') }}</p>
 
-          <h2>Contact Information</h2>
+          <h2>{{ $t('termsOfUsePage.contactTitle') }}</h2>
           <p>
-            If you have any questions about these Terms of Use, please contact us at
+            {{ $t('termsOfUsePage.contactText') }}
             <a href="mailto:wyong@typesoulcodes.org">wyong@typesoulcodes.org</a>
           </p>
         </div>
@@ -90,8 +56,28 @@
 </template>
 
 <script setup>
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
+const route = useRoute()
+const { t } = useI18n()
+
+// SEO
+const { updateSEO } = useSEO('termsOfUsePage', { canonical: route.path })
+
+// 生命周期
+onMounted(() => {
+  updateSEO()
+})
+
+// 监听语言切换
+watch(() => route.path, () => {
+  updateSEO()
+})
 </script>
 
 <style scoped>
