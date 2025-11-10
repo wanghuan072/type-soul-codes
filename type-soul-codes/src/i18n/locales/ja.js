@@ -88,6 +88,7 @@ export default {
     stepByStepGuide: 'ステップバイステップガイド',
     proTips: 'プロのヒント',
     step1Title: 'Robloxで Type Soul を起動',
+  step1Desc: 'Robloxを開き、「プレイ」を押して体験リストからType Soulを起動します。',
     step2Title: 'キャラクターを作成してレベルアップ',
     step2Desc: 'キャラクターを作成し、少なくともセミグレード2になるまでレベルアップします。',
     step3Title: 'ギフトボックスボタンを探す',

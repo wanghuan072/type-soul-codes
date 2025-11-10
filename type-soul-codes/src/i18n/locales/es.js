@@ -88,6 +88,7 @@ export default {
     stepByStepGuide: 'Guía Paso a Paso',
     proTips: 'Consejos Pro',
     step1Title: 'Inicia Type Soul en Roblox',
+  step1Desc: 'Abre Roblox y pulsa Jugar para cargar Type Soul desde tu lista de experiencias.',
     step2Title: 'Crea y Sube de Nivel tu Personaje',
     step2Desc: 'Crea un personaje y súbelo de nivel hasta alcanzar al menos el rango Semi-Grade 2.',
     step3Title: 'Encuentra el Botón de Caja de Regalo',

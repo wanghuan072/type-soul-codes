@@ -88,7 +88,7 @@ export default {
     "stepByStepGuide": "Schritt-für-Schritt Anleitung",
     "proTips": "Pro-Tipps",
     "step1Title": "Starten Sie Type Soul in Roblox",
-    "step1Desc": "",
+  "step1Desc": "Öffnen Sie Roblox und klicken Sie auf „Spielen“, um Type Soul aus Ihrer Spieleliste zu laden.",
     "step2Title": "Erstellen und Leveln Sie Ihren Charakter",
     "step2Desc": "Erstellen Sie einen Charakter und leveln Sie ihn, bis Sie mindestens Semi-Grade 2 erreichen",
     "step3Title": "Finden Sie die Geschenkbox-Taste",

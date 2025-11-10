@@ -88,6 +88,7 @@ export default {
     stepByStepGuide: '단계별 가이드',
     proTips: '전문 팁',
     step1Title: 'Roblox에서 Type Soul 시작하기',
+  step1Desc: 'Roblox를 열고 「플레이」를 눌러 경험 목록에서 Type Soul을 실행하세요.',
     step2Title: '캐릭터 생성 및 레벨 업',
     step2Desc: '캐릭터를 생성하고 최소한 Semi-Grade 2까지 레벨을 올리세요.',
     step3Title: '선물 상자 버튼 찾기',

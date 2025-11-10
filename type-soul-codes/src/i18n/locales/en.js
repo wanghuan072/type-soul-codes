@@ -88,6 +88,7 @@ export default {
         stepByStepGuide: 'Step-by-Step Guide',
         proTips: 'Pro Tips',
         step1Title: 'Launch Type Soul in Roblox',
+        step1Desc: 'Open Roblox and press Play to load Type Soul from your experiences list',
         step2Title: 'Create and Level Up Character',
         step2Desc: "Create a character and level them up until you're at least Semi-Grade 2",
         step3Title: 'Find the Gift Box Button',

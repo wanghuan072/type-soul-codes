@@ -88,6 +88,7 @@ export default {
     stepByStepGuide: 'Guide étape par étape',
     proTips: 'Astuces pro',
     step1Title: 'Lancez Type Soul sur Roblox',
+  step1Desc: 'Ouvrez Roblox et appuyez sur Jouer pour lancer Type Soul depuis votre liste d’expériences.',
     step2Title: 'Créez et améliorez votre personnage',
     step2Desc: 'Créez un personnage et montez-le au moins au niveau Semi-Grade 2',
     step3Title: 'Trouvez le bouton Cadeau',
