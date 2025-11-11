@@ -125,18 +125,6 @@
             </div>
           </div>
         </div>
-
-        <!-- pc-正方形广告1 -->
-        <aside v-if="!isMobile" style="min-width: 200px; min-height: 100px">
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-4868776021979689"
-            data-ad-slot="6426252679"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-        </aside>
       </div>
     </section>
 
@@ -208,6 +196,17 @@
                 {{ $t('home.copy') }}
               </button>
             </div>
+             <!-- pc-正方形广告1 -->
+        <aside v-if="!isMobile" style="min-width: 200px; height: 175px !important">
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4868776021979689"
+            data-ad-slot="6426252679"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </aside>
           </div>
         </div>
         <!-- PC-横幅广告1 -->
