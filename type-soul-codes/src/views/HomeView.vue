@@ -127,7 +127,7 @@
         </div>
 
         <!-- pc-正方形广告1 -->
-        <aside style="min-width: 200px; min-height: 100px">
+        <aside v-if="!isMobile" style="min-width: 200px; min-height: 100px">
           <ins
             class="adsbygoogle"
             style="display: block"
@@ -141,7 +141,7 @@
     </section>
 
     <!-- PC-左侧广告1 -->
-    <aside style="position: fixed; top: 50%; left: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
+    <aside v-if="!isMobile" style="position: fixed; top: 50%; left: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -152,7 +152,7 @@
       ></ins>
     </aside>
     <!-- PC-右侧广告2 -->
-    <aside style="position: fixed; top: 50%; right: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
+    <aside v-if="!isMobile" style="position: fixed; top: 50%; right: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -211,7 +211,7 @@
           </div>
         </div>
         <!-- PC-横幅广告1 -->
-        <aside style="width: 100%; min-height: 60px">
+        <aside v-if="!isMobile" style="width: 100%; min-height: 60px">
           <ins
             class="adsbygoogle"
             style="display: block"
@@ -267,7 +267,7 @@
         </div>
 
         <!-- pc-横幅广告2 -->
-        <aside style="width: 100%; min-height: 60px">
+        <aside v-if="!isMobile" style="width: 100%; min-height: 60px">
           <ins
             class="adsbygoogle"
             style="display: block"
@@ -750,7 +750,7 @@
           </div>
 
           <!-- PC-正方形广告2 -->
-          <aside style="min-width: 200px; min-height: 100px">
+          <aside v-if="!isMobile" style="min-width: 200px; min-height: 100px">
             <ins
               class="adsbygoogle"
               style="display: block"
@@ -778,6 +778,9 @@ import { useSEO } from '@/seo/i18n-meta-tags'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { showSuccess, showError } from '@/utils/message.js'
+
+import { useDeviceDetection } from '@/utils/useDeviceDetection.js'
+const { isMobile } = useDeviceDetection()
 
 const route = useRoute()
 
