@@ -128,28 +128,7 @@
       </div>
     </section>
 
-    <!-- PC-左侧广告1 -->
-    <aside v-if="!isMobile" style="position: fixed; top: 50%; left: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-4868776021979689"
-        data-ad-slot="3939690132"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-    </aside>
-    <!-- PC-右侧广告2 -->
-    <aside v-if="!isMobile" style="position: fixed; top: 50%; right: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-4868776021979689"
-        data-ad-slot="3939690132"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-    </aside>
+    
 
     <!-- Active Codes Section -->
     <section class="active-codes" id="active-codes">
