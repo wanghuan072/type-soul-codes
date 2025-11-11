@@ -126,8 +126,8 @@
           </div>
         </div>
 
-        <!--  -->
-        <aside style="width: 300px; min-height: 100px">
+        <!-- pc-正方形广告1 -->
+        <aside style="min-width: 200px; min-height: 100px">
           <ins
             class="adsbygoogle"
             style="display: block"
@@ -141,7 +141,7 @@
     </section>
 
     <!-- PC-左侧广告1 -->
-    <aside style="position: fixed; top: 50%; left: 10px; min-width: 100px; min-height: 100px; transform: translateY(-50%)">
+    <aside style="position: fixed; top: 50%; left: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -152,7 +152,7 @@
       ></ins>
     </aside>
     <!-- PC-右侧广告2 -->
-    <!-- <aside style="position: fixed; top: 50%; right: 10px; min-width: 100px; min-height: 100px; transform: translateY(-50%)">
+    <aside style="position: fixed; top: 50%; right: 10px; min-width: 200px; min-height: 400px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -161,7 +161,7 @@
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-    </aside> -->
+    </aside>
 
     <!-- Active Codes Section -->
     <section class="active-codes" id="active-codes">
@@ -748,7 +748,9 @@
               </div>
             </div>
           </div>
-          <aside style="width: 300px; min-height: 100px">
+
+          <!-- PC-正方形广告2 -->
+          <aside style="min-width: 200px; min-height: 100px">
             <ins
               class="adsbygoogle"
               style="display: block"
