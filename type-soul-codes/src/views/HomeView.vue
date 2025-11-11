@@ -8,126 +8,140 @@
       <div class="container">
         <div class="hero-wrap">
           <div class="content">
-            <h1 class="main-title">
-              {{ $t('home.title') }}
-            </h1>
-            <div class="update-info">
-              <span class="live-tag">{{ $t('home.liveTag') }}</span>
-              <span class="update-text"
-                >{{ $t('home.lastUpdated') }}: {{ currentDateTime }} - {{ activeCodesCount }}
-                {{ $t('home.activeCodes') }}</span
-              >
-            </div>
-            <p class="hero-description">
-              {{ $t('home.description') }}
-            </p>
-            <div class="hero-buttons">
-              <a
-                href="javascript:void(0)"
-                @click="scrollToSection('active-codes')"
-                class="btn-primary"
-              >
-                <span class="btn-icon">
-                  <svg
-                    t="1757749099958"
-                    class="icon"
-                    viewBox="0 0 1024 1024"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    p-id="9175"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M490.8 206c-4.3-22.7-17.4-45.9-36.9-65.4-24-24-53.9-38.3-79.9-38.3-9.5 0-23 2.1-32.8 11.9-23.4 23.4-11.3 75.1 26.4 112.8 24 24 53.9 38.3 79.9 38.3 9.5 0 23-2.1 32.8-11.9 10.5-10.6 14.3-27.4 10.5-47.4zM655.1 227c19.5-19.5 32.6-42.7 36.9-65.4 3.8-20 0-36.8-10.5-47.4-9.9-9.9-23.3-11.9-32.8-11.9-26.1 0-56 14.3-79.9 38.3-37.7 37.7-49.8 89.4-26.4 112.8 9.9 9.9 23.3 11.9 32.8 11.9 26 0 55.9-14.3 79.9-38.3zM468.8 303.4h84.9V923h-84.9z"
-                      fill="#FFAEBF"
-                      p-id="9176"
-                    ></path>
-                    <path
-                      d="M870.9 265.3H669.6c4.3-3.6 8.4-7.3 12.4-11.3 24.9-24.9 41.7-55.2 47.4-85.3 6.2-32.8-1.3-61.7-21-81.4-15.1-15.1-35.8-23.1-59.8-23.1-36 0-75.9 18.5-106.9 49.5-12.5 12.5-22.6 26-30.5 39.8-7.9-14.1-18.1-27.6-30.3-39.8-31-31-70.9-49.5-106.9-49.5-24 0-44.7 8-59.8 23.1-39.3 39.4-27.8 112.6 26.4 166.7 4 4 8.2 7.8 12.4 11.3H151.7c-43.6 0-79.1 35.5-79.1 79.1V365c0 43.6 35.5 79.1 79.1 79.1h11.6v438.1c0 43.6 35.5 79.1 79.1 79.1h537.7c43.6 0 79.1-35.5 79.1-79.1V444h11.6c43.6 0 79.1-35.5 79.1-79.1v-20.6c0.1-43.5-35.4-79-79-79z"
-                      fill="#E66978"
-                      p-id="9177"
-                    ></path>
-                    <path
-                      d="M568.7 140.6c24-24 53.9-38.3 79.9-38.3 9.5 0 23 2.1 32.8 11.9 10.5 10.5 14.3 27.4 10.5 47.4-4.3 22.7-17.4 45.9-36.9 65.4-24 24-53.9 38.3-79.9 38.3-9.5 0-23-2.1-32.8-11.9-23.4-23.5-11.4-75.1 26.4-112.8zM367.5 227c-37.7-37.7-49.8-89.4-26.4-112.8 9.9-9.9 23.3-11.9 32.8-11.9 26.1 0 56 14.3 79.9 38.3 19.5 19.5 32.6 42.7 36.9 65.4 3.8 20 0 36.8-10.5 47.4-9.9 9.9-23.3 11.9-32.8 11.9-26 0-55.9-14.3-79.9-38.3z"
-                      fill="#FFAEBF"
-                      p-id="9178"
-                    ></path>
-                    <path
-                      d="M430.7 923H242.4c-22.6 0-40.9-18.4-40.9-40.9V444h229.2v479zM430.7 405.9h-279c-22.6 0-40.9-18.4-40.9-40.9v-20.6c0-22.6 18.4-40.9 40.9-40.9h279v102.4z"
-                      fill="#FFD976"
-                      p-id="9179"
-                    ></path>
-                    <path d="M468.8 303.4h84.9V923h-84.9z" fill="#FFAEBF" p-id="9180"></path>
-                    <path
-                      d="M821.1 882.1c0 22.6-18.4 40.9-40.9 40.9H591.9V444h229.2v438.1zM911.8 365c0 22.6-18.4 40.9-40.9 40.9h-279V303.4h279c22.6 0 40.9 18.4 40.9 40.9V365z"
-                      fill="#FFD976"
-                      p-id="9181"
-                    ></path>
-                  </svg>
-                </span>
-                {{ $t('home.getFreeCodes') }}
-              </a>
-              <a
-                href="javascript:void(0)"
-                @click="scrollToSection('how-to-redeem')"
-                class="btn-secondary"
-              >
-                <span class="btn-icon">
-                  <svg
-                    t="1757749162730"
-                    class="icon"
-                    viewBox="0 0 1024 1024"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    p-id="12781"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M512.32 0.64A511.616 511.616 0 0 0 0.64 512.32 511.616 511.616 0 0 0 512.32 1024 511.616 511.616 0 0 0 1024 512.32 511.616 511.616 0 0 0 512.32 0.64z m56.832 852.8H455.488v-113.728h113.664v113.728z m129.472-370.944c-55.616 84.8-128.32 97.216-128.32 200.128H454.784v-33.6c-2.176-65.024 28.16-117.76 87.36-158.08 61.44-44.8 81.792-57.6 81.792-120.192 0-68.032-66.56-86.656-112.448-86.656-76.864 0-112.896 59.072-112.896 114.88l-113.28-0.384c0-163.392 125.056-227.008 253.568-227.008 120.64 0 200.768 89.984 200.832 174.72 0 53.952-11.072 92.352-41.088 136.192z"
-                      fill="#FA7268"
-                      p-id="12782"
-                    ></path>
-                  </svg>
-                </span>
-                {{ $t('home.howToRedeem') }}
-              </a>
-            </div>
-            <div class="hero-stats">
-              <div class="stat-item">
-                <span class="stat-icon">
-                  <svg
-                    t="1757749187715"
-                    class="icon"
-                    viewBox="0 0 1024 1024"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    p-id="13814"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M377.9 114.1h358.3l-136.4 268 231.5 0.3-485.1 559.3 139.5-356.4H222.6z"
-                      fill="#FED928"
-                      p-id="13815"
-                    ></path>
-                  </svg>
-                </span>
-                <span class="stat-text">{{ $t('home.freshCodes') }}</span>
+            <div class="hero-content">
+              <h1 class="main-title">
+                {{ $t('home.title') }}
+              </h1>
+              <div class="update-info">
+                <span class="live-tag">{{ $t('home.liveTag') }}</span>
+                <span class="update-text"
+                  >{{ $t('home.lastUpdated') }}: {{ currentDateTime }} - {{ activeCodesCount }}
+                  {{ $t('home.activeCodes') }}</span
+                >
               </div>
-              <div class="user-rating">
-                <div class="stars">★★★★★</div>
-                <span class="rating-text">{{ $t('home.userRating') }}</span>
+              <p class="hero-description">
+                {{ $t('home.description') }}
+              </p>
+              <div class="hero-buttons">
+                <a
+                  href="javascript:void(0)"
+                  @click="scrollToSection('active-codes')"
+                  class="btn-primary"
+                >
+                  <span class="btn-icon">
+                    <svg
+                      t="1757749099958"
+                      class="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="9175"
+                      width="200"
+                      height="200"
+                    >
+                      <path
+                        d="M490.8 206c-4.3-22.7-17.4-45.9-36.9-65.4-24-24-53.9-38.3-79.9-38.3-9.5 0-23 2.1-32.8 11.9-23.4 23.4-11.3 75.1 26.4 112.8 24 24 53.9 38.3 79.9 38.3 9.5 0 23-2.1 32.8-11.9 10.5-10.6 14.3-27.4 10.5-47.4zM655.1 227c19.5-19.5 32.6-42.7 36.9-65.4 3.8-20 0-36.8-10.5-47.4-9.9-9.9-23.3-11.9-32.8-11.9-26.1 0-56 14.3-79.9 38.3-37.7 37.7-49.8 89.4-26.4 112.8 9.9 9.9 23.3 11.9 32.8 11.9 26 0 55.9-14.3 79.9-38.3zM468.8 303.4h84.9V923h-84.9z"
+                        fill="#FFAEBF"
+                        p-id="9176"
+                      ></path>
+                      <path
+                        d="M870.9 265.3H669.6c4.3-3.6 8.4-7.3 12.4-11.3 24.9-24.9 41.7-55.2 47.4-85.3 6.2-32.8-1.3-61.7-21-81.4-15.1-15.1-35.8-23.1-59.8-23.1-36 0-75.9 18.5-106.9 49.5-12.5 12.5-22.6 26-30.5 39.8-7.9-14.1-18.1-27.6-30.3-39.8-31-31-70.9-49.5-106.9-49.5-24 0-44.7 8-59.8 23.1-39.3 39.4-27.8 112.6 26.4 166.7 4 4 8.2 7.8 12.4 11.3H151.7c-43.6 0-79.1 35.5-79.1 79.1V365c0 43.6 35.5 79.1 79.1 79.1h11.6v438.1c0 43.6 35.5 79.1 79.1 79.1h537.7c43.6 0 79.1-35.5 79.1-79.1V444h11.6c43.6 0 79.1-35.5 79.1-79.1v-20.6c0.1-43.5-35.4-79-79-79z"
+                        fill="#E66978"
+                        p-id="9177"
+                      ></path>
+                      <path
+                        d="M568.7 140.6c24-24 53.9-38.3 79.9-38.3 9.5 0 23 2.1 32.8 11.9 10.5 10.5 14.3 27.4 10.5 47.4-4.3 22.7-17.4 45.9-36.9 65.4-24 24-53.9 38.3-79.9 38.3-9.5 0-23-2.1-32.8-11.9-23.4-23.5-11.4-75.1 26.4-112.8zM367.5 227c-37.7-37.7-49.8-89.4-26.4-112.8 9.9-9.9 23.3-11.9 32.8-11.9 26.1 0 56 14.3 79.9 38.3 19.5 19.5 32.6 42.7 36.9 65.4 3.8 20 0 36.8-10.5 47.4-9.9 9.9-23.3 11.9-32.8 11.9-26 0-55.9-14.3-79.9-38.3z"
+                        fill="#FFAEBF"
+                        p-id="9178"
+                      ></path>
+                      <path
+                        d="M430.7 923H242.4c-22.6 0-40.9-18.4-40.9-40.9V444h229.2v479zM430.7 405.9h-279c-22.6 0-40.9-18.4-40.9-40.9v-20.6c0-22.6 18.4-40.9 40.9-40.9h279v102.4z"
+                        fill="#FFD976"
+                        p-id="9179"
+                      ></path>
+                      <path d="M468.8 303.4h84.9V923h-84.9z" fill="#FFAEBF" p-id="9180"></path>
+                      <path
+                        d="M821.1 882.1c0 22.6-18.4 40.9-40.9 40.9H591.9V444h229.2v438.1zM911.8 365c0 22.6-18.4 40.9-40.9 40.9h-279V303.4h279c22.6 0 40.9 18.4 40.9 40.9V365z"
+                        fill="#FFD976"
+                        p-id="9181"
+                      ></path>
+                    </svg>
+                  </span>
+                  {{ $t('home.getFreeCodes') }}
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  @click="scrollToSection('how-to-redeem')"
+                  class="btn-secondary"
+                >
+                  <span class="btn-icon">
+                    <svg
+                      t="1757749162730"
+                      class="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="12781"
+                      width="200"
+                      height="200"
+                    >
+                      <path
+                        d="M512.32 0.64A511.616 511.616 0 0 0 0.64 512.32 511.616 511.616 0 0 0 512.32 1024 511.616 511.616 0 0 0 1024 512.32 511.616 511.616 0 0 0 512.32 0.64z m56.832 852.8H455.488v-113.728h113.664v113.728z m129.472-370.944c-55.616 84.8-128.32 97.216-128.32 200.128H454.784v-33.6c-2.176-65.024 28.16-117.76 87.36-158.08 61.44-44.8 81.792-57.6 81.792-120.192 0-68.032-66.56-86.656-112.448-86.656-76.864 0-112.896 59.072-112.896 114.88l-113.28-0.384c0-163.392 125.056-227.008 253.568-227.008 120.64 0 200.768 89.984 200.832 174.72 0 53.952-11.072 92.352-41.088 136.192z"
+                        fill="#FA7268"
+                        p-id="12782"
+                      ></path>
+                    </svg>
+                  </span>
+                  {{ $t('home.howToRedeem') }}
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-icon">
+                    <svg
+                      t="1757749187715"
+                      class="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="13814"
+                      width="200"
+                      height="200"
+                    >
+                      <path
+                        d="M377.9 114.1h358.3l-136.4 268 231.5 0.3-485.1 559.3 139.5-356.4H222.6z"
+                        fill="#FED928"
+                        p-id="13815"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="stat-text">{{ $t('home.freshCodes') }}</span>
+                </div>
+                <div class="user-rating">
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-text">{{ $t('home.userRating') }}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!--  -->
+        <aside style="width: 300px; min-height: 100px">
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4868776021979689"
+            data-ad-slot="6426252679"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </aside>
       </div>
     </section>
 
     <!-- PC-左侧广告1 -->
-    <aside style="position: fixed; top: 50%; left: 10px; transform: translateY(-50%);">
+    <aside style="position: fixed; top: 50%; left: 10px; min-width: 100px; min-height: 100px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -137,8 +151,8 @@
         data-full-width-responsive="true"
       ></ins>
     </aside>
-     <!-- PC-右侧广告2 -->
-     <aside style="position: fixed; top: 50%; right: 10px; transform: translateY(-50%);">
+    <!-- PC-右侧广告2 -->
+    <!-- <aside style="position: fixed; top: 50%; right: 10px; min-width: 100px; min-height: 100px; transform: translateY(-50%)">
       <ins
         class="adsbygoogle"
         style="display: block"
@@ -147,18 +161,7 @@
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-    </aside>
-    <!-- PC-横幅广告1 -->
-    <aside style="width: 100%; min-height: 60px;">
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-4868776021979689"
-        data-ad-slot="9499687314"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-    </aside>
+    </aside> -->
 
     <!-- Active Codes Section -->
     <section class="active-codes" id="active-codes">
@@ -207,6 +210,17 @@
             </div>
           </div>
         </div>
+        <!-- PC-横幅广告1 -->
+        <aside style="width: 100%; min-height: 60px">
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4868776021979689"
+            data-ad-slot="9499687314"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </aside>
       </div>
     </section>
 
@@ -251,6 +265,18 @@
             </div>
           </div>
         </div>
+
+        <!-- pc-横幅广告2 -->
+        <aside style="width: 100%; min-height: 60px">
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4868776021979689"
+            data-ad-slot="7739334342"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </aside>
       </div>
     </section>
 
@@ -688,38 +714,50 @@
     <!-- Game Info Section -->
     <section class="game-info" id="game-info">
       <div class="container">
-        <div class="game-info-wrap">
-          <h2 class="section-title">{{ $t('home.gameInfoTitle') }}</h2>
-          <p class="section-subtitle">
-            {{ $t('home.gameInfoSubtitle') }}
-          </p>
-          <div class="about-content">
-            <div class="intro-text">
-              <p>{{ $t('home.gameInfoIntro1') }}</p>
-              <p>{{ $t('home.gameInfoIntro2') }}</p>
-            </div>
-            <div class="rewards-section">
-              <h3 class="rewards-title">{{ $t('home.rewardsTitle') }}</h3>
-              <div class="rewards-grid">
-                <div class="reward-card">
-                  <h4>{{ $t('home.reward1Title') }}</h4>
-                  <p>{{ $t('home.reward1Desc') }}</p>
-                </div>
-                <div class="reward-card">
-                  <h4>{{ $t('home.reward2Title') }}</h4>
-                  <p>{{ $t('home.reward2Desc') }}</p>
-                </div>
-                <div class="reward-card">
-                  <h4>{{ $t('home.reward3Title') }}</h4>
-                  <p>{{ $t('home.reward3Desc') }}</p>
-                </div>
-                <div class="reward-card">
-                  <h4>{{ $t('home.reward4Title') }}</h4>
-                  <p>{{ $t('home.reward4Desc') }}</p>
+        <div class="game-info-content">
+          <div class="game-info-wrap">
+            <h2 class="section-title">{{ $t('home.gameInfoTitle') }}</h2>
+            <p class="section-subtitle">
+              {{ $t('home.gameInfoSubtitle') }}
+            </p>
+            <div class="about-content">
+              <div class="intro-text">
+                <p>{{ $t('home.gameInfoIntro1') }}</p>
+                <p>{{ $t('home.gameInfoIntro2') }}</p>
+              </div>
+              <div class="rewards-section">
+                <h3 class="rewards-title">{{ $t('home.rewardsTitle') }}</h3>
+                <div class="rewards-grid">
+                  <div class="reward-card">
+                    <h4>{{ $t('home.reward1Title') }}</h4>
+                    <p>{{ $t('home.reward1Desc') }}</p>
+                  </div>
+                  <div class="reward-card">
+                    <h4>{{ $t('home.reward2Title') }}</h4>
+                    <p>{{ $t('home.reward2Desc') }}</p>
+                  </div>
+                  <div class="reward-card">
+                    <h4>{{ $t('home.reward3Title') }}</h4>
+                    <p>{{ $t('home.reward3Desc') }}</p>
+                  </div>
+                  <div class="reward-card">
+                    <h4>{{ $t('home.reward4Title') }}</h4>
+                    <p>{{ $t('home.reward4Desc') }}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <aside style="width: 300px; min-height: 100px">
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-4868776021979689"
+              data-ad-slot="1965522660"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+          </aside>
         </div>
       </div>
     </section>
@@ -938,6 +976,11 @@ watch(
   z-index: 10;
   text-align: center;
   width: 100%;
+  padding: 20px 0;
+}
+
+.hero .container {
+  display: flex;
 }
 
 .update-info {
@@ -1135,6 +1178,10 @@ watch(
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.game-info-content {
+  display: flex;
 }
 
 .game-info .section-title {
