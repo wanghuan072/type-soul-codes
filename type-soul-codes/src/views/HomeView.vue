@@ -154,6 +154,17 @@
     <!-- Active Codes Section -->
     <section class="active-codes" id="active-codes">
       <div class="container">
+        <!-- PC-横幅广告1 -->
+        <aside v-if="!isMobile" style="width: 100%; min-height: 60px">
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-4868776021979689"
+            data-ad-slot="9499687314"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </aside>
         <div class="active-codes-wrap">
           <h2 class="section-title">{{ $t('home.activeCodesTitle') }}</h2>
           <p class="section-description">
@@ -209,17 +220,7 @@
         </aside>
           </div>
         </div>
-        <!-- PC-横幅广告1 -->
-        <aside v-if="!isMobile" style="width: 100%; min-height: 60px">
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-4868776021979689"
-            data-ad-slot="9499687314"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-        </aside>
+        
       </div>
     </section>
 
